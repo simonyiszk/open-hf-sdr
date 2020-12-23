@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name sdr-rescue)(type Legacy)(uri ${KIPRJMOD}/sdr-rescue.lib)(options "")(descr ""))
+)

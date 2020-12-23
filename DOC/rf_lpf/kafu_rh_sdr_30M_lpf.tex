@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage{geometry}
+	\geometry                  %margók és lapméret beállítása
+		{
+			a4paper,
+			top=20mm,
+			bottom=25mm,
+			left=25mm,
+			right=25mm
+		}
+	\pagestyle{plain}           %fejléc üres, lábléc az oldalszámot tartalmazza
+\usepackage{setspace}           %sorközt lehet beállítani
+	\singlespacing              %egyszeres sorköz
+\usepackage{indentfirst}        %bekezdések formázása
+	\setlength{\parindent}{1em} %bekezdés első sorának behúzása
+	\setlength{\parskip}{6pt}   %bekezdések közötti távolság
+\usepackage[autostyle]{csquotes}%idézőjelek helyes formázásához
+	
+\usepackage[utf8]{inputenc}     %karakterkódolás
+\usepackage[magyar]{babel}      %helyesírás-ellenőrzés
+\usepackage[T1]{fontenc}        %szimbólumkódolás
+
+\usepackage{amsmath}            %matematikai képletekhez
+\usepackage{amssymb}            %több matematikai jelölés (automatikusan betölti az 'amsfonts' csomagot)
+\usepackage{graphicx}           %képek beillesztéséhez (valószínűleg betölti a 'graphics' csomagot, de nem találtam erre egyértelmű hivatkozást)
+	\graphicspath               %képek elérési útvonala, szabadon bővíthető/csökkenthető
+	{
+		{./}
+		{./elolap/}
+		{./kepek/}
+	}
+\usepackage{enumitem}           %felsorolásokat lehet vele formázni
+\usepackage{titling}            %title, author, stb. definiálásához, használatához
+\usepackage{hyperref}           %a hivatkozásokat kezeli
+	\hypersetup                 %a hivatkozásokat lehet formálni
+	{
+		colorlinks=true,        %linkek színezésének engedélyezése
+		citecolor=black,        %dokumentumon belüli hivatkozás színe
+		linkcolor=red,          %valami másféle dokumentumon belüli hivatkozás színe
+		urlcolor=blue,          %weblaphivatkozások színe
+	}
+\usepackage[center]{caption}    %képaláírásokat alapból középre igazítja
+\usepackage{subcaption}         %subfigure környezethez
+\usepackage{float}              %'lebegő' objektumok (pl. képek, táblázatok) pozícionálására
+
+
+\begin{document}
+	\include{dokumentacio}
+	\include{fuggelek}
+\end{document}

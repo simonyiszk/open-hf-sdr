@@ -27,10 +27,10 @@ $EndComp
 $Sheet
 S 1500 3350 750  250 
 U 5FE31D05
-F0 "Sheet5FE31D04" 50
+F0 "30MHz LPF" 50
 F1 "rf_lpf.sch" 50
 F2 "IN" I L 1500 3450 50 
-F3 "OUT" I R 2250 3450 50 
+F3 "OUT" O R 2250 3450 50 
 $EndSheet
 $Sheet
 S 2600 3350 900  250 
@@ -39,7 +39,7 @@ F0 "Sheet5FE31E1D" 50
 F1 "rf_autt.sch" 50
 $EndSheet
 $Comp
-L RF_Mixer:ADE-6 U?
+L sdr-rescue:ADE-6-RF_Mixer U?
 U 1 1 5FE32B05
 P 4100 3450
 F 0 "U?" H 4100 3867 50  0000 C CNN
