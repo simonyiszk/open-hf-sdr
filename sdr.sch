@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -50,19 +50,13 @@ F0 "Sheet5FE33196" 50
 F1 "if1_bpf.sch" 50
 $EndSheet
 $Sheet
-S 6250 3300 1150 300 
-U 5FE33241
-F0 "Sheet5FE33240" 50
-F1 "if1_amp.sch" 50
-$EndSheet
-$Sheet
-S 7750 3300 1100 300 
+S 6100 3300 1100 300 
 U 5FE332ED
 F0 "Sheet5FE332EC" 50
 F1 "mixer2.sch" 50
 $EndSheet
 $Sheet
-S 9000 3300 1050 300 
+S 7350 3300 1050 300 
 U 5FE333A1
 F0 "Sheet5FE333A0" 50
 F1 "if2_bpf.sch" 50
@@ -109,4 +103,28 @@ F5 "ATT_SEL1" I L 2600 3850 50
 $EndSheet
 Wire Wire Line
 	2250 3450 2600 3450
+Wire Wire Line
+	3500 3450 3700 3450
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FE67095
+P 3900 3850
+F 0 "#PWR?" H 3900 3600 50  0001 C CNN
+F 1 "GNDA" H 3905 3677 50  0000 C CNN
+F 2 "" H 3900 3850 50  0001 C CNN
+F 3 "" H 3900 3850 50  0001 C CNN
+	1    3900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FE6714C
+P 4100 3850
+F 0 "#PWR?" H 4100 3600 50  0001 C CNN
+F 1 "GNDA" H 4105 3677 50  0000 C CNN
+F 2 "" H 4100 3850 50  0001 C CNN
+F 3 "" H 4100 3850 50  0001 C CNN
+	1    4100 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

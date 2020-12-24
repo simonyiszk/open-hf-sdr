@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SA612
+D Double-balanced mixer
+K DBM, mixer
+F https://www.nxp.com/docs/en/data-sheet/SA612A.pdf
+$ENDCMP
+#
+#End Doc Library
