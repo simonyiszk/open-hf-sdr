@@ -32,12 +32,6 @@ F1 "rf_lpf.sch" 50
 F2 "IN" I L 1500 3450 50 
 F3 "OUT" O R 2250 3450 50 
 $EndSheet
-$Sheet
-S 2600 3350 900  250 
-U 5FE31E1E
-F0 "Sheet5FE31E1D" 50
-F1 "rf_autt.sch" 50
-$EndSheet
 $Comp
 L sdr-rescue:ADE-6-RF_Mixer U?
 U 1 1 5FE32B05
@@ -103,4 +97,16 @@ F 3 "" H 850 3650 50  0001 C CNN
 	1    850  3650
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 2600 3350 900  600 
+U 5FE31E1E
+F0 "Attenuator" 50
+F1 "rf_autt.sch" 50
+F2 "IN" I L 2600 3450 50 
+F3 "OUT" O R 3500 3450 50 
+F4 "ATT_SEL0" I L 2600 3750 50 
+F5 "ATT_SEL1" I L 2600 3850 50 
+$EndSheet
+Wire Wire Line
+	2250 3450 2600 3450
 $EndSCHEMATC
