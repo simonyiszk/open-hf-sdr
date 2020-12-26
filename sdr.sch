@@ -16,55 +16,58 @@ $EndDescr
 $Comp
 L Connector:Conn_Coaxial J?
 U 1 1 5FE31A99
-P 850 3450
-F 0 "J?" H 778 3688 50  0000 C CNN
-F 1 "Conn_Coaxial" H 778 3597 50  0000 C CNN
-F 2 "" H 850 3450 50  0001 C CNN
-F 3 " ~" H 850 3450 50  0001 C CNN
-	1    850  3450
+P 850 3650
+F 0 "J?" H 778 3888 50  0000 C CNN
+F 1 "Conn_Coaxial" H 778 3797 50  0000 C CNN
+F 2 "" H 850 3650 50  0001 C CNN
+F 3 " ~" H 850 3650 50  0001 C CNN
+	1    850  3650
 	-1   0    0    -1  
 $EndComp
 $Sheet
-S 1500 3350 750  250 
+S 1150 1250 750  250 
 U 5FE31D05
 F0 "30MHz LPF" 50
 F1 "rf_lpf.sch" 50
-F2 "IN" I L 1500 3450 50 
-F3 "OUT" O R 2250 3450 50 
+F2 "IN" I L 1150 1350 50 
+F3 "OUT" O R 1900 1350 50 
 $EndSheet
 $Comp
 L sdr-rescue:ADE-6-RF_Mixer U?
 U 1 1 5FE32B05
-P 4100 3450
-F 0 "U?" H 4100 3867 50  0000 C CNN
-F 1 "ADE-1H+" H 4100 3776 50  0000 C CNN
-F 2 "RF_Mini-Circuits:Mini-Circuits_CD542_LandPatternPL-052" H 4175 3075 50  0001 C CNN
-F 3 "https://www.minicircuits.com/pdfs/ADE-6.pdf" H 4275 3175 50  0001 C CNN
-	1    4100 3450
+P 3300 1350
+F 0 "U?" H 3300 1767 50  0000 C CNN
+F 1 "ADE-1H+" H 3300 1676 50  0000 C CNN
+F 2 "RF_Mini-Circuits:Mini-Circuits_CD542_LandPatternPL-052" H 3375 975 50  0001 C CNN
+F 3 "https://www.minicircuits.com/pdfs/ADE-6.pdf" H 3475 1075 50  0001 C CNN
+	1    3300 1350
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 4800 3300 1150 300 
+S 3750 1200 1250 300 
 U 5FE33197
 F0 "37.4 MHz Butterworth BPF" 50
 F1 "if1_bpf.sch" 50
-F2 "IN" I L 4800 3450 50 
-F3 "OUT" I R 5950 3450 50 
+F2 "IN" I L 3750 1350 50 
+F3 "OUT" I R 5000 1350 50 
 $EndSheet
 $Sheet
-S 6100 3300 1100 300 
+S 5100 1200 1450 300 
 U 5FE332ED
-F0 "Sheet5FE332EC" 50
+F0 "37.4 MHz Amp, and 2nd mixer" 50
 F1 "mixer2.sch" 50
+F2 "out_p" I R 6550 1300 50 
+F3 "out_n" I R 6550 1400 50 
+F4 "IN" I L 5100 1350 50 
 $EndSheet
 $Sheet
-S 7350 3300 1050 300 
+S 6700 1200 1050 300 
 U 5FE333A1
 F0 "Sheet5FE333A0" 50
 F1 "if2_bpf.sch" 50
 $EndSheet
 $Sheet
-S 750  5050 1300 350 
+S 7850 1200 1300 350 
 U 5FE3342F
 F0 "Sheet5FE3342E" 50
 F1 "if2_amp.sch" 50
@@ -72,63 +75,138 @@ $EndSheet
 $Comp
 L Analog_ADC:AD9283 U?
 U 1 1 5FE337CA
-P 3700 5550
-F 0 "U?" H 3700 6531 50  0000 C CNN
-F 1 "AD9283" H 3700 6440 50  0000 C CNN
-F 2 "" H 3700 5550 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9283.pdf" H 3700 5550 50  0001 C CNN
-	1    3700 5550
+P 10050 1700
+F 0 "U?" H 10050 2681 50  0000 C CNN
+F 1 "AD9283" H 10050 2590 50  0000 C CNN
+F 2 "" H 10050 1700 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9283.pdf" H 10050 1700 50  0001 C CNN
+	1    10050 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1500 3450 1050 3450
 $Comp
 L power:GNDA #PWR?
 U 1 1 5FE34F57
-P 850 3650
-F 0 "#PWR?" H 850 3400 50  0001 C CNN
-F 1 "GNDA" H 855 3477 50  0000 C CNN
-F 2 "" H 850 3650 50  0001 C CNN
-F 3 "" H 850 3650 50  0001 C CNN
-	1    850  3650
+P 850 3850
+F 0 "#PWR?" H 850 3600 50  0001 C CNN
+F 1 "GNDA" H 855 3677 50  0000 C CNN
+F 2 "" H 850 3850 50  0001 C CNN
+F 3 "" H 850 3850 50  0001 C CNN
+	1    850  3850
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 2600 3350 900  600 
+S 2050 1250 700  600 
 U 5FE31E1E
 F0 "Attenuator" 50
 F1 "rf_autt.sch" 50
-F2 "IN" I L 2600 3450 50 
-F3 "OUT" O R 3500 3450 50 
-F4 "ATT_SEL0" I L 2600 3750 50 
-F5 "ATT_SEL1" I L 2600 3850 50 
+F2 "IN" I L 2050 1350 50 
+F3 "OUT" O R 2750 1350 50 
+F4 "ATT_SEL0" I L 2050 1650 50 
+F5 "ATT_SEL1" I L 2050 1750 50 
 $EndSheet
 Wire Wire Line
-	2250 3450 2600 3450
-Wire Wire Line
-	3500 3450 3700 3450
+	1900 1350 1950 1350
 $Comp
 L power:GNDA #PWR?
 U 1 1 5FE67095
-P 3900 3850
-F 0 "#PWR?" H 3900 3600 50  0001 C CNN
-F 1 "GNDA" H 3905 3677 50  0000 C CNN
-F 2 "" H 3900 3850 50  0001 C CNN
-F 3 "" H 3900 3850 50  0001 C CNN
-	1    3900 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5FE6714C
-P 4100 3850
-F 0 "#PWR?" H 4100 3600 50  0001 C CNN
-F 1 "GNDA" H 4105 3677 50  0000 C CNN
-F 2 "" H 4100 3850 50  0001 C CNN
-F 3 "" H 4100 3850 50  0001 C CNN
-	1    4100 3850
+P 3100 1750
+F 0 "#PWR?" H 3100 1500 50  0001 C CNN
+F 1 "GNDA" H 3105 1577 50  0000 C CNN
+F 2 "" H 3100 1750 50  0001 C CNN
+F 3 "" H 3100 1750 50  0001 C CNN
+	1    3100 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 3450 4500 3450
+	3750 1350 3700 1350
+$Comp
+L Device:R R?
+U 1 1 5FE74C58
+P 2450 1000
+F 0 "R?" V 2243 1000 50  0000 C CNN
+F 1 "0 DNP" V 2334 1000 50  0000 C CNN
+F 2 "" V 2380 1000 50  0001 C CNN
+F 3 "~" H 2450 1000 50  0001 C CNN
+	1    2450 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 1350 2850 1000
+Wire Wire Line
+	2850 1000 2600 1000
+Connection ~ 2850 1350
+Wire Wire Line
+	2850 1350 2900 1350
+Wire Wire Line
+	2300 1000 1950 1000
+Wire Wire Line
+	1950 1000 1950 1350
+Connection ~ 1950 1350
+Wire Wire Line
+	1950 1350 2050 1350
+Wire Wire Line
+	2750 1350 2850 1350
+Wire Wire Line
+	5100 1350 5000 1350
+$Comp
+L Relay:FRT5_separated K?
+U 1 1 5FE86F08
+P 1400 6450
+F 0 "K?" H 1555 6496 50  0000 L CNN
+F 1 "FRT5_separated" H 1555 6405 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 1600 6350 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 1400 6450 50  0001 C CNN
+	1    1400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:FRT5_separated K?
+U 2 1 5FE88F75
+P 1500 3650
+F 0 "K?" V 1175 3650 50  0000 C CNN
+F 1 "FRT5_separated" V 1266 3650 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 1700 3550 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 1500 3650 50  0001 C CNN
+	2    1500 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:FRT5_separated K?
+U 3 1 5FE89BA9
+P 2200 4100
+F 0 "K?" H 2344 4146 50  0000 L CNN
+F 1 "FRT5_separated" H 2344 4055 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 2400 4000 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 2200 4100 50  0001 C CNN
+	3    2200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3550 1900 3550
+Wire Wire Line
+	1900 3550 1900 2100
+Wire Wire Line
+	1900 2100 800  2100
+Wire Wire Line
+	800  2100 800  1350
+Wire Wire Line
+	800  1350 1150 1350
+Wire Wire Line
+	1200 3650 1050 3650
+Wire Wire Line
+	2100 3800 2100 3750
+Wire Wire Line
+	2100 3750 1800 3750
+Wire Wire Line
+	2300 3800 2300 2100
+Wire Wire Line
+	2300 2100 3300 2100
+Wire Wire Line
+	3300 2100 3300 1750
+Wire Wire Line
+	2200 4400 10750 4400
+Wire Wire Line
+	10750 4400 10750 5100
+Text Notes 6250 1850 0    50   ~ 0
+Switchable bga2866??
 $EndSCHEMATC
