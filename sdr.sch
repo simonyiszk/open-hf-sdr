@@ -207,6 +207,6 @@ Wire Wire Line
 	2200 4400 10750 4400
 Wire Wire Line
 	10750 4400 10750 5100
-Text Notes 6250 1850 0    50   ~ 0
+Text Notes 4650 1800 0    50   ~ 0
 Switchable bga2866??
 $EndSCHEMATC
