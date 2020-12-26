@@ -46,8 +46,10 @@ $EndComp
 $Sheet
 S 4800 3300 1150 300 
 U 5FE33197
-F0 "Sheet5FE33196" 50
+F0 "37.4 MHz Butterworth BPF" 50
 F1 "if1_bpf.sch" 50
+F2 "IN" I L 4800 3450 50 
+F3 "OUT" I R 5950 3450 50 
 $EndSheet
 $Sheet
 S 6100 3300 1100 300 
@@ -127,4 +129,6 @@ F 3 "" H 4100 3850 50  0001 C CNN
 	1    4100 3850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4800 3450 4500 3450
 $EndSCHEMATC
