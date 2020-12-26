@@ -1,0 +1,15 @@
+Specified Goal:
+We wanted to design a programmable attenuator with 0dB to 30dB attenuation in 10dB steps. We had to
+design it as a 50 ohm impedance matched network. 
+Design Iterations:
+First of all, I calculated three separate T-pad attenuator networks for the 3 attenuation values.
+I was planning to cascade the three T-networks with J-FET switches enabling to bypass each pad.
+This topology would have allowed the opportunity to combine attenuators and have up to 60dB attenuation.
+Because of the need for DC offset to be present at the JFET's Drain and Source it was not an optimal
+solution for our goal.
+The second and the final iteration was designed with a 2 channel 4:1 multiplexer/demultiplexer integrated
+circuit. I used the same three T-pad attenuators and used the multiplexer as two
+single pole, four throw switches.
+
+In order to reduce complexity and cost, I did not use the calculated resistance values for the T-pads,
+but I choose the closest E24 value. I also disregarded the typical 4 ohm resistance of the multiplexer.
