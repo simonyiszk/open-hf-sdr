@@ -1,0 +1,14 @@
+Goal Specification:
+In order to avoid the possibility of overloading the next frequency mixer, and also minimalize 
+sideband noise, a bandpass filter with the center frequency of 37.4 MHz was neccesary.
+We wanted to minimalize passband ripple, and have a filter with the best possible phase linearity.
+It was also important to not depend on rare and expensive inductors and have the smallest component
+count possible.
+Design Iterations:
+I wanted to design a Butterworth bandpass filter, because of its low passband ripple, and phase
+linearity. I went through multiple iterations, using 4th to 6th order topologies, with different
+Q factors. In order to be able to buy commonly available inductors, I choosed values from the E12 series.
+The most difficult issue was dealing with tolerances, because in many iterations the passband ripple 
+was varying largly in the tolerance simulations.
+Final design:
+I was able to counter the passband ripple variance by choosing increasing the bandwidth.  
