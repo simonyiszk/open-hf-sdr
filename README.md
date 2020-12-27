@@ -13,11 +13,11 @@ Open HF SDR
 ## Second stage
 * IF filter for 37 MHz
 * IF amplifier
-* Mixer to 17 MHz IF
+* Mixer to 9 MHz IF
 
 ## Third stage
-* IF filter for 17 MHz IF with 1 MHz bandwidth
+* IF filter for 9 MHz IF with 1 MHz bandwidth
 * Diff amp to ADC
 
 ## Fourth stage
-* ADC with 8 MSps, undersampling the 17 MHz IF to 1 MHz
+* ADC with 8 MSps, undersampling the 9 MHz IF to 1 MHz
