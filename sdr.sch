@@ -71,6 +71,10 @@ S 7850 1200 1300 350
 U 5FE3342F
 F0 "Sheet5FE3342E" 50
 F1 "if2_amp.sch" 50
+F2 "In+" I L 7850 1300 50 
+F3 "In-" I L 7850 1450 50 
+F4 "Out+" I R 9150 1300 50 
+F5 "Out-" I R 9150 1450 50 
 $EndSheet
 $Comp
 L Analog_ADC:AD9283 U?

@@ -14,9 +14,11 @@ Comment3 ""
 Comment4 "SA612 with grounded base amplifier"
 $EndDescr
 $Comp
-L sa612:SA612 U?
+L sdr-rescue:SA612-sa612 U?
 U 1 1 5FE54485
 P 6600 3850
+AR Path="/5FE54485" Ref="U?"  Part="1" 
+AR Path="/5FE332ED/5FE54485" Ref="U?"  Part="1" 
 F 0 "U?" H 6400 4300 50  0000 C CNN
 F 1 "SA612" H 6450 4200 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6800 4600 50  0001 C CNN
