@@ -50,7 +50,7 @@ L Device:R R?
 U 1 1 5FEAD645
 P 2400 2450
 F 0 "R?" V 2193 2450 50  0000 C CNN
-F 1 "R" V 2284 2450 50  0000 C CNN
+F 1 "10k" V 2284 2450 50  0000 C CNN
 F 2 "" V 2330 2450 50  0001 C CNN
 F 3 "~" H 2400 2450 50  0001 C CNN
 	1    2400 2450
@@ -61,7 +61,7 @@ L Device:R R?
 U 1 1 5FEAE12B
 P 2400 3850
 F 0 "R?" V 2600 3850 50  0000 C CNN
-F 1 "R" V 2500 3850 50  0000 C CNN
+F 1 "10k" V 2500 3850 50  0000 C CNN
 F 2 "" V 2330 3850 50  0001 C CNN
 F 3 "~" H 2400 3850 50  0001 C CNN
 	1    2400 3850
@@ -168,4 +168,10 @@ Wire Wire Line
 Connection ~ 4000 2550
 Wire Wire Line
 	4000 2550 4000 2600
+Text Notes 1250 1350 0    50   ~ 0
+If we want to compensate for the previous filter's attenuation, we need a 26k resistor in order to have in total 30.8 dB gain\n
+Text Notes 1250 1500 0    50   ~ 0
+This way, we have exactly 22dB\n
+Text Notes 1250 1650 0    50   ~ 0
+The previous filter has 750 ohm output impedance\n
 $EndSCHEMATC

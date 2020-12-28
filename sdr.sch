@@ -61,30 +61,34 @@ F3 "out_n" I R 6550 1400 50
 F4 "IN" I L 5100 1350 50 
 $EndSheet
 $Sheet
-S 6700 1200 1050 300 
+S 6700 1200 950  400 
 U 5FE333A1
 F0 "Sheet5FE333A0" 50
 F1 "if2_bpf.sch" 50
+F2 "Out+" I R 7650 1300 50 
+F3 "Out-" I R 7650 1500 50 
+F4 "In+" I L 6700 1300 50 
+F5 "In-" I L 6700 1400 50 
 $EndSheet
 $Sheet
-S 7850 1200 1300 350 
+S 7850 1100 1300 500 
 U 5FE3342F
 F0 "Sheet5FE3342E" 50
 F1 "if2_amp.sch" 50
 F2 "In+" I L 7850 1300 50 
-F3 "In-" I L 7850 1450 50 
+F3 "In-" I L 7850 1500 50 
 F4 "Out+" I R 9150 1300 50 
-F5 "Out-" I R 9150 1450 50 
+F5 "Out-" I R 9150 1500 50 
 $EndSheet
 $Comp
 L Analog_ADC:AD9283 U?
 U 1 1 5FE337CA
-P 10050 1700
-F 0 "U?" H 10050 2681 50  0000 C CNN
-F 1 "AD9283" H 10050 2590 50  0000 C CNN
-F 2 "" H 10050 1700 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9283.pdf" H 10050 1700 50  0001 C CNN
-	1    10050 1700
+P 10100 1700
+F 0 "U?" H 10100 2681 50  0000 C CNN
+F 1 "AD9283" H 10100 2590 50  0000 C CNN
+F 2 "" H 10100 1700 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9283.pdf" H 10100 1700 50  0001 C CNN
+	1    10100 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -213,4 +217,66 @@ Wire Wire Line
 	10750 4400 10750 5100
 Text Notes 4650 1800 0    50   ~ 0
 Switchable bga2866??
+$Comp
+L Device:R R?
+U 1 1 5FEA317B
+P 8500 850
+F 0 "R?" V 8293 850 50  0000 C CNN
+F 1 "0 DNP" V 8384 850 50  0000 C CNN
+F 2 "" V 8430 850 50  0001 C CNN
+F 3 "~" H 8500 850 50  0001 C CNN
+	1    8500 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEA3DAB
+P 8500 2000
+F 0 "R?" V 8293 2000 50  0000 C CNN
+F 1 "0 DNP" V 8384 2000 50  0000 C CNN
+F 2 "" V 8430 2000 50  0001 C CNN
+F 3 "~" H 8500 2000 50  0001 C CNN
+	1    8500 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 1300 7800 1300
+Wire Wire Line
+	7800 1300 7800 850 
+Wire Wire Line
+	7800 850  8350 850 
+Wire Wire Line
+	8650 850  9300 850 
+Wire Wire Line
+	9300 850  9300 1300
+Wire Wire Line
+	9150 1300 9300 1300
+Wire Wire Line
+	9300 1500 9150 1500
+Wire Wire Line
+	9400 1500 9300 1500
+Connection ~ 9300 1500
+Wire Wire Line
+	9400 1300 9300 1300
+Connection ~ 9300 1300
+Wire Wire Line
+	9300 2000 8650 2000
+Wire Wire Line
+	9300 1500 9300 2000
+Wire Wire Line
+	7800 1500 7800 2000
+Wire Wire Line
+	7800 2000 8350 2000
+Wire Wire Line
+	7650 1300 7800 1300
+Connection ~ 7800 1300
+Wire Wire Line
+	7600 1500 7800 1500
+Connection ~ 7800 1500
+Wire Wire Line
+	7800 1500 7850 1500
+Wire Wire Line
+	6700 1300 6550 1300
+Wire Wire Line
+	6550 1400 6700 1400
 $EndSCHEMATC

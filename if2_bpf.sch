@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,182 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Device:C C?
+U 1 1 5FEAD47B
+P 3700 2600
+F 0 "C?" H 3815 2646 50  0000 L CNN
+F 1 "220p" H 3815 2555 50  0000 L CNN
+F 2 "" H 3738 2450 50  0001 C CNN
+F 3 "~" H 3700 2600 50  0001 C CNN
+	1    3700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FEAD8CF
+P 4150 2600
+F 0 "L?" H 4202 2646 50  0000 L CNN
+F 1 "1.5u" H 4202 2555 50  0000 L CNN
+F 2 "" H 4150 2600 50  0001 C CNN
+F 3 "~" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FEAE5C6
+P 4550 2450
+F 0 "C?" V 4298 2450 50  0000 C CNN
+F 1 "2.p" V 4389 2450 50  0000 C CNN
+F 2 "" H 4588 2300 50  0001 C CNN
+F 3 "~" H 4550 2450 50  0001 C CNN
+	1    4550 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FEAEB0C
+P 5000 2450
+F 0 "L?" V 5190 2450 50  0000 C CNN
+F 1 "120u" V 5099 2450 50  0000 C CNN
+F 2 "" H 5000 2450 50  0001 C CNN
+F 3 "~" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FEAFA29
+P 5350 2600
+F 0 "C?" H 5465 2646 50  0000 L CNN
+F 1 "82p" H 5465 2555 50  0000 L CNN
+F 2 "" H 5388 2450 50  0001 C CNN
+F 3 "~" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FEAFA2F
+P 5800 2600
+F 0 "L?" H 5852 2646 50  0000 L CNN
+F 1 "3.9u" H 5852 2555 50  0000 L CNN
+F 2 "" H 5800 2600 50  0001 C CNN
+F 3 "~" H 5800 2600 50  0001 C CNN
+	1    5800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2450 4150 2450
+Connection ~ 4150 2450
+Wire Wire Line
+	4150 2450 3700 2450
+Wire Wire Line
+	4700 2450 4850 2450
+Wire Wire Line
+	5150 2450 5350 2450
+Connection ~ 5350 2450
+Wire Wire Line
+	5350 2450 5800 2450
+$Comp
+L Device:C C?
+U 1 1 5FEB22A4
+P 3700 2900
+F 0 "C?" H 3815 2946 50  0000 L CNN
+F 1 "220p" H 3815 2855 50  0000 L CNN
+F 2 "" H 3738 2750 50  0001 C CNN
+F 3 "~" H 3700 2900 50  0001 C CNN
+	1    3700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FEB22AA
+P 4150 2900
+F 0 "L?" H 4202 2946 50  0000 L CNN
+F 1 "1.5u" H 4202 2855 50  0000 L CNN
+F 2 "" H 4150 2900 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FEB22B0
+P 4550 3050
+F 0 "C?" V 4298 3050 50  0000 C CNN
+F 1 "2.p" V 4389 3050 50  0000 C CNN
+F 2 "" H 4588 2900 50  0001 C CNN
+F 3 "~" H 4550 3050 50  0001 C CNN
+	1    4550 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FEB22B6
+P 5000 3050
+F 0 "L?" V 5190 3050 50  0000 C CNN
+F 1 "120u" V 5099 3050 50  0000 C CNN
+F 2 "" H 5000 3050 50  0001 C CNN
+F 3 "~" H 5000 3050 50  0001 C CNN
+	1    5000 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FEB22BC
+P 5350 2900
+F 0 "C?" H 5465 2946 50  0000 L CNN
+F 1 "82p" H 5465 2855 50  0000 L CNN
+F 2 "" H 5388 2750 50  0001 C CNN
+F 3 "~" H 5350 2900 50  0001 C CNN
+	1    5350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FEB22C2
+P 5800 2900
+F 0 "L?" H 5852 2946 50  0000 L CNN
+F 1 "3.9u" H 5852 2855 50  0000 L CNN
+F 2 "" H 5800 2900 50  0001 C CNN
+F 3 "~" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3050 4150 3050
+Wire Wire Line
+	4700 3050 4850 3050
+Wire Wire Line
+	5150 3050 5350 3050
+Connection ~ 4150 3050
+Wire Wire Line
+	4150 3050 4400 3050
+Connection ~ 5350 3050
+Wire Wire Line
+	5350 3050 5800 3050
+Text HLabel 6050 2450 2    50   Input ~ 0
+Out+
+Text HLabel 6050 3050 2    50   Input ~ 0
+Out-
+Text HLabel 3300 2450 0    50   Input ~ 0
+In+
+Text HLabel 3300 3050 0    50   Input ~ 0
+In-
+Wire Wire Line
+	3300 2450 3700 2450
+Connection ~ 3700 2450
+Wire Wire Line
+	3300 3050 3700 3050
+Connection ~ 3700 3050
+Wire Wire Line
+	5800 2450 6050 2450
+Connection ~ 5800 2450
+Wire Wire Line
+	5800 3050 6050 3050
+Connection ~ 5800 3050
+Text Notes 3450 1350 0    50   ~ 0
+In theory it has 9dB passband attenuation\n
 $EndSCHEMATC
