@@ -13,182 +13,216 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:C C?
-U 1 1 5FEAD47B
-P 3700 2600
-F 0 "C?" H 3815 2646 50  0000 L CNN
-F 1 "220p" H 3815 2555 50  0000 L CNN
-F 2 "" H 3738 2450 50  0001 C CNN
-F 3 "~" H 3700 2600 50  0001 C CNN
-	1    3700 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FEAD8CF
-P 4150 2600
-F 0 "L?" H 4202 2646 50  0000 L CNN
-F 1 "1.5u" H 4202 2555 50  0000 L CNN
-F 2 "" H 4150 2600 50  0001 C CNN
-F 3 "~" H 4150 2600 50  0001 C CNN
-	1    4150 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FEAE5C6
-P 4550 2450
-F 0 "C?" V 4298 2450 50  0000 C CNN
-F 1 "2.p" V 4389 2450 50  0000 C CNN
-F 2 "" H 4588 2300 50  0001 C CNN
-F 3 "~" H 4550 2450 50  0001 C CNN
-	1    4550 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FEAEB0C
-P 5000 2450
-F 0 "L?" V 5190 2450 50  0000 C CNN
-F 1 "120u" V 5099 2450 50  0000 C CNN
-F 2 "" H 5000 2450 50  0001 C CNN
-F 3 "~" H 5000 2450 50  0001 C CNN
-	1    5000 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FEAFA29
-P 5350 2600
-F 0 "C?" H 5465 2646 50  0000 L CNN
-F 1 "82p" H 5465 2555 50  0000 L CNN
-F 2 "" H 5388 2450 50  0001 C CNN
-F 3 "~" H 5350 2600 50  0001 C CNN
-	1    5350 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FEAFA2F
-P 5800 2600
-F 0 "L?" H 5852 2646 50  0000 L CNN
-F 1 "3.9u" H 5852 2555 50  0000 L CNN
-F 2 "" H 5800 2600 50  0001 C CNN
-F 3 "~" H 5800 2600 50  0001 C CNN
-	1    5800 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 2450 4150 2450
-Connection ~ 4150 2450
-Wire Wire Line
-	4150 2450 3700 2450
-Wire Wire Line
-	4700 2450 4850 2450
-Wire Wire Line
-	5150 2450 5350 2450
-Connection ~ 5350 2450
-Wire Wire Line
-	5350 2450 5800 2450
-$Comp
-L Device:C C?
-U 1 1 5FEB22A4
-P 3700 2900
-F 0 "C?" H 3815 2946 50  0000 L CNN
-F 1 "220p" H 3815 2855 50  0000 L CNN
-F 2 "" H 3738 2750 50  0001 C CNN
-F 3 "~" H 3700 2900 50  0001 C CNN
-	1    3700 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FEB22AA
-P 4150 2900
-F 0 "L?" H 4202 2946 50  0000 L CNN
-F 1 "1.5u" H 4202 2855 50  0000 L CNN
-F 2 "" H 4150 2900 50  0001 C CNN
-F 3 "~" H 4150 2900 50  0001 C CNN
-	1    4150 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FEB22B0
-P 4550 3050
-F 0 "C?" V 4298 3050 50  0000 C CNN
-F 1 "2.p" V 4389 3050 50  0000 C CNN
-F 2 "" H 4588 2900 50  0001 C CNN
-F 3 "~" H 4550 3050 50  0001 C CNN
-	1    4550 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FEB22B6
-P 5000 3050
-F 0 "L?" V 5190 3050 50  0000 C CNN
-F 1 "120u" V 5099 3050 50  0000 C CNN
-F 2 "" H 5000 3050 50  0001 C CNN
-F 3 "~" H 5000 3050 50  0001 C CNN
-	1    5000 3050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FEB22BC
-P 5350 2900
-F 0 "C?" H 5465 2946 50  0000 L CNN
-F 1 "82p" H 5465 2855 50  0000 L CNN
-F 2 "" H 5388 2750 50  0001 C CNN
-F 3 "~" H 5350 2900 50  0001 C CNN
-	1    5350 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 5FEB22C2
-P 5800 2900
-F 0 "L?" H 5852 2946 50  0000 L CNN
-F 1 "3.9u" H 5852 2855 50  0000 L CNN
-F 2 "" H 5800 2900 50  0001 C CNN
-F 3 "~" H 5800 2900 50  0001 C CNN
-	1    5800 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 3050 4150 3050
-Wire Wire Line
-	4700 3050 4850 3050
-Wire Wire Line
-	5150 3050 5350 3050
-Connection ~ 4150 3050
-Wire Wire Line
-	4150 3050 4400 3050
-Connection ~ 5350 3050
-Wire Wire Line
-	5350 3050 5800 3050
-Text HLabel 6050 2450 2    50   Input ~ 0
+Text HLabel 6800 2000 2    50   Input ~ 0
 Out+
-Text HLabel 6050 3050 2    50   Input ~ 0
+Text HLabel 6800 2600 2    50   Input ~ 0
 Out-
-Text HLabel 3300 2450 0    50   Input ~ 0
+Text HLabel 4550 2000 0    50   Input ~ 0
 In+
-Text HLabel 3300 3050 0    50   Input ~ 0
+Text HLabel 4550 2600 0    50   Input ~ 0
 In-
+$Comp
+L Device:C C?
+U 1 1 5FECCD6C
+P 4750 2300
+F 0 "C?" H 4500 2350 50  0000 L CNN
+F 1 "56p" H 4500 2250 50  0000 L CNN
+F 2 "" H 4788 2150 50  0001 C CNN
+F 3 "~" H 4750 2300 50  0001 C CNN
+	1    4750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FECD51B
+P 4900 2000
+F 0 "L?" V 4719 2000 50  0000 C CNN
+F 1 "3u3" V 4810 2000 50  0000 C CNN
+F 2 "" H 4900 2000 50  0001 C CNN
+F 3 "~" H 4900 2000 50  0001 C CNN
+	1    4900 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FECDA86
+P 4900 2600
+F 0 "L?" V 5000 2600 50  0000 C CNN
+F 1 "3u3" V 5100 2600 50  0000 C CNN
+F 2 "" H 4900 2600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FECE707
+P 5050 2300
+F 0 "C?" H 5165 2346 50  0000 L CNN
+F 1 "22p" H 5165 2255 50  0000 L CNN
+F 2 "" H 5088 2150 50  0001 C CNN
+F 3 "~" H 5050 2300 50  0001 C CNN
+	1    5050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FECF0CE
+P 5750 2000
+F 0 "C?" V 5498 2000 50  0000 C CNN
+F 1 "33p" V 5589 2000 50  0000 C CNN
+F 2 "" H 5788 1850 50  0001 C CNN
+F 3 "~" H 5750 2000 50  0001 C CNN
+	1    5750 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FECF5C4
+P 6050 2000
+F 0 "L?" V 5869 2000 50  0000 C CNN
+F 1 "10u" V 5960 2000 50  0000 C CNN
+F 2 "" H 6050 2000 50  0001 C CNN
+F 3 "~" H 6050 2000 50  0001 C CNN
+	1    6050 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FED0166
+P 6200 2300
+F 0 "L?" H 6252 2346 50  0000 L CNN
+F 1 "1u5" H 6252 2255 50  0000 L CNN
+F 2 "" H 6200 2300 50  0001 C CNN
+F 3 "~" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FED1E6D
+P 6350 2000
+F 0 "C?" V 6098 2000 50  0000 C CNN
+F 1 "330p" V 6189 2000 50  0000 C CNN
+F 2 "" H 6388 1850 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FED258A
+P 6500 2150
+F 0 "L?" H 6552 2196 50  0000 L CNN
+F 1 "150n" H 6552 2105 50  0000 L CNN
+F 2 "" H 6500 2150 50  0001 C CNN
+F 3 "~" H 6500 2150 50  0001 C CNN
+	1    6500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FED3759
+P 6500 2450
+F 0 "L?" H 6552 2496 50  0000 L CNN
+F 1 "150n" H 6552 2405 50  0000 L CNN
+F 2 "" H 6500 2450 50  0001 C CNN
+F 3 "~" H 6500 2450 50  0001 C CNN
+	1    6500 2450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3300 2450 3700 2450
-Connection ~ 3700 2450
+	4550 2600 4750 2600
 Wire Wire Line
-	3300 3050 3700 3050
-Connection ~ 3700 3050
+	4750 2600 4750 2450
+Connection ~ 4750 2600
 Wire Wire Line
-	5800 2450 6050 2450
-Connection ~ 5800 2450
+	4750 2150 4750 2000
 Wire Wire Line
-	5800 3050 6050 3050
-Connection ~ 5800 3050
-Text Notes 3450 1350 0    50   ~ 0
-In theory it has 9dB passband attenuation\n
+	4750 2000 4550 2000
+Connection ~ 4750 2000
+Wire Wire Line
+	5050 2150 5050 2000
+Wire Wire Line
+	6200 2150 6200 2000
+Connection ~ 6200 2000
+Wire Wire Line
+	6800 2600 6500 2600
+Wire Wire Line
+	6800 2000 6500 2000
+Connection ~ 6500 2000
+Wire Wire Line
+	6500 2300 6800 2300
+Connection ~ 6500 2300
+Text HLabel 6800 2300 2    50   Input ~ 0
+DC_CM
+$Comp
+L Device:C C?
+U 1 1 5FED6CF7
+P 6350 2600
+F 0 "C?" V 6200 2600 50  0000 C CNN
+F 1 "330p" V 6100 2600 50  0000 C CNN
+F 2 "" H 6388 2450 50  0001 C CNN
+F 3 "~" H 6350 2600 50  0001 C CNN
+	1    6350 2600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6500 2600
+$Comp
+L Device:L L?
+U 1 1 5FED7875
+P 6050 2600
+F 0 "L?" V 6250 2600 50  0000 C CNN
+F 1 "10u" V 6150 2600 50  0000 C CNN
+F 2 "" H 6050 2600 50  0001 C CNN
+F 3 "~" H 6050 2600 50  0001 C CNN
+	1    6050 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FED7DBE
+P 5750 2600
+F 0 "C?" V 6000 2600 50  0000 C CNN
+F 1 "33p" V 5900 2600 50  0000 C CNN
+F 2 "" H 5788 2450 50  0001 C CNN
+F 3 "~" H 5750 2600 50  0001 C CNN
+	1    5750 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 2450 6200 2600
+Connection ~ 6200 2600
+$Comp
+L Device:C C?
+U 1 1 5FEE51AD
+P 5450 2300
+F 0 "C?" H 5565 2346 50  0000 L CNN
+F 1 "270p" H 5565 2255 50  0000 L CNN
+F 2 "" H 5488 2150 50  0001 C CNN
+F 3 "~" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2600 5450 2600
+Connection ~ 5050 2600
+Wire Wire Line
+	5450 2450 5450 2600
+Connection ~ 5450 2600
+Wire Wire Line
+	5450 2600 5050 2600
+Wire Wire Line
+	5600 2000 5450 2000
+Connection ~ 5050 2000
+Wire Wire Line
+	5450 2150 5450 2000
+Connection ~ 5450 2000
+Wire Wire Line
+	5450 2000 5050 2000
+Connection ~ 5050 2550
+Wire Wire Line
+	5050 2550 5050 2600
+Wire Wire Line
+	5050 2450 5050 2600
 $EndSCHEMATC

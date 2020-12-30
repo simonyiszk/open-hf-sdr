@@ -69,6 +69,7 @@ F2 "Out+" I R 7650 1300 50
 F3 "Out-" I R 7650 1500 50 
 F4 "In+" I L 6700 1300 50 
 F5 "In-" I L 6700 1400 50 
+F6 "DC_CM" I R 7650 1400 50 
 $EndSheet
 $Sheet
 S 7850 1100 1300 500 
@@ -79,6 +80,7 @@ F2 "In+" I L 7850 1300 50
 F3 "In-" I L 7850 1500 50 
 F4 "Out+" I R 9150 1300 50 
 F5 "Out-" I R 9150 1500 50 
+F6 "DC_CM" I L 7850 1400 50 
 $EndSheet
 $Comp
 L Analog_ADC:AD9283 U?
@@ -271,12 +273,14 @@ Wire Wire Line
 	7650 1300 7800 1300
 Connection ~ 7800 1300
 Wire Wire Line
-	7600 1500 7800 1500
-Connection ~ 7800 1500
-Wire Wire Line
 	7800 1500 7850 1500
 Wire Wire Line
 	6700 1300 6550 1300
 Wire Wire Line
 	6550 1400 6700 1400
+Wire Wire Line
+	7650 1500 7800 1500
+Connection ~ 7800 1500
+Wire Wire Line
+	7650 1400 7850 1400
 $EndSCHEMATC
