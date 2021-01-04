@@ -1,0 +1,295 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3550 3550 0    50   Input ~ 0
+IN
+$Comp
+L Device:C C?
+U 1 1 5FF5B34E
+P 3750 3700
+F 0 "C?" H 3865 3746 50  0000 L CNN
+F 1 "100p" H 3865 3655 50  0000 L CNN
+F 2 "" H 3788 3550 50  0001 C CNN
+F 3 "~" H 3750 3700 50  0001 C CNN
+	1    3750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FF5B8FE
+P 4050 3550
+F 0 "L?" V 3869 3550 50  0000 C CNN
+F 1 "330n" V 3960 3550 50  0000 C CNN
+F 2 "" H 4050 3550 50  0001 C CNN
+F 3 "~" H 4050 3550 50  0001 C CNN
+	1    4050 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF5C386
+P 4350 3700
+F 0 "C?" H 4465 3746 50  0000 L CNN
+F 1 "180p" H 4465 3655 50  0000 L CNN
+F 2 "" H 4388 3550 50  0001 C CNN
+F 3 "~" H 4350 3700 50  0001 C CNN
+	1    4350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FF5C8F3
+P 4650 3550
+F 0 "L?" V 4469 3550 50  0000 C CNN
+F 1 "330n" V 4560 3550 50  0000 C CNN
+F 2 "" H 4650 3550 50  0001 C CNN
+F 3 "~" H 4650 3550 50  0001 C CNN
+	1    4650 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF5D049
+P 5000 3700
+F 0 "C?" H 5115 3746 50  0000 L CNN
+F 1 "180p" H 5115 3655 50  0000 L CNN
+F 2 "" H 5038 3550 50  0001 C CNN
+F 3 "~" H 5000 3700 50  0001 C CNN
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FF5D4BF
+P 5300 3550
+F 0 "L?" V 5119 3550 50  0000 C CNN
+F 1 "330n" V 5210 3550 50  0000 C CNN
+F 2 "" H 5300 3550 50  0001 C CNN
+F 3 "~" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF5DC62
+P 5600 3700
+F 0 "C?" H 5715 3746 50  0000 L CNN
+F 1 "100p" H 5715 3655 50  0000 L CNN
+F 2 "" H 5638 3550 50  0001 C CNN
+F 3 "~" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 7550 3550 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	5450 3550 5600 3550
+Wire Wire Line
+	4800 3550 5000 3550
+Wire Wire Line
+	4200 3550 4350 3550
+Wire Wire Line
+	3550 3550 3750 3550
+Connection ~ 3750 3550
+Wire Wire Line
+	3750 3550 3900 3550
+Connection ~ 4350 3550
+Wire Wire Line
+	4350 3550 4500 3550
+Connection ~ 5000 3550
+Wire Wire Line
+	5000 3550 5150 3550
+Connection ~ 5600 3550
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF5F909
+P 5600 3850
+F 0 "#PWR?" H 5600 3600 50  0001 C CNN
+F 1 "GNDA" H 5605 3677 50  0000 C CNN
+F 2 "" H 5600 3850 50  0001 C CNN
+F 3 "" H 5600 3850 50  0001 C CNN
+	1    5600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF5FBE9
+P 5000 3850
+F 0 "#PWR?" H 5000 3600 50  0001 C CNN
+F 1 "GNDA" H 5005 3677 50  0000 C CNN
+F 2 "" H 5000 3850 50  0001 C CNN
+F 3 "" H 5000 3850 50  0001 C CNN
+	1    5000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF6017D
+P 4350 3850
+F 0 "#PWR?" H 4350 3600 50  0001 C CNN
+F 1 "GNDA" H 4355 3677 50  0000 C CNN
+F 2 "" H 4350 3850 50  0001 C CNN
+F 3 "" H 4350 3850 50  0001 C CNN
+	1    4350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF6055B
+P 3750 3850
+F 0 "#PWR?" H 3750 3600 50  0001 C CNN
+F 1 "GNDA" H 3755 3677 50  0000 C CNN
+F 2 "" H 3750 3850 50  0001 C CNN
+F 3 "" H 3750 3850 50  0001 C CNN
+	1    3750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF61235
+P 6150 3700
+F 0 "C?" H 6265 3746 50  0000 L CNN
+F 1 "C" H 6265 3655 50  0000 L CNN
+F 2 "" H 6188 3550 50  0001 C CNN
+F 3 "~" H 6150 3700 50  0001 C CNN
+	1    6150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FF617BD
+P 6150 4000
+F 0 "L?" H 6203 4046 50  0000 L CNN
+F 1 "L" H 6203 3955 50  0000 L CNN
+F 2 "" H 6150 4000 50  0001 C CNN
+F 3 "~" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FF61F37
+P 6650 3400
+F 0 "L?" V 6469 3400 50  0000 C CNN
+F 1 "L" V 6560 3400 50  0000 C CNN
+F 2 "" H 6650 3400 50  0001 C CNN
+F 3 "~" H 6650 3400 50  0001 C CNN
+	1    6650 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF62AEB
+P 6650 3800
+F 0 "C?" V 6398 3800 50  0000 C CNN
+F 1 "C" V 6489 3800 50  0000 C CNN
+F 2 "" H 6688 3650 50  0001 C CNN
+F 3 "~" H 6650 3800 50  0001 C CNN
+	1    6650 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF63DE3
+P 7150 3700
+F 0 "C?" H 7265 3746 50  0000 L CNN
+F 1 "C" H 7265 3655 50  0000 L CNN
+F 2 "" H 7188 3550 50  0001 C CNN
+F 3 "~" H 7150 3700 50  0001 C CNN
+	1    7150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5FF63F05
+P 7150 4000
+F 0 "L?" H 7203 4046 50  0000 L CNN
+F 1 "L" H 7203 3955 50  0000 L CNN
+F 2 "" H 7150 4000 50  0001 C CNN
+F 3 "~" H 7150 4000 50  0001 C CNN
+	1    7150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3550 6150 3550
+Wire Wire Line
+	7150 3550 7550 3550
+Wire Wire Line
+	6800 3400 6900 3400
+Wire Wire Line
+	6900 3400 6900 3550
+Wire Wire Line
+	6900 3800 6800 3800
+Wire Wire Line
+	6500 3800 6400 3800
+Wire Wire Line
+	6400 3800 6400 3550
+Wire Wire Line
+	6400 3400 6500 3400
+Wire Wire Line
+	6150 3550 6400 3550
+Connection ~ 6150 3550
+Connection ~ 6400 3550
+Wire Wire Line
+	6400 3550 6400 3400
+Wire Wire Line
+	6900 3550 7150 3550
+Connection ~ 6900 3550
+Wire Wire Line
+	6900 3550 6900 3800
+Connection ~ 7150 3550
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF66DA7
+P 6150 4150
+F 0 "#PWR?" H 6150 3900 50  0001 C CNN
+F 1 "GNDA" H 6155 3977 50  0000 C CNN
+F 2 "" H 6150 4150 50  0001 C CNN
+F 3 "" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF67134
+P 7150 4150
+F 0 "#PWR?" H 7150 3900 50  0001 C CNN
+F 1 "GNDA" H 7155 3977 50  0000 C CNN
+F 2 "" H 7150 4150 50  0001 C CNN
+F 3 "" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5950 3200 5950 4100
+Wire Notes Line
+	5950 4100 3600 4100
+Wire Notes Line
+	3600 4100 3600 3200
+Wire Notes Line
+	3600 3200 5950 3200
+Text Notes 3600 3150 0    50   ~ 0
+Low pass filter for 37 MHz\nThe highest freq needed LO
+Wire Notes Line
+	6000 3100 7500 3100
+Wire Notes Line
+	7500 3100 7500 4450
+Wire Notes Line
+	7500 4450 6000 4450
+Wire Notes Line
+	6000 3100 6000 4450
+Text Notes 6000 3050 0    50   ~ 0
+Bandstop filter for the sampling freqs
+$EndSCHEMATC

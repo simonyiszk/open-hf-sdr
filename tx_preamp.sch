@@ -1,0 +1,265 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5FF4BE0D
+P 6650 2200
+AR Path="/5FF4BE0D" Ref="T?"  Part="1" 
+AR Path="/5FF487A7/5FF4BE0D" Ref="T?"  Part="1" 
+F 0 "T?" H 6650 1775 50  0000 C CNN
+F 1 "pwb1040lb" H 6650 1866 50  0000 C CNN
+F 2 "" H 6650 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC846BDW1 Q?
+U 1 1 5FF4BE13
+P 5450 2950
+AR Path="/5FF4BE13" Ref="Q?"  Part="1" 
+AR Path="/5FF487A7/5FF4BE13" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5640 2996 50  0000 L CNN
+F 1 "BC846BDW1" H 5640 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5650 3050 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC846BDW1T1-D.PDF" H 5450 2950 50  0001 C CNN
+	1    5450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846BDW1 Q?
+U 2 1 5FF4BE19
+P 4000 2950
+AR Path="/5FF4BE19" Ref="Q?"  Part="2" 
+AR Path="/5FF487A7/5FF4BE19" Ref="Q?"  Part="2" 
+F 0 "Q?" H 4191 2996 50  0000 L CNN
+F 1 "BC846BDW1" H 4191 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4200 3050 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC846BDW1T1-D.PDF" H 4000 2950 50  0001 C CNN
+	2    4000 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2400 5550 2400
+Wire Wire Line
+	5550 2400 5550 2750
+Wire Wire Line
+	6250 2000 3900 2000
+Wire Wire Line
+	3900 2000 3900 2750
+$Comp
+L Device:L L?
+U 1 1 5FF5153B
+P 3900 1700
+F 0 "L?" H 3953 1746 50  0000 L CNN
+F 1 "L" H 3953 1655 50  0000 L CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "~" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1850 3900 2000
+Connection ~ 3900 2000
+Wire Wire Line
+	3900 3150 3900 4450
+Wire Wire Line
+	3900 4450 4700 4450
+Wire Wire Line
+	5550 4450 5550 3150
+$Comp
+L Device:R R?
+U 1 1 5FF5258C
+P 4700 4600
+F 0 "R?" H 4770 4646 50  0000 L CNN
+F 1 "R" H 4770 4555 50  0000 L CNN
+F 2 "" V 4630 4600 50  0001 C CNN
+F 3 "~" H 4700 4600 50  0001 C CNN
+	1    4700 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 4450
+Wire Wire Line
+	4700 4450 5550 4450
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF52ED2
+P 4700 4750
+F 0 "#PWR?" H 4700 4500 50  0001 C CNN
+F 1 "GNDA" H 4705 4577 50  0000 C CNN
+F 2 "" H 4700 4750 50  0001 C CNN
+F 3 "" H 4700 4750 50  0001 C CNN
+	1    4700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF53208
+P 4250 4150
+F 0 "#PWR?" H 4250 3900 50  0001 C CNN
+F 1 "GNDA" H 4255 3977 50  0000 C CNN
+F 2 "" H 4250 4150 50  0001 C CNN
+F 3 "" H 4250 4150 50  0001 C CNN
+	1    4250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF53BDA
+P 4250 4000
+F 0 "R?" H 4320 4046 50  0000 L CNN
+F 1 "R" H 4320 3955 50  0000 L CNN
+F 2 "" V 4180 4000 50  0001 C CNN
+F 3 "~" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF54027
+P 4250 3700
+F 0 "R?" H 4320 3746 50  0000 L CNN
+F 1 "R" H 4320 3655 50  0000 L CNN
+F 2 "" V 4180 3700 50  0001 C CNN
+F 3 "~" H 4250 3700 50  0001 C CNN
+	1    4250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF545B2
+P 4550 4000
+F 0 "C?" H 4665 4046 50  0000 L CNN
+F 1 "C" H 4665 3955 50  0000 L CNN
+F 2 "" H 4588 3850 50  0001 C CNN
+F 3 "~" H 4550 4000 50  0001 C CNN
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF54C5F
+P 4550 4150
+F 0 "#PWR?" H 4550 3900 50  0001 C CNN
+F 1 "GNDA" H 4555 3977 50  0000 C CNN
+F 2 "" H 4550 4150 50  0001 C CNN
+F 3 "" H 4550 4150 50  0001 C CNN
+	1    4550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3850 4250 3850
+Connection ~ 4250 3850
+$Comp
+L Device:R R?
+U 1 1 5FF5510F
+P 4550 3550
+F 0 "R?" H 4620 3596 50  0000 L CNN
+F 1 "R" H 4620 3505 50  0000 L CNN
+F 2 "" V 4480 3550 50  0001 C CNN
+F 3 "~" H 4550 3550 50  0001 C CNN
+	1    4550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF555EF
+P 4850 3550
+F 0 "R?" H 4920 3596 50  0000 L CNN
+F 1 "R" H 4920 3505 50  0000 L CNN
+F 2 "" V 4780 3550 50  0001 C CNN
+F 3 "~" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3700 4550 3700
+Wire Wire Line
+	4550 3700 4550 3850
+Connection ~ 4550 3700
+Connection ~ 4550 3850
+Wire Wire Line
+	4550 3400 4550 2950
+Wire Wire Line
+	4550 2950 4350 2950
+Wire Wire Line
+	4850 3400 4850 2950
+Wire Wire Line
+	4850 2950 5000 2950
+$Comp
+L Device:C C?
+U 1 1 5FF568C2
+P 4350 2800
+F 0 "C?" H 4465 2846 50  0000 L CNN
+F 1 "C" H 4465 2755 50  0000 L CNN
+F 2 "" H 4388 2650 50  0001 C CNN
+F 3 "~" H 4350 2800 50  0001 C CNN
+	1    4350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF56E6E
+P 5000 2800
+F 0 "C?" H 5115 2846 50  0000 L CNN
+F 1 "C" H 5115 2755 50  0000 L CNN
+F 2 "" H 5038 2650 50  0001 C CNN
+F 3 "~" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 2950
+Wire Wire Line
+	4350 2950 4200 2950
+Connection ~ 5000 2950
+Wire Wire Line
+	5000 2950 5250 2950
+Text HLabel 4350 2650 1    50   Input ~ 0
+IN_P
+Text HLabel 5000 2650 1    50   Input ~ 0
+IN_N
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF58184
+P 7050 2400
+F 0 "#PWR?" H 7050 2150 50  0001 C CNN
+F 1 "GNDA" H 7055 2227 50  0000 C CNN
+F 2 "" H 7050 2400 50  0001 C CNN
+F 3 "" H 7050 2400 50  0001 C CNN
+	1    7050 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 7050 2000 2    50   Input ~ 0
+OUT
+Text Notes 6900 1850 0    50   ~ 0
+TODO pin numbering
+$Comp
+L Device:L L?
+U 1 1 5FF7D2BF
+P 5550 1700
+F 0 "L?" H 5603 1746 50  0000 L CNN
+F 1 "L" H 5603 1655 50  0000 L CNN
+F 2 "" H 5550 1700 50  0001 C CNN
+F 3 "~" H 5550 1700 50  0001 C CNN
+	1    5550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1850 5550 2400
+Connection ~ 5550 2400
+Wire Wire Line
+	3900 1550 5550 1550
+$EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -183,13 +183,13 @@ $EndComp
 $Comp
 L Relay:FRT5_separated K?
 U 3 1 5FE89BA9
-P 2200 4100
-F 0 "K?" H 2344 4146 50  0000 L CNN
-F 1 "FRT5_separated" H 2344 4055 50  0000 L CNN
-F 2 "Relay_THT:Relay_DPDT_FRT5" H 2400 4000 50  0001 L CNN
-F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 2200 4100 50  0001 C CNN
-	3    2200 4100
-	1    0    0    -1  
+P 6200 4250
+F 0 "K?" H 6344 4296 50  0000 L CNN
+F 1 "FRT5_separated" H 6344 4205 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 6400 4150 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 6200 4250 50  0001 C CNN
+	3    6200 4250
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	1800 3550 1900 3550
@@ -204,21 +204,9 @@ Wire Wire Line
 Wire Wire Line
 	1200 3650 1050 3650
 Wire Wire Line
-	2100 3800 2100 3750
-Wire Wire Line
 	2100 3750 1800 3750
 Wire Wire Line
-	2300 3800 2300 2100
-Wire Wire Line
-	2300 2100 3300 2100
-Wire Wire Line
 	3300 2100 3300 1750
-Wire Wire Line
-	2200 4400 10750 4400
-Wire Wire Line
-	10750 4400 10750 5100
-Text Notes 4650 1800 0    50   ~ 0
-Switchable bga2866??
 $Comp
 L Device:R R?
 U 1 1 5FEA317B
@@ -283,4 +271,48 @@ Wire Wire Line
 Connection ~ 7800 1500
 Wire Wire Line
 	7650 1400 7850 1400
+$Comp
+L Analog_DAC:AD9744 U?
+U 1 1 5FF3A0F3
+P 10150 4700
+F 0 "U?" H 10150 5881 50  0000 C CNN
+F 1 "AD9744" H 10150 5790 50  0000 C CNN
+F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 10750 4900 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9744.pdf" H 10750 4900 50  0001 C CNN
+	1    10150 4700
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 7500 4100 1000 300 
+U 5FF487A7
+F0 "Tx Preamp" 50
+F1 "tx_preamp.sch" 50
+F2 "IN_P" I R 8500 4200 50 
+F3 "IN_N" I R 8500 4300 50 
+F4 "OUT" I L 7500 4250 50 
+$EndSheet
+$Sheet
+S 6500 4100 850  300 
+U 5FF5AE54
+F0 "Tx filter" 50
+F1 "tx_filter.sch" 50
+F2 "IN" I R 7350 4250 50 
+F3 "OUT" I L 6500 4250 50 
+$EndSheet
+Wire Wire Line
+	7350 4250 7500 4250
+Wire Wire Line
+	5900 4150 5500 4150
+Wire Wire Line
+	5500 4150 5500 2100
+Wire Wire Line
+	5500 2100 3300 2100
+Wire Wire Line
+	5900 4350 2100 4350
+Wire Wire Line
+	2100 3750 2100 4350
+Text Notes 3250 4450 0    50   ~ 0
+PA?
+Text Notes 6000 4050 0    50   ~ 0
++19 dBm
 $EndSCHEMATC
