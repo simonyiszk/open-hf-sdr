@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 7
 Title "HF-SDR RF-Attenuator"
 Date "2020 december"
 Rev "v01.1"
@@ -41,17 +41,6 @@ F 1 "GNDA" H 5605 4227 50  0000 C CNN
 F 2 "" H 5600 4400 50  0001 C CNN
 F 3 "" H 5600 4400 50  0001 C CNN
 	1    5600 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 5FE533AF
-P 5600 2700
-F 0 "#PWR?" H 5600 2450 50  0001 C CNN
-F 1 "GNDD" H 5604 2545 50  0000 C CNN
-F 2 "" H 5600 2700 50  0001 C CNN
-F 3 "" H 5600 2700 50  0001 C CNN
-	1    5600 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -331,24 +320,12 @@ Wire Wire Line
 	4400 1550 5150 1550
 Wire Wire Line
 	5150 1400 4400 1400
-$Comp
-L power:GNDD #PWR?
-U 1 1 5FECD05D
-P 6300 1550
-F 0 "#PWR?" H 6300 1300 50  0001 C CNN
-F 1 "GNDD" H 6304 1395 50  0000 C CNN
-F 2 "" H 6300 1550 50  0001 C CNN
-F 3 "" H 6300 1550 50  0001 C CNN
-	1    6300 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 1550 6300 1400
 Wire Wire Line
 	6300 1400 6050 1400
 Wire Wire Line
 	6050 1550 6300 1550
-Connection ~ 6300 1550
 Text Notes 4350 1150 0    50   ~ 0
 S0    S1    Att\n\n 0     0     0dB\n 0     1    10dB\n 1     0    20dB\n 1     1    30dB
 Wire Notes Line
@@ -367,4 +344,27 @@ Wire Bus Line
 	6850 2150 6850 6050
 Wire Bus Line
 	4400 2150 4400 6050
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF9D7B5
+P 5600 2700
+F 0 "#PWR?" H 5600 2450 50  0001 C CNN
+F 1 "GNDA" H 5605 2527 50  0000 C CNN
+F 2 "" H 5600 2700 50  0001 C CNN
+F 3 "" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FF9DC72
+P 6300 1550
+F 0 "#PWR?" H 6300 1300 50  0001 C CNN
+F 1 "GNDA" H 6305 1377 50  0000 C CNN
+F 2 "" H 6300 1550 50  0001 C CNN
+F 3 "" H 6300 1550 50  0001 C CNN
+	1    6300 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 1550
 $EndSCHEMATC
