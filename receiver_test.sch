@@ -1,0 +1,314 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5FE31A99
+P 850 3650
+F 0 "J1" H 778 3888 50  0000 C CNN
+F 1 "Conn_Coaxial" H 778 3797 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 850 3650 50  0001 C CNN
+F 3 " ~" H 850 3650 50  0001 C CNN
+F 4 "43-28-28" H 800 4000 50  0000 C CNN "Lomex"
+	1    850  3650
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 1550 3550 750  250 
+U 5FE31D05
+F0 "30MHz LPF" 50
+F1 "rf_lpf.sch" 50
+F2 "IN" I L 1550 3650 50 
+F3 "OUT" O R 2300 3650 50 
+$EndSheet
+$Sheet
+S 4150 3500 1250 300 
+U 5FE33197
+F0 "37.4 MHz Butterworth BPF" 50
+F1 "if1_bpf.sch" 50
+F2 "IN" I L 4150 3650 50 
+F3 "OUT" I R 5400 3650 50 
+$EndSheet
+$Sheet
+S 5500 3500 1450 300 
+U 5FE332ED
+F0 "37.4 MHz Amp, and 2nd mixer" 50
+F1 "mixer2.sch" 50
+F2 "out_p" I R 6950 3600 50 
+F3 "out_n" I R 6950 3700 50 
+F4 "IN" I L 5500 3650 50 
+$EndSheet
+$Sheet
+S 7100 3500 950  400 
+U 5FE333A1
+F0 "Sheet5FE333A0" 50
+F1 "if2_bpf.sch" 50
+F2 "Out+" I R 8050 3600 50 
+F3 "Out-" I R 8050 3800 50 
+F4 "In+" I L 7100 3600 50 
+F5 "In-" I L 7100 3700 50 
+F6 "DC_CM" I R 8050 3700 50 
+$EndSheet
+$Sheet
+S 8250 3400 1300 500 
+U 5FE3342F
+F0 "Sheet5FE3342E" 50
+F1 "if2_amp.sch" 50
+F2 "In+" I L 8250 3600 50 
+F3 "In-" I L 8250 3800 50 
+F4 "Out+" I R 9550 3500 50 
+F5 "Out-" I R 9550 3800 50 
+F6 "DC_CM" I L 8250 3700 50 
+$EndSheet
+$Comp
+L power:GNDA #PWR0101
+U 1 1 5FE34F57
+P 850 3850
+F 0 "#PWR0101" H 850 3600 50  0001 C CNN
+F 1 "GNDA" H 855 3677 50  0000 C CNN
+F 2 "" H 850 3850 50  0001 C CNN
+F 3 "" H 850 3850 50  0001 C CNN
+	1    850  3850
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2450 3550 700  600 
+U 5FE31E1E
+F0 "Attenuator" 50
+F1 "rf_autt.sch" 50
+F2 "IN" I L 2450 3650 50 
+F3 "OUT" O R 3150 3650 50 
+F4 "ATT_SEL0" I L 2450 3950 50 
+F5 "ATT_SEL1" I L 2450 4050 50 
+$EndSheet
+$Comp
+L power:GNDA #PWR0102
+U 1 1 5FE67095
+P 3500 4050
+F 0 "#PWR0102" H 3500 3800 50  0001 C CNN
+F 1 "GNDA" H 3505 3877 50  0000 C CNN
+F 2 "" H 3500 4050 50  0001 C CNN
+F 3 "" H 3500 4050 50  0001 C CNN
+	1    3500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3650 4100 3650
+Wire Wire Line
+	5500 3650 5400 3650
+Wire Wire Line
+	7100 3600 6950 3600
+Wire Wire Line
+	6950 3700 7100 3700
+Wire Wire Line
+	8050 3700 8250 3700
+Wire Wire Line
+	8050 3600 8250 3600
+Wire Wire Line
+	9550 3500 9800 3500
+Wire Wire Line
+	9550 3800 9800 3800
+Wire Wire Line
+	8050 3800 8250 3800
+$Comp
+L sdr-rescue:ADE-6-RF_Mixer U1
+U 1 1 5FE32B05
+P 3700 3650
+F 0 "U1" H 3700 4067 50  0000 C CNN
+F 1 "ADE-1H+" H 3700 3976 50  0000 C CNN
+F 2 "RF_Mini-Circuits:Mini-Circuits_CD542_LandPatternPL-052" H 3775 3275 50  0001 C CNN
+F 3 "https://www.minicircuits.com/pdfs/ADE-6.pdf" H 3875 3375 50  0001 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3650 2450 3650
+$Comp
+L Device:R R3
+U 1 1 5FF926C7
+P 9800 3650
+F 0 "R3" H 9870 3696 50  0000 L CNN
+F 1 "R" H 9870 3605 50  0000 L CNN
+F 2 "" V 9730 3650 50  0001 C CNN
+F 3 "~" H 9800 3650 50  0001 C CNN
+	1    9800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5FF9410D
+P 10400 3700
+F 0 "J5" H 10372 3582 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10372 3673 50  0000 R CNN
+F 2 "" H 10400 3700 50  0001 C CNN
+F 3 "~" H 10400 3700 50  0001 C CNN
+	1    10400 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10200 3600 10050 3600
+Wire Wire Line
+	10050 3600 10050 3500
+Wire Wire Line
+	10050 3500 9800 3500
+Connection ~ 9800 3500
+Wire Wire Line
+	9800 3800 10050 3800
+Wire Wire Line
+	10050 3800 10050 3700
+Wire Wire Line
+	10050 3700 10200 3700
+Connection ~ 9800 3800
+Wire Wire Line
+	1050 3650 1550 3650
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5FF983E5
+P 850 4800
+F 0 "J2" H 778 5038 50  0000 C CNN
+F 1 "Conn_Coaxial" H 778 4947 50  0000 C CNN
+F 2 "" H 850 4800 50  0001 C CNN
+F 3 " ~" H 850 4800 50  0001 C CNN
+	1    850  4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0103
+U 1 1 5FF9847F
+P 850 5000
+F 0 "#PWR0103" H 850 4750 50  0001 C CNN
+F 1 "GNDA" H 855 4827 50  0000 C CNN
+F 2 "" H 850 5000 50  0001 C CNN
+F 3 "" H 850 5000 50  0001 C CNN
+	1    850  5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4800 3700 4050
+Wire Wire Line
+	1050 4800 3700 4800
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5FF9B6BE
+P 1250 5850
+F 0 "J3" H 1358 6031 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1358 5940 50  0000 C CNN
+F 2 "" H 1250 5850 50  0001 C CNN
+F 3 "~" H 1250 5850 50  0001 C CNN
+	1    1250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5FF9BAF4
+P 1250 6350
+F 0 "J4" H 1358 6531 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1358 6440 50  0000 C CNN
+F 2 "" H 1250 6350 50  0001 C CNN
+F 3 "~" H 1250 6350 50  0001 C CNN
+	1    1250 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5850 1800 5850
+Wire Wire Line
+	2200 5850 2200 3950
+Wire Wire Line
+	2200 3950 2450 3950
+Wire Wire Line
+	1450 6350 2050 6350
+Wire Wire Line
+	2300 6350 2300 4050
+Wire Wire Line
+	2300 4050 2450 4050
+$Comp
+L power:GNDA #PWR0104
+U 1 1 5FFA3A1C
+P 1450 5950
+F 0 "#PWR0104" H 1450 5700 50  0001 C CNN
+F 1 "GNDA" H 1455 5777 50  0000 C CNN
+F 2 "" H 1450 5950 50  0001 C CNN
+F 3 "" H 1450 5950 50  0001 C CNN
+	1    1450 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0105
+U 1 1 5FFA3D77
+P 1450 6450
+F 0 "#PWR0105" H 1450 6200 50  0001 C CNN
+F 1 "GNDA" H 1455 6277 50  0000 C CNN
+F 2 "" H 1450 6450 50  0001 C CNN
+F 3 "" H 1450 6450 50  0001 C CNN
+	1    1450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FFA4117
+P 1800 5450
+F 0 "R1" H 1870 5496 50  0000 L CNN
+F 1 "R" H 1870 5405 50  0000 L CNN
+F 2 "" V 1730 5450 50  0001 C CNN
+F 3 "~" H 1800 5450 50  0001 C CNN
+	1    1800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FFA495D
+P 2050 5450
+F 0 "R2" H 2120 5496 50  0000 L CNN
+F 1 "R" H 2120 5405 50  0000 L CNN
+F 2 "" V 1980 5450 50  0001 C CNN
+F 3 "~" H 2050 5450 50  0001 C CNN
+	1    2050 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5600 1800 5850
+Connection ~ 1800 5850
+Wire Wire Line
+	1800 5850 2200 5850
+Wire Wire Line
+	2050 5600 2050 6350
+Connection ~ 2050 6350
+Wire Wire Line
+	2050 6350 2300 6350
+$Comp
+L power:+5VA #PWR0106
+U 1 1 5FFA595B
+P 1800 5300
+F 0 "#PWR0106" H 1800 5150 50  0001 C CNN
+F 1 "+5VA" H 1815 5473 50  0000 C CNN
+F 2 "" H 1800 5300 50  0001 C CNN
+F 3 "" H 1800 5300 50  0001 C CNN
+	1    1800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR0107
+U 1 1 5FFA5D1E
+P 2050 5300
+F 0 "#PWR0107" H 2050 5150 50  0001 C CNN
+F 1 "+5VA" H 2065 5473 50  0000 C CNN
+F 2 "" H 2050 5300 50  0001 C CNN
+F 3 "" H 2050 5300 50  0001 C CNN
+	1    2050 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3650 3300 3650
+$EndSCHEMATC
