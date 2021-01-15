@@ -16,7 +16,7 @@ Open HF SDR
 * Mixer to 9 MHz IF
 
 ## Third stage
-* IF filter for 9 MHz IF with 1 MHz bandwidth
+* IF filter for 9 MHz IF with 0.5 MHz bandwidth
 * Diff amp to ADC
 
 ## Fourth stage
