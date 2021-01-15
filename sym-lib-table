@@ -2,4 +2,5 @@
   (lib (name sdr-rescue)(type Legacy)(uri ${KIPRJMOD}/sdr-rescue.lib)(options "")(descr ""))
   (lib (name FST3253)(type Legacy)(uri ${KIPRJMOD}/FST3253.lib)(options "")(descr ""))
   (lib (name sdr)(type Legacy)(uri ${KIPRJMOD}/sdr.lib)(options "")(descr ""))
+  (lib (name receiver_test-rescue)(type Legacy)(uri ${KIPRJMOD}/receiver_test-rescue.lib)(options "")(descr ""))
 )
