@@ -727,6 +727,7 @@ F 0 "H1" H 10400 846 50  0000 L CNN
 F 1 "3mm spacer" H 10400 755 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 800 50  0001 C CNN
 F 3 "~" H 10300 800 50  0001 C CNN
+F 4 "14-00-89 + 14-01-46" H 10300 800 50  0001 C CNN "Lomex"
 	1    10300 800 
 	1    0    0    -1  
 $EndComp
