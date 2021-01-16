@@ -111,17 +111,6 @@ F 3 "~" H 7950 3200 50  0001 C CNN
 	1    7950 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5FE57211
-P 7950 3350
-F 0 "#PWR0115" H 7950 3100 50  0001 C CNN
-F 1 "GND" H 7955 3177 50  0000 C CNN
-F 2 "" H 7950 3350 50  0001 C CNN
-F 3 "" H 7950 3350 50  0001 C CNN
-	1    7950 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7950 3050 7850 3050
 Wire Wire Line
@@ -129,10 +118,10 @@ Wire Wire Line
 Wire Wire Line
 	8450 3050 7950 3050
 Connection ~ 7950 3050
-Text HLabel 7200 3700 2    50   Input ~ 0
-out_p
-Text HLabel 7200 3800 2    50   Input ~ 0
-out_n
+Text HLabel 7200 3700 2    50   Output ~ 0
+Out+
+Text HLabel 7200 3800 2    50   Output ~ 0
+Out-
 $Comp
 L Device:C C18
 U 1 1 5FE577B2
@@ -497,17 +486,6 @@ F 3 "~" H 3550 3050 50  0001 C CNN
 	1    3550 3050
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5FE79CB0
-P 3550 3200
-F 0 "#PWR0125" H 3550 2950 50  0001 C CNN
-F 1 "GND" H 3555 3027 50  0000 C CNN
-F 2 "" H 3550 3200 50  0001 C CNN
-F 3 "" H 3550 3200 50  0001 C CNN
-	1    3550 3200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3550 2900 3650 2900
 Wire Wire Line
@@ -553,6 +531,28 @@ F 1 "+5VA" H 8465 3023 50  0000 C CNN
 F 2 "" H 8450 2850 50  0001 C CNN
 F 3 "" H 8450 2850 50  0001 C CNN
 	1    8450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 6009A572
+P 3550 3200
+F 0 "#PWR?" H 3550 2950 50  0001 C CNN
+F 1 "GNDA" H 3555 3027 50  0000 C CNN
+F 2 "" H 3550 3200 50  0001 C CNN
+F 3 "" H 3550 3200 50  0001 C CNN
+	1    3550 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 6009AB1D
+P 7950 3350
+F 0 "#PWR?" H 7950 3100 50  0001 C CNN
+F 1 "GNDA" H 7955 3177 50  0000 C CNN
+F 2 "" H 7950 3350 50  0001 C CNN
+F 3 "" H 7950 3350 50  0001 C CNN
+	1    7950 3350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

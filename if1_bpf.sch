@@ -4,198 +4,203 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "37 MHz IF Filter"
-Date "2021-01-15"
-Rev ""
-Comp "HA5KFU"
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "37 MHz Bandpass filter"
+Date "2021 january"
+Rev "v02"
+Comp "by Keri"
+Comment1 "50 Ohm input/output impedance"
+Comment2 "appr. 4 MHz span (-3dB)"
+Comment3 "37 MHz center"
+Comment4 "Inverse Chebysev structure"
 $EndDescr
-$Comp
-L Device:C C5
-U 1 1 5FE7343E
-P 4500 3600
-F 0 "C5" V 4248 3600 50  0000 C CNN
-F 1 "8p2" V 4339 3600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4538 3450 50  0001 C CNN
-F 3 "~" H 4500 3600 50  0001 C CNN
-	1    4500 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:L L4
-U 1 1 5FE73D0E
-P 4900 3600
-F 0 "L4" V 5090 3600 50  0000 C CNN
-F 1 "2u2" V 4999 3600 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 3600 50  0001 C CNN
-F 3 "~" H 4900 3600 50  0001 C CNN
-F 4 "93-02-72 " V 5150 3650 50  0000 C CNN "Lomex"
-	1    4900 3600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5FE74A56
-P 5150 3750
-F 0 "C6" H 5035 3704 50  0000 R CNN
-F 1 "43p" H 5035 3795 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 3600 50  0001 C CNN
-F 3 "~" H 5150 3750 50  0001 C CNN
-	1    5150 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:L L5
-U 1 1 5FE75044
-P 5150 4050
-F 0 "L5" H 5202 4096 50  0000 L CNN
-F 1 "330n" H 5202 4005 50  0000 L CNN
-F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5150 4050 50  0001 C CNN
-F 3 "~" H 5150 4050 50  0001 C CNN
-F 4 "93-00-04" H 4900 4000 50  0000 C CNN "Lomex"
-	1    5150 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 5FE756D3
-P 5900 3600
-F 0 "C8" V 5648 3600 50  0000 C CNN
-F 1 "3p3" V 5739 3600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5938 3450 50  0001 C CNN
-F 3 "~" H 5900 3600 50  0001 C CNN
-	1    5900 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:L L7
-U 1 1 5FE771FA
-P 6300 3600
-F 0 "L7" V 6490 3600 50  0000 C CNN
-F 1 "5u6" V 6399 3600 50  0000 C CNN
-F 2 "" H 6300 3600 50  0001 C CNN
-F 3 "~" H 6300 3600 50  0001 C CNN
-F 4 "X" V 6600 3600 50  0000 C CNN "Lomex"
-	1    6300 3600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:L L8
-U 1 1 5FE79301
-P 6950 3750
-F 0 "L8" H 7002 3796 50  0000 L CNN
-F 1 "18n" H 7002 3705 50  0000 L CNN
-F 2 "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 6950 3750 50  0001 C CNN
-F 3 "~" H 6950 3750 50  0001 C CNN
-F 4 "93-02-63" H 7200 3600 50  0000 C CNN "Lomex"
-	1    6950 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5FE792FB
-P 6550 3750
-F 0 "C9" H 6435 3704 50  0000 R CNN
-F 1 "1n" H 6435 3795 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6588 3600 50  0001 C CNN
-F 3 "~" H 6550 3750 50  0001 C CNN
-	1    6550 3750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4200 3600 4350 3600
-Wire Wire Line
-	4650 3600 4750 3600
-Wire Wire Line
-	5050 3600 5150 3600
-Connection ~ 5150 3600
-Wire Wire Line
-	6050 3600 6150 3600
-Wire Wire Line
-	6450 3600 6550 3600
-Connection ~ 6550 3600
-Wire Wire Line
-	6550 3600 6950 3600
-$Comp
-L power:GND #PWR0108
-U 1 1 5FE7C8C8
-P 5150 4200
-F 0 "#PWR0108" H 5150 3950 50  0001 C CNN
-F 1 "GND" H 5155 4027 50  0000 C CNN
-F 2 "" H 5150 4200 50  0001 C CNN
-F 3 "" H 5150 4200 50  0001 C CNN
-	1    5150 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 5FE7CE31
-P 6550 3900
-F 0 "#PWR0109" H 6550 3650 50  0001 C CNN
-F 1 "GND" H 6555 3727 50  0000 C CNN
-F 2 "" H 6550 3900 50  0001 C CNN
-F 3 "" H 6550 3900 50  0001 C CNN
-	1    6550 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5FE7D2D1
-P 6950 3900
-F 0 "#PWR0110" H 6950 3650 50  0001 C CNN
-F 1 "GND" H 6955 3727 50  0000 C CNN
-F 2 "" H 6950 3900 50  0001 C CNN
-F 3 "" H 6950 3900 50  0001 C CNN
-	1    6950 3900
-	1    0    0    -1  
-$EndComp
-Text HLabel 4200 3600 0    50   Input ~ 0
+Text HLabel 3950 3400 0    50   Input ~ 0
 IN
-Text HLabel 7150 3600 2    50   Input ~ 0
+Text HLabel 8150 3400 2    50   Output ~ 0
 OUT
-Wire Wire Line
-	5150 3600 5600 3600
 $Comp
-L Device:C C7
-U 1 1 5FE92C59
-P 5600 3750
-F 0 "C7" H 5485 3704 50  0000 R CNN
-F 1 "51p" H 5485 3795 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 3600 50  0001 C CNN
-F 3 "~" H 5600 3750 50  0001 C CNN
-	1    5600 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:L L6
-U 1 1 5FE92D35
-P 5600 4050
-F 0 "L6" H 5652 4096 50  0000 L CNN
-F 1 "470n" H 5652 4005 50  0000 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 4050 50  0001 C CNN
-F 3 "~" H 5600 4050 50  0001 C CNN
-F 4 "93-02-70" H 5850 3900 50  0000 C CNN "Lomex"
-	1    5600 4050
+L Device:C C?
+U 1 1 600431FC
+P 4450 3850
+F 0 "C?" H 4565 3896 50  0000 L CNN
+F 1 "390p" H 4565 3805 50  0000 L CNN
+F 2 "" H 4488 3700 50  0001 C CNN
+F 3 "~" H 4450 3850 50  0001 C CNN
+	1    4450 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0111
-U 1 1 5FE92D3F
-P 5600 4200
-F 0 "#PWR0111" H 5600 3950 50  0001 C CNN
-F 1 "GND" H 5605 4027 50  0000 C CNN
-F 2 "" H 5600 4200 50  0001 C CNN
-F 3 "" H 5600 4200 50  0001 C CNN
-	1    5600 4200
+L Device:L L?
+U 1 1 600436A2
+P 4900 3850
+F 0 "L?" H 4952 3896 50  0000 L CNN
+F 1 "47n" H 4952 3805 50  0000 L CNN
+F 2 "" H 4900 3850 50  0001 C CNN
+F 3 "~" H 4900 3850 50  0001 C CNN
+F 4 "93-02-59" H 4900 3850 50  0001 C CNN "Lomex"
+	1    4900 3850
 	1    0    0    -1  
 $EndComp
-Connection ~ 5600 3600
+$Comp
+L Device:L L?
+U 1 1 600471E0
+P 5600 3200
+F 0 "L?" V 5790 3200 50  0000 C CNN
+F 1 "39n" V 5699 3200 50  0000 C CNN
+F 2 "" H 5600 3200 50  0001 C CNN
+F 3 "~" H 5600 3200 50  0001 C CNN
+F 4 "2846682RL" H 5600 3200 50  0001 C CNN "Farnell"
+	1    5600 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6004779D
+P 5600 3600
+F 0 "C?" V 5350 3600 50  0000 C CNN
+F 1 "390p" V 5450 3600 50  0000 C CNN
+F 2 "" H 5638 3450 50  0001 C CNN
+F 3 "~" H 5600 3600 50  0001 C CNN
+	1    5600 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 6004D573
+P 6500 3200
+F 0 "L?" V 6690 3200 50  0000 C CNN
+F 1 "47n" V 6599 3200 50  0000 C CNN
+F 2 "" H 6500 3200 50  0001 C CNN
+F 3 "~" H 6500 3200 50  0001 C CNN
+F 4 "93-02-59" H 6500 3200 50  0001 C CNN "Lomex"
+	1    6500 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6004D579
+P 6500 3600
+F 0 "C?" V 6250 3600 50  0000 C CNN
+F 1 "470p" V 6350 3600 50  0000 C CNN
+F 2 "" H 6538 3450 50  0001 C CNN
+F 3 "~" H 6500 3600 50  0001 C CNN
+	1    6500 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6004E74D
+P 7200 3850
+F 0 "C?" H 7315 3896 50  0000 L CNN
+F 1 "390p" H 7315 3805 50  0000 L CNN
+F 2 "" H 7238 3700 50  0001 C CNN
+F 3 "~" H 7200 3850 50  0001 C CNN
+	1    7200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 6004E753
+P 7650 3850
+F 0 "L?" H 7702 3896 50  0000 L CNN
+F 1 "47n" H 7702 3805 50  0000 L CNN
+F 2 "" H 7650 3850 50  0001 C CNN
+F 3 "~" H 7650 3850 50  0001 C CNN
+F 4 "93-02-59" H 7650 3850 50  0001 C CNN "Lomex"
+	1    7650 3850
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5600 3600 5750 3600
+	5750 3600 5900 3600
 Wire Wire Line
-	7150 3600 6950 3600
-Connection ~ 6950 3600
+	5900 3600 5900 3400
+Wire Wire Line
+	5900 3200 5750 3200
+Wire Wire Line
+	5450 3600 5300 3600
+Wire Wire Line
+	5300 3600 5300 3400
+Wire Wire Line
+	5300 3200 5450 3200
+Wire Wire Line
+	6350 3200 6200 3200
+Wire Wire Line
+	6200 3200 6200 3400
+Wire Wire Line
+	6200 3600 6350 3600
+Wire Wire Line
+	6650 3600 6800 3600
+Wire Wire Line
+	6800 3600 6800 3400
+Wire Wire Line
+	6800 3200 6650 3200
+Wire Wire Line
+	5900 3400 6200 3400
+Connection ~ 5900 3400
+Wire Wire Line
+	5900 3400 5900 3200
+Connection ~ 6200 3400
+Wire Wire Line
+	6200 3400 6200 3600
+Connection ~ 5300 3400
+Wire Wire Line
+	5300 3400 5300 3200
+Connection ~ 6800 3400
+Wire Wire Line
+	6800 3400 6800 3200
+Wire Wire Line
+	4450 3400 4900 3400
+Wire Wire Line
+	6800 3400 7200 3400
+Wire Wire Line
+	4450 3700 4450 3400
+Wire Wire Line
+	4900 3700 4900 3400
+Connection ~ 4900 3400
+Wire Wire Line
+	4900 3400 5300 3400
+Wire Wire Line
+	7200 3700 7200 3400
+Connection ~ 7200 3400
+Wire Wire Line
+	7200 3400 7650 3400
+Wire Wire Line
+	7650 3700 7650 3400
+Wire Wire Line
+	4450 4000 4450 4300
+Wire Wire Line
+	4450 4300 4900 4300
+Wire Wire Line
+	7650 4300 7650 4000
+Wire Wire Line
+	7200 4000 7200 4300
+Connection ~ 7200 4300
+Wire Wire Line
+	7200 4300 7650 4300
+Wire Wire Line
+	4900 4000 4900 4300
+Connection ~ 4900 4300
+Wire Wire Line
+	4900 4300 6050 4300
+Wire Wire Line
+	6050 4300 6050 4400
+Connection ~ 6050 4300
+Wire Wire Line
+	6050 4300 7200 4300
+$Comp
+L power:GNDA #PWR?
+U 1 1 60071173
+P 6050 4400
+F 0 "#PWR?" H 6050 4150 50  0001 C CNN
+F 1 "GNDA" H 6055 4227 50  0000 C CNN
+F 2 "" H 6050 4400 50  0001 C CNN
+F 3 "" H 6050 4400 50  0001 C CNN
+	1    6050 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3400 7650 3400
+Connection ~ 7650 3400
+Wire Wire Line
+	4450 3400 3950 3400
+Connection ~ 4450 3400
 $EndSCHEMATC

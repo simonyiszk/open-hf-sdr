@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
-Title "HF-SDR RF-LPF"
+Title "30 MHz Lowpass filter"
 Date "2020 december"
 Rev "v01"
 Comp "by Keri"
-Comment1 "-42,17 dB @ 44 MHz"
-Comment2 "-3 dB @ 29,56 MHz"
-Comment3 "50 Ohm input/output impedance"
-Comment4 "30 MHz low pass filter"
+Comment1 "50 ohm input/output impedance"
+Comment2 "-42,17 dB @ 44 MHz"
+Comment3 "-3 dB @ 29,56 MHz"
+Comment4 "Chebysev structure"
 $EndDescr
 Text HLabel 4200 3400 0    50   Input ~ 0
 IN

@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "Open HF SDR receiver test card"
-Date "2021-01-15"
+Date "2021 january"
 Rev ""
 Comp "HA5KFU"
 Comment1 ""
@@ -34,32 +34,32 @@ F2 "IN" I L 1050 3650 50
 F3 "OUT" O R 1800 3650 50 
 $EndSheet
 $Sheet
-S 4900 3500 1250 300 
+S 4900 3500 850  300 
 U 5FE33197
-F0 "37.4 MHz Inv-Chebysev BPF" 50
+F0 "37.4 MHz BPF" 50
 F1 "if1_bpf.sch" 50
 F2 "IN" I L 4900 3650 50 
-F3 "OUT" I R 6150 3650 50 
+F3 "OUT" O R 5750 3650 50 
 $EndSheet
 $Sheet
-S 3800 6000 1450 300 
+S 3500 5950 1450 300 
 U 5FE332ED
 F0 "37.4 MHz Amp, and 2nd mixer" 50
 F1 "mixer2.sch" 50
-F2 "out_p" I R 5250 6100 50 
-F3 "out_n" I R 5250 6200 50 
-F4 "IN" I L 3800 6150 50 
+F2 "IN" I L 3500 6100 50 
+F3 "Out+" O R 4950 6050 50 
+F4 "Out-" O R 4950 6150 50 
 $EndSheet
 $Sheet
-S 6050 5900 950  400 
+S 6050 5800 950  600 
 U 5FE333A1
 F0 "Sheet5FE333A0" 50
 F1 "if2_bpf.sch" 50
-F2 "Out+" I R 7000 5950 50 
-F3 "Out-" I R 7000 6150 50 
-F4 "In+" I L 6050 5950 50 
-F5 "In-" I L 6050 6250 50 
-F6 "DC_CM" I R 7000 6250 50 
+F2 "In+" I L 6050 5900 50 
+F3 "In-" I L 6050 6300 50 
+F4 "Out+" O R 7000 5900 50 
+F5 "Out-" O R 7000 6300 50 
+F6 "DC_CM" O R 7000 6100 50 
 $EndSheet
 $Sheet
 S 8100 5850 1300 500 
@@ -67,10 +67,10 @@ U 5FE3342F
 F0 "Sheet5FE3342E" 50
 F1 "if2_amp.sch" 50
 F2 "In+" I L 8100 5950 50 
-F3 "In-" I L 8100 6150 50 
-F4 "Out+" I R 9400 5900 50 
-F5 "Out-" I R 9400 6300 50 
-F6 "DC_CM" I L 8100 6250 50 
+F3 "In-" I L 8100 6250 50 
+F4 "DC_CM" I L 8100 6100 50 
+F5 "Out+" O R 9400 5900 50 
+F6 "Out-" O R 9400 6300 50 
 $EndSheet
 $Comp
 L power:GNDA #PWR0101
@@ -106,10 +106,6 @@ F 3 "" H 3750 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 3650 4350 3650
-Wire Wire Line
-	5500 5900 5400 5900
-Wire Wire Line
-	5400 6300 5500 6300
 Wire Wire Line
 	9400 5900 9600 5900
 Wire Wire Line
@@ -289,38 +285,34 @@ $EndComp
 $Comp
 L Device:R R28
 U 1 1 5FFB8E41
-P 3500 6150
-F 0 "R28" V 3400 6150 50  0000 C CNN
-F 1 "BP" V 3500 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3430 6150 50  0001 C CNN
-F 3 "~" H 3500 6150 50  0001 C CNN
-	1    3500 6150
+P 3200 6100
+F 0 "R28" V 3100 6100 50  0000 C CNN
+F 1 "BP" V 3200 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3130 6100 50  0001 C CNN
+F 3 "~" H 3200 6100 50  0001 C CNN
+	1    3200 6100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6300 4950 3350 4950
-Wire Wire Line
-	3350 4950 3350 6150
 $Comp
 L Device:R R30
 U 1 1 5FFBA567
-P 5650 5900
-F 0 "R30" V 5750 5900 50  0000 C CNN
-F 1 "BP" V 5650 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5580 5900 50  0001 C CNN
-F 3 "~" H 5650 5900 50  0001 C CNN
-	1    5650 5900
+P 5550 5900
+F 0 "R30" V 5650 5900 50  0000 C CNN
+F 1 "BP" V 5550 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5480 5900 50  0001 C CNN
+F 3 "~" H 5550 5900 50  0001 C CNN
+	1    5550 5900
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R31
 U 1 1 5FFBAA04
-P 5650 6300
-F 0 "R31" V 5550 6300 50  0000 C CNN
-F 1 "BP" V 5650 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5580 6300 50  0001 C CNN
-F 3 "~" H 5650 6300 50  0001 C CNN
-	1    5650 6300
+P 5550 6300
+F 0 "R31" V 5650 6300 50  0000 C CNN
+F 1 "BP" V 5550 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5480 6300 50  0001 C CNN
+F 3 "~" H 5550 6300 50  0001 C CNN
+	1    5550 6300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -523,9 +515,9 @@ Wire Wire Line
 	4400 3650 4450 3650
 Connection ~ 4400 3650
 Wire Wire Line
-	6300 3650 6150 3650
+	5900 3650 5750 3650
 Wire Wire Line
-	6300 3650 6300 4950
+	5900 3650 5900 4950
 $Comp
 L Connector:TestPoint TP7
 U 1 1 6005A640
@@ -600,189 +592,117 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP10
 U 1 1 60074A08
-P 6300 3400
-F 0 "TP10" H 6200 3550 50  0000 R CNN
-F 1 "TestPoint" H 6200 3450 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6500 3400 50  0001 C CNN
-F 3 "~" H 6500 3400 50  0001 C CNN
-	1    6300 3400
+P 5900 3400
+F 0 "TP10" H 5800 3550 50  0000 R CNN
+F 1 "TestPoint" H 5800 3450 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6100 3400 50  0001 C CNN
+F 3 "~" H 6100 3400 50  0001 C CNN
+	1    5900 3400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 3400 6300 3650
-Connection ~ 6300 3650
+	5900 3400 5900 3650
+Connection ~ 5900 3650
 $Comp
 L Connector:TestPoint TP5
 U 1 1 600764F8
-P 3700 5800
-F 0 "TP5" H 3600 5950 50  0000 R CNN
-F 1 "TestPoint" H 3600 5850 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3900 5800 50  0001 C CNN
-F 3 "~" H 3900 5800 50  0001 C CNN
-	1    3700 5800
+P 3400 5750
+F 0 "TP5" H 3300 5900 50  0000 R CNN
+F 1 "TestPoint" H 3300 5800 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3600 5750 50  0001 C CNN
+F 3 "~" H 3600 5750 50  0001 C CNN
+	1    3400 5750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 5800 3700 6150
+	3400 5750 3400 6100
 Wire Wire Line
-	3700 6150 3650 6150
+	3400 6100 3350 6100
 Wire Wire Line
-	3800 6150 3700 6150
-Connection ~ 3700 6150
+	3500 6100 3400 6100
+Connection ~ 3400 6100
 $Comp
 L Connector:TestPoint_2Pole TP8
 U 1 1 6007A8CD
-P 5400 6100
-F 0 "TP8" V 5000 6000 50  0000 L CNN
-F 1 "TestPoint_2Pole" V 5100 5550 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5400 6100 50  0001 C CNN
-F 3 "~" H 5400 6100 50  0001 C CNN
-	1    5400 6100
+P 5250 6100
+F 0 "TP8" V 4850 6000 50  0000 L CNN
+F 1 "TestPoint_2Pole" V 4950 5550 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 6100 50  0001 C CNN
+F 3 "~" H 5250 6100 50  0001 C CNN
+	1    5250 6100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5250 6100 5300 6100
-Wire Wire Line
-	5300 6100 5300 5900
-Wire Wire Line
-	5300 5900 5400 5900
-Wire Wire Line
-	5250 6200 5300 6200
-Wire Wire Line
-	5300 6200 5300 6300
-Wire Wire Line
-	5300 6300 5400 6300
-Connection ~ 5400 5900
-Connection ~ 5400 6300
 $Comp
 L Connector:TestPoint_2Pole TP9
 U 1 1 60091E94
-P 5900 6100
-F 0 "TP9" V 5500 6000 50  0000 L CNN
-F 1 "TestPoint_2Pole" V 5300 5550 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5900 6100 50  0001 C CNN
-F 3 "~" H 5900 6100 50  0001 C CNN
-	1    5900 6100
+P 5850 6100
+F 0 "TP9" V 5450 6000 50  0000 L CNN
+F 1 "TestPoint_2Pole" V 5250 5550 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5850 6100 50  0001 C CNN
+F 3 "~" H 5850 6100 50  0001 C CNN
+	1    5850 6100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5900 5900 5800 5900
-Wire Wire Line
-	5900 6300 5800 6300
-Wire Wire Line
-	6050 6250 5950 6250
-Wire Wire Line
-	5950 6250 5950 6300
-Wire Wire Line
-	5950 6300 5900 6300
-Connection ~ 5900 6300
-Wire Wire Line
-	5950 5950 5950 5900
-Wire Wire Line
-	5950 5900 5900 5900
-Wire Wire Line
-	5950 5950 6050 5950
-Connection ~ 5900 5900
-Connection ~ 7950 6150
-Wire Wire Line
-	8050 5750 8050 5950
-Wire Wire Line
-	8050 5950 8100 5950
-Connection ~ 7950 5750
-Wire Wire Line
-	7950 6150 8100 6150
-Wire Wire Line
-	7950 5750 8050 5750
-Wire Wire Line
-	7850 5750 7950 5750
-Wire Wire Line
-	7850 5950 7850 5750
-Wire Wire Line
-	7650 5950 7850 5950
 $Comp
 L Connector:TestPoint_2Pole TP12
 U 1 1 600AF8CD
-P 7950 5950
-F 0 "TP12" V 7600 5800 50  0000 L CNN
-F 1 "TestPoint_2Pole" V 7350 5400 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7950 5950 50  0001 C CNN
-F 3 "~" H 7950 5950 50  0001 C CNN
-	1    7950 5950
+P 7800 6100
+F 0 "TP12" V 7450 5950 50  0000 L CNN
+F 1 "TestPoint_2Pole" V 7200 5550 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7800 6100 50  0001 C CNN
+F 3 "~" H 7800 6100 50  0001 C CNN
+	1    7800 6100
 	0    1    1    0   
 $EndComp
-Connection ~ 7200 5750
-Wire Wire Line
-	7300 5950 7350 5950
-Wire Wire Line
-	7300 5750 7300 5950
-Wire Wire Line
-	7200 5750 7300 5750
-Wire Wire Line
-	7100 5750 7200 5750
-Wire Wire Line
-	7100 5950 7100 5750
-Wire Wire Line
-	7000 5950 7100 5950
-Wire Wire Line
-	7200 6150 7350 6150
-Connection ~ 7200 6150
 $Comp
 L Connector:TestPoint_2Pole TP11
 U 1 1 600AAF52
-P 7200 5950
-F 0 "TP11" V 6850 5800 50  0000 L CNN
-F 1 "TestPoint_2Pole" V 6600 5400 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7200 5950 50  0001 C CNN
-F 3 "~" H 7200 5950 50  0001 C CNN
-	1    7200 5950
+P 7200 6100
+F 0 "TP11" V 6850 5950 50  0000 L CNN
+F 1 "TestPoint_2Pole" V 6600 5550 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7200 6100 50  0001 C CNN
+F 3 "~" H 7200 6100 50  0001 C CNN
+	1    7200 6100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7650 6250 8100 6250
-Wire Wire Line
-	7650 6150 7950 6150
 $Comp
 L Device:R R34
 U 1 1 5FFBEA8B
-P 7500 6250
-F 0 "R34" V 7450 6450 50  0000 C CNN
-F 1 "BP" V 7500 6250 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 6250 50  0001 C CNN
-F 3 "~" H 7500 6250 50  0001 C CNN
-	1    7500 6250
+P 7500 6300
+F 0 "R34" V 7600 6300 50  0000 C CNN
+F 1 "BP" V 7500 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 6300 50  0001 C CNN
+F 3 "~" H 7500 6300 50  0001 C CNN
+	1    7500 6300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R33
 U 1 1 5FFBE9A9
-P 7500 6150
-F 0 "R33" V 7450 6350 50  0000 C CNN
-F 1 "BP" V 7500 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 6150 50  0001 C CNN
-F 3 "~" H 7500 6150 50  0001 C CNN
-	1    7500 6150
+P 7500 6100
+F 0 "R33" V 7600 6100 50  0000 C CNN
+F 1 "BP" V 7500 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 6100 50  0001 C CNN
+F 3 "~" H 7500 6100 50  0001 C CNN
+	1    7500 6100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R32
 U 1 1 5FFBE656
-P 7500 5950
-F 0 "R32" V 7450 6150 50  0000 C CNN
-F 1 "BP" V 7500 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 5950 50  0001 C CNN
-F 3 "~" H 7500 5950 50  0001 C CNN
-	1    7500 5950
+P 7500 5900
+F 0 "R32" V 7600 5900 50  0000 C CNN
+F 1 "BP" V 7500 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 5900 50  0001 C CNN
+F 3 "~" H 7500 5900 50  0001 C CNN
+	1    7500 5900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7000 6250 7350 6250
-Wire Wire Line
-	7000 6150 7200 6150
 $Comp
 L Connector:TestPoint_2Pole TP13
 U 1 1 600C84D5
 P 9600 6100
-F 0 "TP13" V 9100 5950 50  0000 L CNN
+F 0 "TP13" V 9250 6000 50  0000 L CNN
 F 1 "TestPoint_2Pole" V 9000 5550 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9600 6100 50  0001 C CNN
 F 3 "~" H 9600 6100 50  0001 C CNN
@@ -846,22 +766,88 @@ $EndComp
 $Comp
 L Device:C C35
 U 1 1 6017A58C
-P 10450 6100
-F 0 "C35" H 10565 6146 50  0000 L CNN
-F 1 "10p" H 10565 6055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10488 5950 50  0001 C CNN
-F 3 "~" H 10450 6100 50  0001 C CNN
-	1    10450 6100
+P 10550 6100
+F 0 "C35" H 10665 6146 50  0000 L CNN
+F 1 "10p" H 10665 6055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10588 5950 50  0001 C CNN
+F 3 "~" H 10550 6100 50  0001 C CNN
+	1    10550 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10450 5950 10450 5900
-Wire Wire Line
-	10450 5900 10100 5900
 Connection ~ 10100 5900
-Wire Wire Line
-	10450 6250 10450 6300
-Wire Wire Line
-	10450 6300 10100 6300
 Connection ~ 10100 6300
+Wire Wire Line
+	6050 5900 5850 5900
+Wire Wire Line
+	5850 5900 5700 5900
+Connection ~ 5850 5900
+Wire Wire Line
+	5400 5900 5250 5900
+Wire Wire Line
+	5250 6300 5400 6300
+Wire Wire Line
+	5700 6300 5850 6300
+Wire Wire Line
+	5850 6300 6050 6300
+Connection ~ 5850 6300
+Wire Wire Line
+	5250 5900 5050 5900
+Wire Wire Line
+	5050 5900 5050 6050
+Wire Wire Line
+	5050 6050 4950 6050
+Connection ~ 5250 5900
+Wire Wire Line
+	4950 6150 5050 6150
+Wire Wire Line
+	5050 6150 5050 6300
+Wire Wire Line
+	5050 6300 5250 6300
+Connection ~ 5250 6300
+Wire Wire Line
+	3050 6100 3000 6100
+Wire Wire Line
+	3000 6100 3000 4950
+Wire Wire Line
+	8100 6250 7950 6250
+Wire Wire Line
+	7950 6250 7950 6300
+Wire Wire Line
+	7950 6300 7800 6300
+Wire Wire Line
+	7950 5900 7950 5950
+Wire Wire Line
+	7950 5950 8100 5950
+Wire Wire Line
+	8100 6100 7650 6100
+Wire Wire Line
+	7350 6100 7000 6100
+Wire Wire Line
+	7000 5900 7200 5900
+Wire Wire Line
+	7350 5900 7200 5900
+Connection ~ 7200 5900
+Wire Wire Line
+	7650 5900 7800 5900
+Wire Wire Line
+	7800 5900 7950 5900
+Connection ~ 7800 5900
+Wire Wire Line
+	7800 6300 7650 6300
+Connection ~ 7800 6300
+Wire Wire Line
+	7350 6300 7200 6300
+Wire Wire Line
+	7200 6300 7000 6300
+Connection ~ 7200 6300
+Wire Wire Line
+	3000 4950 5900 4950
+Wire Wire Line
+	10550 5900 10550 5950
+Wire Wire Line
+	10100 5900 10550 5900
+Wire Wire Line
+	10550 6300 10550 6250
+Wire Wire Line
+	10100 6300 10550 6300
 $EndSCHEMATC
