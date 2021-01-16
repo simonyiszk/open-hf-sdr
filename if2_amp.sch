@@ -89,16 +89,14 @@ Wire Wire Line
 	2800 3050 2800 2450
 Wire Wire Line
 	2800 2450 2550 2450
-Text HLabel 3150 3050 2    50   Input ~ 0
+Text HLabel 3450 3050 2    50   Input ~ 0
 Out+
-Text HLabel 3150 3250 2    50   Input ~ 0
+Text HLabel 3450 3250 2    50   Input ~ 0
 Out-
 Wire Wire Line
-	3150 3050 2800 3050
-Connection ~ 2800 3050
+	3450 3050 3100 3050
 Wire Wire Line
-	2800 3250 3150 3250
-Connection ~ 2800 3250
+	3100 3250 3450 3250
 Wire Wire Line
 	2800 3150 2750 3150
 $Comp
@@ -510,4 +508,28 @@ Wire Wire Line
 	7000 3650 7000 3300
 Wire Wire Line
 	6500 3650 7000 3650
+$Comp
+L Device:R R40
+U 1 1 6008957E
+P 2950 3050
+F 0 "R40" V 2743 3050 50  0000 C CNN
+F 1 "BP" V 2834 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2880 3050 50  0001 C CNN
+F 3 "~" H 2950 3050 50  0001 C CNN
+	1    2950 3050
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 3050
+$Comp
+L Device:R R41
+U 1 1 60089A07
+P 2950 3250
+F 0 "R41" V 2743 3250 50  0000 C CNN
+F 1 "BP" V 2834 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2880 3250 50  0001 C CNN
+F 3 "~" H 2950 3250 50  0001 C CNN
+	1    2950 3250
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 3250
 $EndSCHEMATC
