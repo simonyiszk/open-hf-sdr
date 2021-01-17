@@ -245,7 +245,7 @@ F 3 "~" H 6350 4300 50  0001 C CNN
 	1    6350 4300
 	0    1    1    0   
 $EndComp
-Text HLabel 3300 4100 0    50   Input ~ 0
+Text HLabel 3350 3900 0    50   Input ~ 0
 DC_CM
 Text HLabel 1500 3250 0    50   Input ~ 0
 In+
@@ -533,46 +533,13 @@ $EndComp
 $Comp
 L Device:R R42
 U 1 1 600B0426
-P 3500 3950
-F 0 "R42" H 3570 3996 50  0000 L CNN
-F 1 "19k" H 3570 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3430 3950 50  0001 C CNN
-F 3 "~" H 3500 3950 50  0001 C CNN
-	1    3500 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R43
-U 1 1 600B1000
-P 3500 4250
-F 0 "R43" H 3570 4296 50  0000 L CNN
-F 1 "19k" H 3570 4205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3430 4250 50  0001 C CNN
-F 3 "~" H 3500 4250 50  0001 C CNN
-	1    3500 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 600B13A7
-P 3500 4400
-F 0 "#PWR0115" H 3500 4150 50  0001 C CNN
-F 1 "GND" H 3500 4250 50  0000 C CNN
-F 2 "" H 3500 4400 50  0001 C CNN
-F 3 "" H 3500 4400 50  0001 C CNN
-	1    3500 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5VA #PWR0125
-U 1 1 600B17EE
-P 3500 3800
-F 0 "#PWR0125" H 3500 3650 50  0001 C CNN
-F 1 "+5VA" H 3515 3973 50  0000 C CNN
-F 2 "" H 3500 3800 50  0001 C CNN
-F 3 "" H 3500 3800 50  0001 C CNN
-	1    3500 3800
-	1    0    0    -1  
+P 3700 3900
+F 0 "R42" V 3600 3800 50  0000 L CNN
+F 1 "BP" V 3700 3850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3630 3900 50  0001 C CNN
+F 3 "~" H 3700 3900 50  0001 C CNN
+	1    3700 3900
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0143
@@ -586,15 +553,11 @@ F 3 "" H 3850 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 4100 3500 4100
-Connection ~ 3500 4100
+	3350 3900 3550 3900
 Wire Wire Line
-	3300 4100 3500 4100
-Wire Wire Line
-	3850 3150 3850 4100
+	3850 3150 3850 3900
 Wire Wire Line
 	2750 3150 3850 3150
-Connection ~ 3850 4100
 $Comp
 L Device:C C9
 U 1 1 600BC4CD
@@ -606,4 +569,7 @@ F 3 "~" H 7350 3500 50  0001 C CNN
 	1    7350 3500
 	1    0    0    -1  
 $EndComp
+Connection ~ 3850 3900
+Wire Wire Line
+	3850 3900 3850 4100
 $EndSCHEMATC
