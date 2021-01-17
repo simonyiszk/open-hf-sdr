@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 12
+Sheet 4 14
 Title "37,224 MHz Bandpass filter"
 Date "2021 january"
 Rev "v02"

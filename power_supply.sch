@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 13 14
 Title "Open HF SDR FPGA Sheet"
 Date "2021-01-16"
 Rev ""
@@ -52,4 +52,12 @@ F 31 "0°C" H 9300 3950 50  0001 L CNN "temperature range low"
 	4    9300 650 
 	1    0    0    -1  
 $EndComp
+Text Notes 8900 2000 0    50   ~ 0
+1V+-50mV
+Text Notes 600  7700 0    50   ~ 0
+https://www.xilinx.com/support/documentation/data_sheets/ds189-spartan-7-data-sheet.pdf
+Text Notes 8850 800  0    50   ~ 0
+1.8V+-90mV
+Text Notes 8900 1300 0    50   ~ 0
+1V+-50mV
 $EndSCHEMATC

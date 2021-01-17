@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 14
 Title "Open HF SDR FPGA Sheet"
 Date "2021-01-16"
 Rev ""
@@ -36,5 +36,11 @@ S 1150 3200 1250 450
 U 6004B3B4
 F0 "Sheet6004B3B3" 50
 F1 "power_supply.sch" 50
+$EndSheet
+$Sheet
+S 1150 3900 1250 450 
+U 6005349A
+F0 "Sheet60053499" 50
+F1 "programmer.sch" 50
 $EndSheet
 $EndSCHEMATC
