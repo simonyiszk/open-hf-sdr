@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "37 MHz Bandpass filter"
+Title "37,224 MHz Bandpass filter"
 Date "2021 january"
 Rev "v02"
 Comp "by Keri"
 Comment1 "50 Ohm input/output impedance"
-Comment2 "appr. 4 MHz span (-3dB)"
-Comment3 "37 MHz center"
+Comment2 "4,5 MHz span (-3dB)"
+Comment3 "37,25 MHz center"
 Comment4 "Inverse Chebysev structure"
 $EndDescr
 Text HLabel 3950 3400 0    50   Input ~ 0

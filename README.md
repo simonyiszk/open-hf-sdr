@@ -8,10 +8,10 @@ Open HF SDR
 ## First stage
 * 30 MHz low-pass filter
 * Programmable auttenator with 10, 20, and 30 dB options
-* Highly linear mixer to 37.63 MHz IF
+* Highly linear mixer to 37.224 MHz IF
 
 ## Second stage
-* IF filter for 37.63 MHz
+* IF filter for 37.224 MHz
 * IF amplifier
 * Mixer to 9 MHz IF
 
