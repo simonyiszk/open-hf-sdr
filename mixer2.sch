@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 14
 Title "IF Amp, matching, Second mixer"
 Date "2020-12-24"
 Rev "v0.5"
