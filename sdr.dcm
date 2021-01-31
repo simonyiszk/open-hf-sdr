@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP SY8029
+D 2 MHz dual synchronous buck step down regulator
+K step-down, buck, smps
+F https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf
+$ENDCMP
+#
 $CMP XC7S6-1FTGB196C
 D XC7S6-1FTGB196C
 F https://www.xilinx.com/support/documentation/data_sheets/ds189-spartan-7-data-sheet.pdf

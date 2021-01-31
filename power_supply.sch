@@ -52,108 +52,906 @@ F 31 "0°C" H 9300 3950 50  0001 L CNN "temperature range low"
 	4    9300 650 
 	1    0    0    -1  
 $EndComp
-Text Notes 8900 2000 0    50   ~ 0
+Text Notes 4600 1950 0    50   ~ 0
 1V+-50mV
 Text Notes 600  7700 0    50   ~ 0
 https://www.xilinx.com/support/documentation/data_sheets/ds189-spartan-7-data-sheet.pdf
-Text Notes 8850 800  0    50   ~ 0
+Text Notes 4550 750  0    50   ~ 0
 1.8V+-90mV
-Text Notes 8900 1300 0    50   ~ 0
-1V+-50mV
-Text Notes 2550 5250 0    50   ~ 0
-https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf
 $Comp
 L Device:L L?
 U 1 1 600CB20B
-P 5150 2000
-F 0 "L?" V 4878 2000 50  0000 C CNN
-F 1 "47u" V 4969 2000 50  0000 C CNN
-F 2 "" H 5150 2000 50  0001 C CNN
-F 3 "~" H 5150 2000 50  0001 C CNN
-F 4 "93-01-06" V 5060 2000 50  0000 C CNN "Lomex"
-	1    5150 2000
+P 3450 2000
+F 0 "L?" V 3178 2000 50  0000 C CNN
+F 1 "47u" V 3269 2000 50  0000 C CNN
+F 2 "" H 3450 2000 50  0001 C CNN
+F 3 "~" H 3450 2000 50  0001 C CNN
+F 4 "93-01-06" V 3360 2000 50  0000 C CNN "Lomex"
+	1    3450 2000
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 600CC1A7
-P 5450 2200
-F 0 "C?" H 5565 2291 50  0000 L CNN
-F 1 "4u7" H 5565 2200 50  0000 L CNN
-F 2 "" H 5488 2050 50  0001 C CNN
-F 3 "~" H 5450 2200 50  0001 C CNN
-F 4 "82-06-22" H 5565 2109 50  0000 L CNN "Lomex"
-	1    5450 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 600CC714
-P 6100 2200
-F 0 "C?" H 6215 2291 50  0000 L CNN
-F 1 "4u7" H 6215 2200 50  0000 L CNN
-F 2 "" H 6138 2050 50  0001 C CNN
-F 3 "~" H 6100 2200 50  0001 C CNN
-F 4 "82-06-22" H 6215 2109 50  0000 L CNN "Lomex"
-	1    6100 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 600CD1F2
-P 6750 2200
-F 0 "C?" H 6865 2246 50  0000 L CNN
-F 1 "100n" H 6865 2155 50  0000 L CNN
-F 2 "" H 6788 2050 50  0001 C CNN
-F 3 "~" H 6750 2200 50  0001 C CNN
-	1    6750 2200
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L L?
 U 1 1 600D147C
-P 5150 900
-F 0 "L?" V 4878 900 50  0000 C CNN
-F 1 "68u" V 4969 900 50  0000 C CNN
-F 2 "" H 5150 900 50  0001 C CNN
-F 3 "~" H 5150 900 50  0001 C CNN
-F 4 " 93-03-36" V 5060 900 50  0000 C CNN "Lomex"
-	1    5150 900 
+P 3450 800
+F 0 "L?" V 3178 800 50  0000 C CNN
+F 1 "68u" V 3269 800 50  0000 C CNN
+F 2 "" H 3450 800 50  0001 C CNN
+F 3 "~" H 3450 800 50  0001 C CNN
+F 4 " 93-03-36" V 3360 800 50  0000 C CNN "Lomex"
+	1    3450 800 
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 600D2019
-P 5450 1150
-F 0 "C?" H 5565 1241 50  0000 L CNN
-F 1 "4u7" H 5565 1150 50  0000 L CNN
-F 2 "" H 5488 1000 50  0001 C CNN
-F 3 "~" H 5450 1150 50  0001 C CNN
-F 4 "82-06-22" H 5565 1059 50  0000 L CNN "Lomex"
-	1    5450 1150
+P 3950 950
+F 0 "C?" H 4065 1041 50  0000 L CNN
+F 1 "4u7" H 4065 950 50  0000 L CNN
+F 2 "" H 3988 800 50  0001 C CNN
+F 3 "~" H 3950 950 50  0001 C CNN
+F 4 "82-06-22" H 4065 859 50  0000 L CNN "Lomex"
+	1    3950 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 600D222E
-P 6100 1150
-F 0 "C?" H 6215 1241 50  0000 L CNN
-F 1 "4u7" H 6215 1150 50  0000 L CNN
-F 2 "" H 6138 1000 50  0001 C CNN
-F 3 "~" H 6100 1150 50  0001 C CNN
-F 4 "82-06-22" H 6215 1059 50  0000 L CNN "Lomex"
-	1    6100 1150
+P 4500 950
+F 0 "C?" H 4615 1041 50  0000 L CNN
+F 1 "4u7" H 4615 950 50  0000 L CNN
+F 2 "" H 4538 800 50  0001 C CNN
+F 3 "~" H 4500 950 50  0001 C CNN
+F 4 "82-06-22" H 4615 859 50  0000 L CNN "Lomex"
+	1    4500 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 600D2238
-P 6750 1150
-F 0 "C?" H 6865 1196 50  0000 L CNN
-F 1 "100n" H 6865 1105 50  0000 L CNN
-F 2 "" H 6788 1000 50  0001 C CNN
-F 3 "~" H 6750 1150 50  0001 C CNN
-	1    6750 1150
+P 5050 950
+F 0 "C?" H 5165 996 50  0000 L CNN
+F 1 "100n" H 5165 905 50  0000 L CNN
+F 2 "" H 5088 800 50  0001 C CNN
+F 3 "~" H 5050 950 50  0001 C CNN
+	1    5050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60179EB0
+P 3600 950
+F 0 "R?" H 3670 996 50  0000 L CNN
+F 1 "R" H 3670 905 50  0000 L CNN
+F 2 "" V 3530 950 50  0001 C CNN
+F 3 "~" H 3600 950 50  0001 C CNN
+	1    3600 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 1 1 6017C9AF
+P 3050 650
+F 0 "U?" H 3000 765 50  0000 C CNN
+F 1 "SY8029" H 3000 674 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 3050 650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 3050 650 50  0001 C CNN
+	1    3050 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 2 1 6017D4D7
+P 3050 1850
+F 0 "U?" H 3000 1965 50  0000 C CNN
+F 1 "SY8029" H 3000 1874 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 3050 1850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 3050 1850 50  0001 C CNN
+	2    3050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 3 1 6017EB6F
+P 2200 1200
+F 0 "U?" H 2378 946 50  0000 L CNN
+F 1 "SY8029" H 2378 855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 2200 1200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 2200 1200 50  0001 C CNN
+	3    2200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 800  4500 800 
+Connection ~ 4500 800 
+Wire Wire Line
+	4500 800  3950 800 
+Wire Wire Line
+	5050 1100 4500 1100
+Connection ~ 4500 1100
+Wire Wire Line
+	4500 1100 3950 1100
+$Comp
+L Device:R R?
+U 1 1 60181B8D
+P 3750 1100
+F 0 "R?" V 3650 1150 50  0000 C CNN
+F 1 "R" V 3550 1150 50  0000 C CNN
+F 2 "" V 3680 1100 50  0001 C CNN
+F 3 "~" H 3750 1100 50  0001 C CNN
+	1    3750 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60182D32
+P 3950 1200
+F 0 "#PWR?" H 3950 950 50  0001 C CNN
+F 1 "GNDD" H 3954 1045 50  0000 C CNN
+F 2 "" H 3950 1200 50  0001 C CNN
+F 3 "" H 3950 1200 50  0001 C CNN
+	1    3950 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 1100
+Wire Wire Line
+	3300 1100 3600 1100
+Wire Wire Line
+	3950 1200 3950 1100
+Connection ~ 3950 1100
+Wire Wire Line
+	3950 1100 3900 1100
+Wire Wire Line
+	3950 800  3600 800 
+Connection ~ 3950 800 
+Connection ~ 3600 800 
+$Comp
+L Device:C C?
+U 1 1 6019C511
+P 5500 950
+F 0 "C?" H 5615 996 50  0000 L CNN
+F 1 "C" H 5615 905 50  0000 L CNN
+F 2 "" H 5538 800 50  0001 C CNN
+F 3 "~" H 5500 950 50  0001 C CNN
+	1    5500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6019CFB9
+P 6000 950
+F 0 "C?" H 6115 996 50  0000 L CNN
+F 1 "C" H 6115 905 50  0000 L CNN
+F 2 "" H 6038 800 50  0001 C CNN
+F 3 "~" H 6000 950 50  0001 C CNN
+	1    6000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6019D60E
+P 6450 950
+F 0 "C?" H 6565 996 50  0000 L CNN
+F 1 "C" H 6565 905 50  0000 L CNN
+F 2 "" H 6488 800 50  0001 C CNN
+F 3 "~" H 6450 950 50  0001 C CNN
+	1    6450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6019DA81
+P 6900 950
+F 0 "C?" H 7015 996 50  0000 L CNN
+F 1 "C" H 7015 905 50  0000 L CNN
+F 2 "" H 6938 800 50  0001 C CNN
+F 3 "~" H 6900 950 50  0001 C CNN
+	1    6900 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6019E051
+P 7400 950
+F 0 "C?" H 7515 996 50  0000 L CNN
+F 1 "C" H 7515 905 50  0000 L CNN
+F 2 "" H 7438 800 50  0001 C CNN
+F 3 "~" H 7400 950 50  0001 C CNN
+	1    7400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6019E4FE
+P 7850 950
+F 0 "C?" H 7965 996 50  0000 L CNN
+F 1 "C" H 7965 905 50  0000 L CNN
+F 2 "" H 7888 800 50  0001 C CNN
+F 3 "~" H 7850 950 50  0001 C CNN
+	1    7850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6019E980
+P 8250 950
+F 0 "C?" H 8365 996 50  0000 L CNN
+F 1 "C" H 8365 905 50  0000 L CNN
+F 2 "" H 8288 800 50  0001 C CNN
+F 3 "~" H 8250 950 50  0001 C CNN
+	1    8250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6019F153
+P 8600 950
+F 0 "C?" H 8715 996 50  0000 L CNN
+F 1 "C" H 8715 905 50  0000 L CNN
+F 2 "" H 8638 800 50  0001 C CNN
+F 3 "~" H 8600 950 50  0001 C CNN
+	1    8600 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 800  8600 800 
+Wire Wire Line
+	9300 800  9300 750 
+Wire Wire Line
+	9300 650  9400 650 
+Connection ~ 8600 800 
+Wire Wire Line
+	8600 800  9300 800 
+Wire Wire Line
+	9400 950  9300 950 
+Wire Wire Line
+	9300 950  9300 850 
+Connection ~ 9300 800 
+Wire Wire Line
+	9400 850  9300 850 
+Connection ~ 9300 850 
+Wire Wire Line
+	9300 850  9300 800 
+Wire Wire Line
+	9400 750  9300 750 
+Connection ~ 9300 750 
+Wire Wire Line
+	9300 750  9300 650 
+Wire Wire Line
+	8250 800  7850 800 
+Connection ~ 8250 800 
+Connection ~ 5050 800 
+Connection ~ 5500 800 
+Wire Wire Line
+	5500 800  5050 800 
+Connection ~ 6000 800 
+Wire Wire Line
+	6000 800  5500 800 
+Connection ~ 6450 800 
+Wire Wire Line
+	6450 800  6000 800 
+Connection ~ 6900 800 
+Wire Wire Line
+	6900 800  6450 800 
+Connection ~ 7400 800 
+Wire Wire Line
+	7400 800  6900 800 
+Connection ~ 7850 800 
+Wire Wire Line
+	7850 800  7400 800 
+Wire Notes Line
+	5800 600  5800 1450
+Wire Notes Line
+	5800 1450 3200 1450
+Wire Notes Line
+	3200 1450 3200 600 
+Wire Notes Line
+	3200 600  5800 600 
+Text Notes 5200 1400 0    50   ~ 0
+Filter at SMPS
+Wire Notes Line
+	5850 600  8850 600 
+Wire Notes Line
+	8850 600  8850 1450
+Wire Notes Line
+	8850 1450 5850 1450
+Wire Notes Line
+	5850 1450 5850 600 
+Text Notes 8200 1400 0    50   ~ 0
+Filter at FPGA
+$Comp
+L Device:R R?
+U 1 1 601A60B1
+P 3600 2150
+F 0 "R?" H 3670 2196 50  0000 L CNN
+F 1 "R" H 3670 2105 50  0000 L CNN
+F 2 "" V 3530 2150 50  0001 C CNN
+F 3 "~" H 3600 2150 50  0001 C CNN
+	1    3600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601A60B7
+P 3750 2300
+F 0 "R?" V 3650 2350 50  0000 C CNN
+F 1 "R" V 3550 2350 50  0000 C CNN
+F 2 "" V 3680 2300 50  0001 C CNN
+F 3 "~" H 3750 2300 50  0001 C CNN
+	1    3750 2300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3600 2300
+Wire Wire Line
+	3300 2300 3600 2300
+$Comp
+L Device:C C?
+U 1 1 601AFD11
+P 3950 2150
+F 0 "C?" H 4065 2241 50  0000 L CNN
+F 1 "4u7" H 4065 2150 50  0000 L CNN
+F 2 "" H 3988 2000 50  0001 C CNN
+F 3 "~" H 3950 2150 50  0001 C CNN
+F 4 "82-06-22" H 4065 2059 50  0000 L CNN "Lomex"
+	1    3950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD18
+P 4500 2150
+F 0 "C?" H 4615 2241 50  0000 L CNN
+F 1 "4u7" H 4615 2150 50  0000 L CNN
+F 2 "" H 4538 2000 50  0001 C CNN
+F 3 "~" H 4500 2150 50  0001 C CNN
+F 4 "82-06-22" H 4615 2059 50  0000 L CNN "Lomex"
+	1    4500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD1E
+P 5050 2150
+F 0 "C?" H 5165 2196 50  0000 L CNN
+F 1 "100n" H 5165 2105 50  0000 L CNN
+F 2 "" H 5088 2000 50  0001 C CNN
+F 3 "~" H 5050 2150 50  0001 C CNN
+	1    5050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2000 4500 2000
+Connection ~ 4500 2000
+Wire Wire Line
+	4500 2000 3950 2000
+Wire Wire Line
+	5050 2300 4500 2300
+Connection ~ 4500 2300
+Wire Wire Line
+	4500 2300 3950 2300
+$Comp
+L Device:R R?
+U 1 1 601AFD2A
+P 3750 2300
+F 0 "R?" V 3650 2350 50  0000 C CNN
+F 1 "R" V 3550 2350 50  0000 C CNN
+F 2 "" V 3680 2300 50  0001 C CNN
+F 3 "~" H 3750 2300 50  0001 C CNN
+	1    3750 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 601AFD30
+P 3950 2400
+F 0 "#PWR?" H 3950 2150 50  0001 C CNN
+F 1 "GNDD" H 3954 2245 50  0000 C CNN
+F 2 "" H 3950 2400 50  0001 C CNN
+F 3 "" H 3950 2400 50  0001 C CNN
+	1    3950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2400 3950 2300
+Connection ~ 3950 2300
+Wire Wire Line
+	3950 2300 3900 2300
+Wire Wire Line
+	3950 2000 3600 2000
+Connection ~ 3950 2000
+$Comp
+L Device:C C?
+U 1 1 601AFD3B
+P 5500 2150
+F 0 "C?" H 5615 2196 50  0000 L CNN
+F 1 "C" H 5615 2105 50  0000 L CNN
+F 2 "" H 5538 2000 50  0001 C CNN
+F 3 "~" H 5500 2150 50  0001 C CNN
+	1    5500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD41
+P 6000 2150
+F 0 "C?" H 6115 2196 50  0000 L CNN
+F 1 "C" H 6115 2105 50  0000 L CNN
+F 2 "" H 6038 2000 50  0001 C CNN
+F 3 "~" H 6000 2150 50  0001 C CNN
+	1    6000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD47
+P 6450 2150
+F 0 "C?" H 6565 2196 50  0000 L CNN
+F 1 "C" H 6565 2105 50  0000 L CNN
+F 2 "" H 6488 2000 50  0001 C CNN
+F 3 "~" H 6450 2150 50  0001 C CNN
+	1    6450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD4D
+P 6900 2150
+F 0 "C?" H 7015 2196 50  0000 L CNN
+F 1 "C" H 7015 2105 50  0000 L CNN
+F 2 "" H 6938 2000 50  0001 C CNN
+F 3 "~" H 6900 2150 50  0001 C CNN
+	1    6900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD53
+P 7400 2150
+F 0 "C?" H 7515 2196 50  0000 L CNN
+F 1 "C" H 7515 2105 50  0000 L CNN
+F 2 "" H 7438 2000 50  0001 C CNN
+F 3 "~" H 7400 2150 50  0001 C CNN
+	1    7400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD59
+P 7850 2150
+F 0 "C?" H 7965 2196 50  0000 L CNN
+F 1 "C" H 7965 2105 50  0000 L CNN
+F 2 "" H 7888 2000 50  0001 C CNN
+F 3 "~" H 7850 2150 50  0001 C CNN
+	1    7850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD5F
+P 8250 2150
+F 0 "C?" H 8365 2196 50  0000 L CNN
+F 1 "C" H 8365 2105 50  0000 L CNN
+F 2 "" H 8288 2000 50  0001 C CNN
+F 3 "~" H 8250 2150 50  0001 C CNN
+	1    8250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601AFD65
+P 8600 2150
+F 0 "C?" H 8715 2196 50  0000 L CNN
+F 1 "C" H 8715 2105 50  0000 L CNN
+F 2 "" H 8638 2000 50  0001 C CNN
+F 3 "~" H 8600 2150 50  0001 C CNN
+	1    8600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2000 8600 2000
+Connection ~ 8600 2000
+Wire Wire Line
+	8600 2000 9300 2000
+Wire Wire Line
+	8250 2000 7850 2000
+Connection ~ 8250 2000
+Connection ~ 5050 2000
+Connection ~ 5500 2000
+Wire Wire Line
+	5500 2000 5050 2000
+Connection ~ 6000 2000
+Wire Wire Line
+	6000 2000 5500 2000
+Connection ~ 6450 2000
+Wire Wire Line
+	6450 2000 6000 2000
+Connection ~ 6900 2000
+Wire Wire Line
+	6900 2000 6450 2000
+Connection ~ 7400 2000
+Wire Wire Line
+	7400 2000 6900 2000
+Connection ~ 7850 2000
+Wire Wire Line
+	7850 2000 7400 2000
+Wire Notes Line
+	5800 1800 5800 2650
+Wire Notes Line
+	5800 2650 3200 2650
+Wire Notes Line
+	3200 1800 5800 1800
+Text Notes 5200 2600 0    50   ~ 0
+Filter at SMPS
+Wire Notes Line
+	5850 1800 8850 1800
+Wire Notes Line
+	8850 1800 8850 2650
+Wire Notes Line
+	8850 2650 5850 2650
+Wire Notes Line
+	5850 2650 5850 1800
+Text Notes 8200 2600 0    50   ~ 0
+Filter at FPGA
+Connection ~ 3600 2000
+Connection ~ 3900 2300
+Wire Notes Line
+	3200 2650 3200 1800
+Wire Wire Line
+	9400 1150 9300 1150
+Wire Wire Line
+	9300 1150 9300 1250
+Wire Wire Line
+	9300 2450 9400 2450
+Connection ~ 9300 2000
+Wire Wire Line
+	9400 2350 9300 2350
+Connection ~ 9300 2350
+Wire Wire Line
+	9300 2350 9300 2450
+Wire Wire Line
+	9400 2250 9300 2250
+Connection ~ 9300 2250
+Wire Wire Line
+	9300 2250 9300 2350
+Wire Wire Line
+	9400 2150 9300 2150
+Wire Wire Line
+	9300 2000 9300 2050
+Connection ~ 9300 2150
+Wire Wire Line
+	9300 2150 9300 2250
+Wire Wire Line
+	9400 2050 9300 2050
+Connection ~ 9300 2050
+Wire Wire Line
+	9300 2050 9300 2150
+Wire Wire Line
+	9400 1950 9300 1950
+Connection ~ 9300 1950
+Wire Wire Line
+	9300 1950 9300 2000
+Wire Wire Line
+	9400 1850 9300 1850
+Connection ~ 9300 1850
+Wire Wire Line
+	9300 1850 9300 1950
+Wire Wire Line
+	9400 1750 9300 1750
+Connection ~ 9300 1750
+Wire Wire Line
+	9300 1750 9300 1850
+Wire Wire Line
+	9400 1650 9300 1650
+Connection ~ 9300 1650
+Wire Wire Line
+	9300 1650 9300 1750
+Wire Wire Line
+	9400 1550 9300 1550
+Connection ~ 9300 1550
+Wire Wire Line
+	9300 1550 9300 1650
+Wire Wire Line
+	9400 1350 9300 1350
+Connection ~ 9300 1350
+Wire Wire Line
+	9300 1350 9300 1550
+Wire Wire Line
+	9400 1250 9300 1250
+Connection ~ 9300 1250
+Wire Wire Line
+	9300 1250 9300 1350
+Text Notes 4550 3450 0    50   ~ 0
+3.3V
+$Comp
+L Device:L L?
+U 1 1 601CE319
+P 3450 3500
+F 0 "L?" V 3178 3500 50  0000 C CNN
+F 1 "L" V 3269 3500 50  0000 C CNN
+F 2 "" H 3450 3500 50  0001 C CNN
+F 3 "~" H 3450 3500 50  0001 C CNN
+F 4 "" V 3360 3500 50  0000 C CNN "Lomex"
+	1    3450 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE324
+P 3950 3650
+F 0 "C?" H 4065 3741 50  0000 L CNN
+F 1 "4u7" H 4065 3650 50  0000 L CNN
+F 2 "" H 3988 3500 50  0001 C CNN
+F 3 "~" H 3950 3650 50  0001 C CNN
+F 4 "82-06-22" H 4065 3559 50  0000 L CNN "Lomex"
+	1    3950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE32F
+P 4500 3650
+F 0 "C?" H 4615 3741 50  0000 L CNN
+F 1 "4u7" H 4615 3650 50  0000 L CNN
+F 2 "" H 4538 3500 50  0001 C CNN
+F 3 "~" H 4500 3650 50  0001 C CNN
+F 4 "82-06-22" H 4615 3559 50  0000 L CNN "Lomex"
+	1    4500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE339
+P 5050 3650
+F 0 "C?" H 5165 3696 50  0000 L CNN
+F 1 "100n" H 5165 3605 50  0000 L CNN
+F 2 "" H 5088 3500 50  0001 C CNN
+F 3 "~" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601CE343
+P 3600 3650
+F 0 "R?" H 3670 3696 50  0000 L CNN
+F 1 "R" H 3670 3605 50  0000 L CNN
+F 2 "" V 3530 3650 50  0001 C CNN
+F 3 "~" H 3600 3650 50  0001 C CNN
+	1    3600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 1 1 601CE34D
+P 3050 3350
+F 0 "U?" H 3000 3465 50  0000 C CNN
+F 1 "SY8029" H 3000 3374 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 3050 3350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 3050 3350 50  0001 C CNN
+	1    3050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 2 1 601CE357
+P 3000 4450
+F 0 "U?" H 2950 4565 50  0000 C CNN
+F 1 "SY8029" H 2950 4474 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 3000 4450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 3000 4450 50  0001 C CNN
+	2    3000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 3 1 601CE361
+P 2100 3800
+F 0 "U?" H 2278 3546 50  0000 L CNN
+F 1 "SY8029" H 2278 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 2100 3800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 2100 3800 50  0001 C CNN
+	3    2100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3500 4500 3500
+Connection ~ 4500 3500
+Wire Wire Line
+	4500 3500 3950 3500
+Wire Wire Line
+	5050 3800 4500 3800
+Connection ~ 4500 3800
+Wire Wire Line
+	4500 3800 3950 3800
+$Comp
+L Device:R R?
+U 1 1 601CE371
+P 3750 3800
+F 0 "R?" V 3650 3850 50  0000 C CNN
+F 1 "R" V 3550 3850 50  0000 C CNN
+F 2 "" V 3680 3800 50  0001 C CNN
+F 3 "~" H 3750 3800 50  0001 C CNN
+	1    3750 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 601CE37B
+P 3950 3900
+F 0 "#PWR?" H 3950 3650 50  0001 C CNN
+F 1 "GNDD" H 3954 3745 50  0000 C CNN
+F 2 "" H 3950 3900 50  0001 C CNN
+F 3 "" H 3950 3900 50  0001 C CNN
+	1    3950 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 3800
+Wire Wire Line
+	3300 3800 3600 3800
+Wire Wire Line
+	3950 3900 3950 3800
+Connection ~ 3950 3800
+Wire Wire Line
+	3950 3800 3900 3800
+Wire Wire Line
+	3950 3500 3600 3500
+Connection ~ 3950 3500
+Connection ~ 3600 3500
+$Comp
+L Device:C C?
+U 1 1 601CE38D
+P 5500 3650
+F 0 "C?" H 5615 3696 50  0000 L CNN
+F 1 "C" H 5615 3605 50  0000 L CNN
+F 2 "" H 5538 3500 50  0001 C CNN
+F 3 "~" H 5500 3650 50  0001 C CNN
+	1    5500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE397
+P 6000 3650
+F 0 "C?" H 6115 3696 50  0000 L CNN
+F 1 "C" H 6115 3605 50  0000 L CNN
+F 2 "" H 6038 3500 50  0001 C CNN
+F 3 "~" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE3A1
+P 6450 3650
+F 0 "C?" H 6565 3696 50  0000 L CNN
+F 1 "C" H 6565 3605 50  0000 L CNN
+F 2 "" H 6488 3500 50  0001 C CNN
+F 3 "~" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE3AB
+P 6900 3650
+F 0 "C?" H 7015 3696 50  0000 L CNN
+F 1 "C" H 7015 3605 50  0000 L CNN
+F 2 "" H 6938 3500 50  0001 C CNN
+F 3 "~" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE3B5
+P 7400 3650
+F 0 "C?" H 7515 3696 50  0000 L CNN
+F 1 "C" H 7515 3605 50  0000 L CNN
+F 2 "" H 7438 3500 50  0001 C CNN
+F 3 "~" H 7400 3650 50  0001 C CNN
+	1    7400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE3BF
+P 7850 3650
+F 0 "C?" H 7965 3696 50  0000 L CNN
+F 1 "C" H 7965 3605 50  0000 L CNN
+F 2 "" H 7888 3500 50  0001 C CNN
+F 3 "~" H 7850 3650 50  0001 C CNN
+	1    7850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE3C9
+P 8250 3650
+F 0 "C?" H 8365 3696 50  0000 L CNN
+F 1 "C" H 8365 3605 50  0000 L CNN
+F 2 "" H 8288 3500 50  0001 C CNN
+F 3 "~" H 8250 3650 50  0001 C CNN
+	1    8250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601CE3D3
+P 8600 3650
+F 0 "C?" H 8715 3696 50  0000 L CNN
+F 1 "C" H 8715 3605 50  0000 L CNN
+F 2 "" H 8638 3500 50  0001 C CNN
+F 3 "~" H 8600 3650 50  0001 C CNN
+	1    8600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3500 8600 3500
+Connection ~ 8600 3500
+Wire Wire Line
+	8600 3500 9300 3500
+Wire Wire Line
+	8250 3500 7850 3500
+Connection ~ 8250 3500
+Connection ~ 5050 3500
+Connection ~ 5500 3500
+Wire Wire Line
+	5500 3500 5050 3500
+Connection ~ 6000 3500
+Wire Wire Line
+	6000 3500 5500 3500
+Connection ~ 6450 3500
+Wire Wire Line
+	6450 3500 6000 3500
+Connection ~ 6900 3500
+Wire Wire Line
+	6900 3500 6450 3500
+Connection ~ 7400 3500
+Wire Wire Line
+	7400 3500 6900 3500
+Connection ~ 7850 3500
+Wire Wire Line
+	7850 3500 7400 3500
+Wire Notes Line
+	5800 3300 5800 4150
+Wire Notes Line
+	5800 4150 3200 4150
+Wire Notes Line
+	3200 4150 3200 3300
+Wire Notes Line
+	3200 3300 5800 3300
+Text Notes 5200 4100 0    50   ~ 0
+Filter at SMPS
+Wire Notes Line
+	5850 3300 8850 3300
+Wire Notes Line
+	8850 3300 8850 4150
+Wire Notes Line
+	8850 4150 5850 4150
+Wire Notes Line
+	5850 4150 5850 3300
+Text Notes 8200 4100 0    50   ~ 0
+Filter at FPGA
+$Comp
+L power:GNDD #PWR?
+U 1 1 6020976C
+P 3250 4900
+F 0 "#PWR?" H 3250 4650 50  0001 C CNN
+F 1 "GNDD" H 3254 4745 50  0000 C CNN
+F 2 "" H 3250 4900 50  0001 C CNN
+F 3 "" H 3250 4900 50  0001 C CNN
+	1    3250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 6020A1F0
+P 1850 4250
+F 0 "#PWR?" H 1850 4000 50  0001 C CNN
+F 1 "GNDD" H 1854 4095 50  0000 C CNN
+F 2 "" H 1850 4250 50  0001 C CNN
+F 3 "" H 1850 4250 50  0001 C CNN
+	1    1850 4250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
