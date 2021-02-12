@@ -1,0 +1,40 @@
+{
+	"version": "1.0",
+	"modules": {
+		"top_design": {
+			"proto_instances": {
+				"/iq_oscillator/cplx_sep_0/s_axis_data": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "s_axis_data_tdata"},
+						"TVALID": { "actual": "s_axis_data_tvalid"}
+					}
+				},
+				"/iq_oscillator/dds_compiler_0/M_AXIS_DATA": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"TDATA": { "actual": "m_axis_data_tdata"},
+						"TVALID": { "actual": "m_axis_data_tvalid"}
+					}
+				},
+				"/iq_oscillator/dds_compiler_0/S_AXIS_CONFIG": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"TDATA": { "actual": "s_axis_config_tdata"},
+						"TVALID": { "actual": "s_axis_config_tvalid"}
+					}
+				},
+				"/iq_oscillator/dds_config_gen_0/m_axis_config": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"TDATA": { "actual": "m_axis_config_tdata"},
+						"TVALID": { "actual": "m_axis_config_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}
