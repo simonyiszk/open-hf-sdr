@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"181,-102",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "PinnedPorts":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port adc_clock -pg 1 -lvl 0 -x -70 -y 120 -defaultsOSRD
+preplace port adc_power_down -pg 1 -lvl 0 -x -70 -y 160 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -70 -y 180 -defaultsOSRD
+preplace port tvalid -pg 1 -lvl 6 -x 1660 -y 190 -defaultsOSRD
+preplace portBus adc_data -pg 1 -lvl 0 -x -70 -y 140 -defaultsOSRD
+preplace portBus iq_data -pg 1 -lvl 6 -x 1660 -y 170 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 2 -x 420 -y 170 -defaultsOSRD
+preplace inst adc2axis_0 -pg 1 -lvl 1 -x 100 -y 150 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 3 -x 780 -y 60 -defaultsOSRD
+preplace inst cmpy_0 -pg 1 -lvl 4 -x 1120 -y 180 -defaultsOSRD
+preplace inst real2complex_0 -pg 1 -lvl 3 -x 780 -y 180 -defaultsOSRD
+preplace inst fir_compiler_1 -pg 1 -lvl 5 -x 1470 -y 170 -defaultsOSRD
+preplace netloc clk_1 1 0 5 -50 240 250 250 600 260 950 280 1300J
+preplace netloc adc_power_down_1 1 0 1 NJ 160
+preplace netloc adc_data_1 1 0 1 NJ 140
+preplace netloc adc_clock_1 1 0 1 NJ 120
+preplace netloc fir_compiler_1_m_axis_data_tdata 1 5 1 NJ 170
+preplace netloc fir_compiler_1_m_axis_data_tvalid 1 5 1 NJ 190
+preplace netloc fir_compiler_0_m_axis_data_tvalid 1 2 1 590 190n
+preplace netloc fir_compiler_0_m_axis_data_tdata 1 2 1 610 170n
+preplace netloc adc2axis_0_s_axis_data 1 1 1 250 150n
+preplace netloc dds_compiler_0_M_AXIS_DATA 1 3 1 950J 60n
+preplace netloc real2complex_0_s_axis_out 1 3 1 950J 160n
+preplace netloc cmpy_0_M_AXIS_DOUT 1 4 1 1290 160n
+levelinfo -pg 1 -70 100 420 780 1120 1470 1660
+pagesize -pg 1 -db -bbox -sgen -240 0 1800 290
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

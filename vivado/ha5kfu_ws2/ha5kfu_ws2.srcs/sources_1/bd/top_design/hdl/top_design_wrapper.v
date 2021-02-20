@@ -1,24 +1,23 @@
-//Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-//--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Fri Feb 12 22:07:27 2021
-//Host        : RemoteApp running 64-bit major release  (build 9200)
-//Command     : generate_target top_design_wrapper.bd
-//Design      : top_design_wrapper
-//Purpose     : IP block netlist
-//--------------------------------------------------------------------------------
+//Open HF SDR -- ha5kfu
+
 `timescale 1 ps / 1 ps
 
-module top_design_wrapper
-   (S,
-    clk);
-  output [13:0]S;
-  input clk;
+module top_design_wrapper (
+  output [13:0]dac_data,
+  output dac_clk,
+  
+  input input_clk,
+  
+  input [7:0]adc_data,
+  output adc_clk,
+  output adc_power_down
+);
 
-  wire [13:0]S;
-  wire clk;
+  assign dac_clk = input_clk;
 
-  top tld
-       (.S(S),
-        .clk(clk));
+  assign adc_clk = 0;
+  assign adc_power_down = 0;
+
+  top tld (.S(tmp), .clk(input_clk));
+  receiver rec(.adc_data(adc_data), .clk(input_clk), .adc_power_down(adc_power_down));
 endmodule
