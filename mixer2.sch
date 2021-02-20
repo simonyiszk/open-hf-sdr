@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 14
+Sheet 5 14
 Title "IF Amp, matching, Second mixer"
 Date "2020-12-24"
 Rev "v0.5"
@@ -19,6 +19,7 @@ U 1 1 5FE54485
 P 6600 3850
 AR Path="/5FE54485" Ref="U?"  Part="1" 
 AR Path="/5FE332ED/5FE54485" Ref="U2"  Part="1" 
+AR Path="/6004ACB3/5FE332ED/5FE54485" Ref="U2"  Part="1" 
 F 0 "U2" H 6400 4300 50  0000 C CNN
 F 1 "SA612" H 6450 4200 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6800 4600 50  0001 C CNN

@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_USB:FT2232HL U?
+L open_hf_sdr-rescue:FT2232HL-Interface_USB U?
 U 1 1 60055DFE
 P 3500 3800
 F 0 "U?" H 3500 6181 50  0000 C CNN
