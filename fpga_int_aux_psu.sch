@@ -1,0 +1,408 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 14 16
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 5600 2250 0    50   ~ 0
+1.8V+-90mV
+$Comp
+L Device:L L?
+U 1 1 603D6A92
+P 4500 2300
+AR Path="/6004B3B4/603D6A92" Ref="L?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6A92" Ref="L?"  Part="1" 
+F 0 "L?" V 4228 2300 50  0000 C CNN
+F 1 "68u" V 4319 2300 50  0000 C CNN
+F 2 "" H 4500 2300 50  0001 C CNN
+F 3 "~" H 4500 2300 50  0001 C CNN
+F 4 " 93-03-36" V 4410 2300 50  0000 C CNN "Lomex"
+	1    4500 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 603D6A99
+P 5000 2450
+AR Path="/6004B3B4/603D6A99" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6A99" Ref="C?"  Part="1" 
+F 0 "C?" H 5115 2541 50  0000 L CNN
+F 1 "4u7" H 5115 2450 50  0000 L CNN
+F 2 "" H 5038 2300 50  0001 C CNN
+F 3 "~" H 5000 2450 50  0001 C CNN
+F 4 "82-06-22" H 5115 2359 50  0000 L CNN "Lomex"
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 603D6AA0
+P 5550 2450
+AR Path="/6004B3B4/603D6AA0" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AA0" Ref="C?"  Part="1" 
+F 0 "C?" H 5665 2541 50  0000 L CNN
+F 1 "4u7" H 5665 2450 50  0000 L CNN
+F 2 "" H 5588 2300 50  0001 C CNN
+F 3 "~" H 5550 2450 50  0001 C CNN
+F 4 "82-06-22" H 5665 2359 50  0000 L CNN "Lomex"
+	1    5550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 603D6AA6
+P 6100 2450
+AR Path="/6004B3B4/603D6AA6" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AA6" Ref="C?"  Part="1" 
+F 0 "C?" H 6215 2496 50  0000 L CNN
+F 1 "100n" H 6215 2405 50  0000 L CNN
+F 2 "" H 6138 2300 50  0001 C CNN
+F 3 "~" H 6100 2450 50  0001 C CNN
+	1    6100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603D6AAC
+P 4650 2450
+AR Path="/6004B3B4/603D6AAC" Ref="R?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AAC" Ref="R?"  Part="1" 
+F 0 "R?" H 4720 2496 50  0000 L CNN
+F 1 "R" H 4720 2405 50  0000 L CNN
+F 2 "" V 4580 2450 50  0001 C CNN
+F 3 "~" H 4650 2450 50  0001 C CNN
+	1    4650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 1 1 603D6AB2
+P 4100 2150
+AR Path="/6004B3B4/603D6AB2" Ref="U?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AB2" Ref="U?"  Part="1" 
+F 0 "U?" H 4050 2265 50  0000 C CNN
+F 1 "SY8029" H 4050 2174 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 4100 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 3 1 603D6AB8
+P 3250 2700
+AR Path="/6004B3B4/603D6AB8" Ref="U?"  Part="3" 
+AR Path="/6004B3B4/603AAE8B/603D6AB8" Ref="U?"  Part="3" 
+F 0 "U?" H 3428 2446 50  0000 L CNN
+F 1 "SY8029" H 3428 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 3250 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 3250 2700 50  0001 C CNN
+	3    3250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2300 5550 2300
+Connection ~ 5550 2300
+Wire Wire Line
+	5550 2300 5000 2300
+Wire Wire Line
+	6100 2600 5550 2600
+Connection ~ 5550 2600
+Wire Wire Line
+	5550 2600 5000 2600
+$Comp
+L Device:R R?
+U 1 1 603D6AC4
+P 4800 2600
+AR Path="/6004B3B4/603D6AC4" Ref="R?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AC4" Ref="R?"  Part="1" 
+F 0 "R?" V 4700 2650 50  0000 C CNN
+F 1 "R" V 4600 2650 50  0000 C CNN
+F 2 "" V 4730 2600 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 603D6ACA
+P 5000 2700
+AR Path="/6004B3B4/603D6ACA" Ref="#PWR?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6ACA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 2450 50  0001 C CNN
+F 1 "GNDD" H 5004 2545 50  0000 C CNN
+F 2 "" H 5000 2700 50  0001 C CNN
+F 3 "" H 5000 2700 50  0001 C CNN
+	1    5000 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 2600
+Wire Wire Line
+	4350 2600 4650 2600
+Wire Wire Line
+	5000 2700 5000 2600
+Connection ~ 5000 2600
+Wire Wire Line
+	5000 2600 4950 2600
+Wire Wire Line
+	5000 2300 4650 2300
+Connection ~ 5000 2300
+Connection ~ 4650 2300
+$Comp
+L Device:C C?
+U 1 1 603D6AD8
+P 6550 2450
+AR Path="/6004B3B4/603D6AD8" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AD8" Ref="C?"  Part="1" 
+F 0 "C?" H 6665 2496 50  0000 L CNN
+F 1 "C" H 6665 2405 50  0000 L CNN
+F 2 "" H 6588 2300 50  0001 C CNN
+F 3 "~" H 6550 2450 50  0001 C CNN
+	1    6550 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 2300
+Connection ~ 6550 2300
+Wire Wire Line
+	6550 2300 6100 2300
+Wire Wire Line
+	7050 2300 6550 2300
+Wire Notes Line
+	6850 2950 4250 2950
+Wire Notes Line
+	4250 2950 4250 2100
+Wire Notes Line
+	4250 2100 6850 2100
+Text Notes 6250 2900 0    50   ~ 0
+Filter at SMPS
+$Comp
+L power:+3V3 #PWR?
+U 1 1 603D6AE6
+P 3000 2850
+AR Path="/6004B3B4/603D6AE6" Ref="#PWR?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AE6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 2700 50  0001 C CNN
+F 1 "+3V3" H 3015 3023 50  0000 C CNN
+F 2 "" H 3000 2850 50  0001 C CNN
+F 3 "" H 3000 2850 50  0001 C CNN
+	1    3000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 603D6AEC
+P 3000 3300
+AR Path="/6004B3B4/603D6AEC" Ref="#PWR?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AEC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 3050 50  0001 C CNN
+F 1 "GNDD" H 3004 3145 50  0000 C CNN
+F 2 "" H 3000 3300 50  0001 C CNN
+F 3 "" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3300 3000 3150
+Wire Notes Line
+	4250 4150 4250 3300
+Text Notes 6250 4100 0    50   ~ 0
+Filter at SMPS
+Wire Notes Line
+	4250 3300 6850 3300
+Wire Notes Line
+	6850 4150 4250 4150
+Wire Wire Line
+	7050 3500 6550 3500
+Connection ~ 6550 3500
+$Comp
+L Device:C C?
+U 1 1 603D6AF9
+P 6550 3650
+AR Path="/6004B3B4/603D6AF9" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6AF9" Ref="C?"  Part="1" 
+F 0 "C?" H 6665 3696 50  0000 L CNN
+F 1 "C" H 6665 3605 50  0000 L CNN
+F 2 "" H 6588 3500 50  0001 C CNN
+F 3 "~" H 6550 3650 50  0001 C CNN
+	1    6550 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3800 4950 3800
+Connection ~ 5000 3800
+Wire Wire Line
+	5000 3900 5000 3800
+$Comp
+L power:GNDD #PWR?
+U 1 1 603D6B02
+P 5000 3900
+AR Path="/6004B3B4/603D6B02" Ref="#PWR?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B02" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 3650 50  0001 C CNN
+F 1 "GNDD" H 5004 3745 50  0000 C CNN
+F 2 "" H 5000 3900 50  0001 C CNN
+F 3 "" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603D6B08
+P 4800 3800
+AR Path="/6004B3B4/603D6B08" Ref="R?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B08" Ref="R?"  Part="1" 
+F 0 "R?" V 4700 3850 50  0000 C CNN
+F 1 "R" V 4600 3850 50  0000 C CNN
+F 2 "" V 4730 3800 50  0001 C CNN
+F 3 "~" H 4800 3800 50  0001 C CNN
+	1    4800 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 3500 6100 3500
+Connection ~ 6100 3500
+$Comp
+L Device:C C?
+U 1 1 603D6B10
+P 6100 3650
+AR Path="/6004B3B4/603D6B10" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B10" Ref="C?"  Part="1" 
+F 0 "C?" H 6215 3696 50  0000 L CNN
+F 1 "100n" H 6215 3605 50  0000 L CNN
+F 2 "" H 6138 3500 50  0001 C CNN
+F 3 "~" H 6100 3650 50  0001 C CNN
+	1    6100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3800 5000 3800
+Wire Wire Line
+	6100 3800 5550 3800
+Connection ~ 5550 3800
+Wire Wire Line
+	6100 3500 5550 3500
+Connection ~ 5550 3500
+$Comp
+L Device:C C?
+U 1 1 603D6B1C
+P 5550 3650
+AR Path="/6004B3B4/603D6B1C" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B1C" Ref="C?"  Part="1" 
+F 0 "C?" H 5665 3741 50  0000 L CNN
+F 1 "4u7" H 5665 3650 50  0000 L CNN
+F 2 "" H 5588 3500 50  0001 C CNN
+F 3 "~" H 5550 3650 50  0001 C CNN
+F 4 "82-06-22" H 5665 3559 50  0000 L CNN "Lomex"
+	1    5550 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3500 4650 3500
+Wire Wire Line
+	5550 3500 5000 3500
+Connection ~ 5000 3500
+$Comp
+L Device:C C?
+U 1 1 603D6B26
+P 5000 3650
+AR Path="/6004B3B4/603D6B26" Ref="C?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B26" Ref="C?"  Part="1" 
+F 0 "C?" H 5115 3741 50  0000 L CNN
+F 1 "4u7" H 5115 3650 50  0000 L CNN
+F 2 "" H 5038 3500 50  0001 C CNN
+F 3 "~" H 5000 3650 50  0001 C CNN
+F 4 "82-06-22" H 5115 3559 50  0000 L CNN "Lomex"
+	1    5000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3800 4650 3800
+Connection ~ 4950 3800
+Connection ~ 4650 3800
+$Comp
+L Device:R R?
+U 1 1 603D6B2F
+P 4800 3800
+AR Path="/6004B3B4/603D6B2F" Ref="R?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B2F" Ref="R?"  Part="1" 
+F 0 "R?" V 4700 3850 50  0000 C CNN
+F 1 "R" V 4600 3850 50  0000 C CNN
+F 2 "" V 4730 3800 50  0001 C CNN
+F 3 "~" H 4800 3800 50  0001 C CNN
+	1    4800 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603D6B35
+P 4650 3650
+AR Path="/6004B3B4/603D6B35" Ref="R?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B35" Ref="R?"  Part="1" 
+F 0 "R?" H 4720 3696 50  0000 L CNN
+F 1 "R" H 4720 3605 50  0000 L CNN
+F 2 "" V 4580 3650 50  0001 C CNN
+F 3 "~" H 4650 3650 50  0001 C CNN
+	1    4650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L sdr:SY8029 U?
+U 2 1 603D6B3B
+P 4100 3350
+AR Path="/6004B3B4/603D6B3B" Ref="U?"  Part="2" 
+AR Path="/6004B3B4/603AAE8B/603D6B3B" Ref="U?"  Part="2" 
+F 0 "U?" H 4050 3465 50  0000 C CNN
+F 1 "SY8029" H 4050 3374 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering" H 4100 3350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Silergy-Corp-SY8029AIC_C207636.pdf" H 4100 3350 50  0001 C CNN
+	2    4100 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 3500
+$Comp
+L Device:L L?
+U 1 1 603D6B43
+P 4500 3500
+AR Path="/6004B3B4/603D6B43" Ref="L?"  Part="1" 
+AR Path="/6004B3B4/603AAE8B/603D6B43" Ref="L?"  Part="1" 
+F 0 "L?" V 4228 3500 50  0000 C CNN
+F 1 "47u" V 4319 3500 50  0000 C CNN
+F 2 "" H 4500 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+F 4 "93-01-06" V 4410 3500 50  0000 C CNN "Lomex"
+	1    4500 3500
+	0    1    1    0   
+$EndComp
+Text Notes 5650 3450 0    50   ~ 0
+1V+-50mV
+Text HLabel 7050 2300 2    50   Output ~ 0
+VCCint
+Text HLabel 7050 3500 2    50   Output ~ 0
+VCCaux
+Wire Notes Line
+	6850 2100 6850 2950
+Wire Notes Line
+	6850 3300 6850 4150
+Text HLabel 3750 3800 0    50   Input ~ 0
+EN_VCCaux
+$Comp
+L power:+3.3V #PWR?
+U 1 1 603DCFE1
+P 3750 2600
+F 0 "#PWR?" H 3750 2450 50  0001 C CNN
+F 1 "+3.3V" H 3765 2773 50  0000 C CNN
+F 2 "" H 3750 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	1    3750 2600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
