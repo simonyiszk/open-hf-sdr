@@ -829,8 +829,6 @@ F 3 "" H 7250 5550 50  0001 C CNN
 $EndComp
 Text GLabel 7500 5950 2    50   Input ~ 0
 FPGA_VCCO
-Wire Wire Line
-	7500 5950 7450 5950
 $Comp
 L Device:R R?
 U 1 1 604E3653
@@ -921,47 +919,14 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 60508322
-P 4350 5800
-F 0 "R?" H 4420 5846 50  0000 L CNN
-F 1 "470k" H 4420 5755 50  0000 L CNN
-F 2 "" V 4280 5800 50  0001 C CNN
-F 3 "~" H 4350 5800 50  0001 C CNN
-	1    4350 5800
+P 4700 5850
+F 0 "R?" H 4770 5896 50  0000 L CNN
+F 1 "470k" H 4770 5805 50  0000 L CNN
+F 2 "" V 4630 5850 50  0001 C CNN
+F 3 "~" H 4700 5850 50  0001 C CNN
+	1    4700 5850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 5650 5000 5650
-$Comp
-L power:GNDD #PWR?
-U 1 1 6050CC3B
-P 4350 6350
-F 0 "#PWR?" H 4350 6100 50  0001 C CNN
-F 1 "GNDD" H 4354 6195 50  0000 C CNN
-F 2 "" H 4350 6350 50  0001 C CNN
-F 3 "" H 4350 6350 50  0001 C CNN
-	1    4350 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6050D4AF
-P 4050 6000
-F 0 "R?" H 4120 6046 50  0000 L CNN
-F 1 "10k" H 4120 5955 50  0000 L CNN
-F 2 "" V 3980 6000 50  0001 C CNN
-F 3 "~" H 4050 6000 50  0001 C CNN
-	1    4050 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 5850 4050 5050
-Wire Wire Line
-	4050 5050 7450 5050
-Wire Wire Line
-	7450 5050 7450 5950
-Connection ~ 7450 5950
-Wire Wire Line
-	7450 5950 7250 5950
 $Comp
 L power:GNDD #PWR?
 U 1 1 605138FA
@@ -1019,17 +984,6 @@ F 3 "~" H 6700 4400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_BEC Q?
-U 1 1 60524F5B
-P 4250 6150
-F 0 "Q?" H 4441 6196 50  0000 L CNN
-F 1 "MMBT3904" H 4441 6105 50  0000 L CNN
-F 2 "" H 4450 6250 50  0001 C CNN
-F 3 "~" H 4250 6150 50  0001 C CNN
-	1    4250 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 60525B4A
 P 7150 5750
@@ -1060,4 +1014,16 @@ Wire Wire Line
 	6300 4600 6600 4600
 Text Notes 4000 4350 0    50   ~ 0
 Power on sequencing with comparators. \nFirst VCCint and VCCbram start, \nthen we switch on VCCaux and then VCCo\n
+Wire Wire Line
+	7250 5950 7500 5950
+Wire Wire Line
+	4700 6000 4700 6350
+Wire Wire Line
+	4700 6350 6750 6350
+Wire Wire Line
+	6750 6350 6750 5750
+Wire Wire Line
+	4700 5700 4700 5650
+Wire Wire Line
+	4700 5650 5000 5650
 $EndSCHEMATC
