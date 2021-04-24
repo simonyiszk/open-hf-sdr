@@ -1216,4 +1216,6 @@ Wire Bus Line
 	10950 1200 10950 2500
 Wire Bus Line
 	10600 3850 10600 5750
+Text Notes 3000 7400 0    50   ~ 0
+Undriven wires may collect noise?
 $EndSCHEMATC
