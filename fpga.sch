@@ -52,4 +52,208 @@ F 31 "0°C" H 4150 4900 50  0001 L CNN "temperature range low"
 	2    4150 1600
 	1    0    0    -1  
 $EndComp
+Text HLabel 1400 5800 0    50   Input ~ 0
+ADC
+Entry Wire Line
+	1500 5900 1600 6000
+Entry Wire Line
+	1600 6100 1500 6000
+Entry Wire Line
+	1600 6300 1500 6200
+Entry Wire Line
+	1600 6400 1500 6300
+Entry Wire Line
+	1600 6500 1500 6400
+Entry Wire Line
+	1600 6600 1500 6500
+Entry Wire Line
+	1600 6700 1500 6600
+Entry Wire Line
+	1600 6800 1500 6700
+Entry Wire Line
+	1600 7000 1500 6900
+Entry Wire Line
+	1600 7100 1500 7000
+Wire Wire Line
+	2100 6000 1600 6000
+Wire Wire Line
+	2100 6100 1600 6100
+Wire Wire Line
+	1600 6300 2100 6300
+Wire Wire Line
+	2100 6400 1600 6400
+Wire Wire Line
+	2100 6500 1600 6500
+Wire Wire Line
+	2100 6600 1600 6600
+Wire Wire Line
+	2100 6700 1600 6700
+Wire Wire Line
+	2100 6800 1600 6800
+Wire Wire Line
+	2100 7000 1600 7000
+Wire Wire Line
+	2100 7100 1600 7100
+Text Label 1950 6000 2    50   ~ 0
+D0
+Text Label 1950 6100 2    50   ~ 0
+D1
+Text Label 1950 6300 2    50   ~ 0
+D2
+Text Label 1950 6400 2    50   ~ 0
+D3
+Text Label 1950 6500 2    50   ~ 0
+D4
+Text Label 1950 6600 2    50   ~ 0
+D5
+Text Label 1950 6700 2    50   ~ 0
+D6
+Text Label 1950 6800 2    50   ~ 0
+D7
+Text Label 1950 7000 2    50   ~ 0
+CLK
+Text Label 1950 7100 2    50   ~ 0
+PWRDWN
+Wire Bus Line
+	1500 5800 1400 5800
+Entry Wire Line
+	1800 2500 1700 2400
+Entry Wire Line
+	1800 2600 1700 2500
+Entry Wire Line
+	1800 2700 1700 2600
+Entry Wire Line
+	1800 2800 1700 2700
+Entry Wire Line
+	1800 2900 1700 2800
+Entry Wire Line
+	1800 3000 1700 2900
+Entry Wire Line
+	1800 3100 1700 3000
+Entry Wire Line
+	1800 3200 1700 3100
+Entry Wire Line
+	1800 3300 1700 3200
+Entry Wire Line
+	1800 3400 1700 3300
+Entry Wire Line
+	1800 3500 1700 3400
+Entry Wire Line
+	1800 3600 1700 3500
+Entry Wire Line
+	1800 3700 1700 3600
+Entry Wire Line
+	1800 3800 1700 3700
+Entry Wire Line
+	1800 4000 1700 3900
+Wire Wire Line
+	2150 2500 1800 2500
+Wire Wire Line
+	2150 2600 1800 2600
+Wire Wire Line
+	2150 2700 1800 2700
+Wire Wire Line
+	2150 2800 1800 2800
+Wire Wire Line
+	2150 2900 1800 2900
+Wire Wire Line
+	2150 3000 1800 3000
+Wire Wire Line
+	2150 3100 1800 3100
+Wire Wire Line
+	2150 3200 1800 3200
+Wire Wire Line
+	2150 3300 1800 3300
+Wire Wire Line
+	2150 3400 1800 3400
+Wire Wire Line
+	2150 3500 1800 3500
+Wire Wire Line
+	2150 3600 1800 3600
+Wire Wire Line
+	2150 3700 1800 3700
+Wire Wire Line
+	2150 3800 1800 3800
+Wire Wire Line
+	2150 4000 1800 4000
+Text Label 2050 2500 2    50   ~ 0
+D0
+Text Label 2050 2600 2    50   ~ 0
+D1
+Text Label 2050 2700 2    50   ~ 0
+D2
+Text Label 2050 2800 2    50   ~ 0
+D3
+Text Label 2050 2900 2    50   ~ 0
+D4
+Text Label 2050 3000 2    50   ~ 0
+D5
+Text Label 2050 3100 2    50   ~ 0
+D6
+Text Label 2050 3200 2    50   ~ 0
+D7
+Text Label 2050 3300 2    50   ~ 0
+D8
+Text Label 2050 3400 2    50   ~ 0
+D9
+Text Label 2050 3500 2    50   ~ 0
+D10
+Text Label 2050 3600 2    50   ~ 0
+D11
+Text Label 2050 3700 2    50   ~ 0
+D12
+Text Label 2050 3800 2    50   ~ 0
+D13
+Text Label 2050 4000 2    50   ~ 0
+CLK
+Wire Bus Line
+	1700 4300 1900 4300
+Text HLabel 1900 4300 2    50   Input ~ 0
+DAC
+Wire Wire Line
+	1400 4650 1400 4150
+Entry Wire Line
+	1700 4050 1600 4150
+Wire Wire Line
+	1600 4150 1400 4150
+Text Label 1550 4150 2    50   ~ 0
+SLEEP
+Wire Wire Line
+	1300 4700 1300 4050
+Wire Wire Line
+	1300 4050 1600 4050
+Entry Wire Line
+	1700 3950 1600 4050
+Text Label 1550 4050 2    50   ~ 0
+MODE
+Text Notes 1650 3950 2    50   ~ 0
+FIX MODE???
+Text Label 9750 4200 0    50   ~ 0
+ATT0
+Text Label 9750 4300 0    50   ~ 0
+ATT1
+Text Label 9750 3700 0    50   ~ 0
+TR
+Wire Bus Line
+	10050 3450 10300 3450
+Text HLabel 10300 3450 2    50   Input ~ 0
+CONTROL
+Entry Wire Line
+	9950 3700 10050 3600
+Entry Wire Line
+	9950 4300 10050 4200
+Entry Wire Line
+	9950 4200 10050 4100
+Wire Wire Line
+	9950 4200 9750 4200
+Wire Wire Line
+	9750 4300 9950 4300
+Wire Wire Line
+	9950 3700 9750 3700
+Wire Bus Line
+	10050 3450 10050 4200
+Wire Bus Line
+	1500 5800 1500 7000
+Wire Bus Line
+	1700 2400 1700 4300
 $EndSCHEMATC
