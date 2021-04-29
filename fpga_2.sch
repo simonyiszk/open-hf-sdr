@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 16
+Sheet 12 17
 Title "Open HF SDR FPGA Sheet"
 Date "2021-01-16"
 Rev ""
@@ -52,4 +52,71 @@ F 31 "0°C" H 4550 4900 50  0001 L CNN "temperature range low"
 	3    4550 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60908D4D
+P 4450 1400
+F 0 "#PWR?" H 4450 1250 50  0001 C CNN
+F 1 "+3.3V" H 4465 1573 50  0000 C CNN
+F 2 "" H 4450 1400 50  0001 C CNN
+F 3 "" H 4450 1400 50  0001 C CNN
+	1    4450 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1800 4450 1800
+Wire Wire Line
+	4450 1800 4450 1700
+Wire Wire Line
+	4650 1700 4450 1700
+Connection ~ 4450 1700
+Wire Wire Line
+	4450 1700 4450 1600
+Wire Wire Line
+	4650 1600 4450 1600
+Connection ~ 4450 1600
+Wire Wire Line
+	4450 1600 4450 1400
+Text HLabel 3700 2150 0    50   Input ~ 0
+Buttons
+Wire Bus Line
+	3700 2150 4100 2150
+Entry Wire Line
+	4100 2300 4200 2400
+Entry Wire Line
+	4100 2200 4200 2300
+Entry Wire Line
+	4100 2400 4200 2500
+Entry Wire Line
+	4100 2500 4200 2600
+Entry Wire Line
+	4100 2800 4200 2900
+Entry Wire Line
+	4100 2900 4200 3000
+Wire Wire Line
+	4200 2300 4650 2300
+Wire Wire Line
+	4200 2400 4650 2400
+Wire Wire Line
+	4200 2500 4650 2500
+Wire Wire Line
+	4200 2600 4650 2600
+Wire Wire Line
+	4200 2900 4650 2900
+Wire Wire Line
+	4200 3000 4650 3000
+Text Label 4300 2300 0    50   ~ 0
+BTN1
+Text Label 4300 2400 0    50   ~ 0
+BTN2
+Text Label 4300 2500 0    50   ~ 0
+SW1
+Text Label 4300 2600 0    50   ~ 0
+SW2
+Text Label 4300 2900 0    50   ~ 0
+SW3
+Text Label 4300 3000 0    50   ~ 0
+SW4
+Wire Bus Line
+	4100 2150 4100 3000
 $EndSCHEMATC

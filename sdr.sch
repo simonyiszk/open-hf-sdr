@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 16
+Sheet 2 17
 Title ""
 Date ""
 Rev ""
@@ -1210,12 +1210,12 @@ Wire Wire Line
 	5050 7250 5250 7250
 Wire Wire Line
 	5250 6650 5050 6650
+Text Notes 3000 7400 0    50   ~ 0
+Undriven wires may collect noise?
 Wire Bus Line
 	5350 6400 5350 7150
 Wire Bus Line
 	10950 1200 10950 2500
 Wire Bus Line
 	10600 3850 10600 5750
-Text Notes 3000 7400 0    50   ~ 0
-Undriven wires may collect noise?
 $EndSCHEMATC

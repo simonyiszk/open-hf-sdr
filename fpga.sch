@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 16
+Sheet 11 17
 Title "Open HF SDR FPGA Sheet"
 Date "2021-01-16"
 Rev ""
@@ -52,208 +52,229 @@ F 31 "0°C" H 4150 4900 50  0001 L CNN "temperature range low"
 	2    4150 1600
 	1    0    0    -1  
 $EndComp
-Text HLabel 1400 5800 0    50   Input ~ 0
+Text HLabel 3250 4700 0    50   Input ~ 0
 ADC
 Entry Wire Line
-	1500 5900 1600 6000
+	3650 4900 3750 5000
 Entry Wire Line
-	1600 6100 1500 6000
+	3750 5100 3650 5000
 Entry Wire Line
-	1600 6300 1500 6200
+	3750 5200 3650 5100
 Entry Wire Line
-	1600 6400 1500 6300
+	3750 5400 3650 5300
 Entry Wire Line
-	1600 6500 1500 6400
+	3750 5500 3650 5400
 Entry Wire Line
-	1600 6600 1500 6500
+	3750 5600 3650 5500
 Entry Wire Line
-	1600 6700 1500 6600
+	3750 5700 3650 5600
 Entry Wire Line
-	1600 6800 1500 6700
+	3750 5800 3650 5700
 Entry Wire Line
-	1600 7000 1500 6900
+	3750 5900 3650 5800
 Entry Wire Line
-	1600 7100 1500 7000
+	3750 6000 3650 5900
 Wire Wire Line
-	2100 6000 1600 6000
+	4250 5000 3750 5000
 Wire Wire Line
-	2100 6100 1600 6100
+	4250 5100 3750 5100
 Wire Wire Line
-	1600 6300 2100 6300
+	3750 5200 4250 5200
 Wire Wire Line
-	2100 6400 1600 6400
+	4250 5400 3750 5400
 Wire Wire Line
-	2100 6500 1600 6500
+	4250 5500 3750 5500
 Wire Wire Line
-	2100 6600 1600 6600
+	4250 5600 3750 5600
 Wire Wire Line
-	2100 6700 1600 6700
+	4250 5700 3750 5700
 Wire Wire Line
-	2100 6800 1600 6800
+	4250 5800 3750 5800
 Wire Wire Line
-	2100 7000 1600 7000
+	4250 5900 3750 5900
 Wire Wire Line
-	2100 7100 1600 7100
-Text Label 1950 6000 2    50   ~ 0
+	4250 6000 3750 6000
+Text Label 4100 5000 2    50   ~ 0
 D0
-Text Label 1950 6100 2    50   ~ 0
+Text Label 4100 5100 2    50   ~ 0
 D1
-Text Label 1950 6300 2    50   ~ 0
+Text Label 4100 5200 2    50   ~ 0
 D2
-Text Label 1950 6400 2    50   ~ 0
+Text Label 4100 5400 2    50   ~ 0
 D3
-Text Label 1950 6500 2    50   ~ 0
+Text Label 4100 5500 2    50   ~ 0
 D4
-Text Label 1950 6600 2    50   ~ 0
+Text Label 4100 5600 2    50   ~ 0
 D5
-Text Label 1950 6700 2    50   ~ 0
+Text Label 4100 5700 2    50   ~ 0
 D6
-Text Label 1950 6800 2    50   ~ 0
+Text Label 4100 5800 2    50   ~ 0
 D7
-Text Label 1950 7000 2    50   ~ 0
+Text Label 4100 5900 2    50   ~ 0
 CLK
-Text Label 1950 7100 2    50   ~ 0
+Text Label 4100 6000 2    50   ~ 0
 PWRDWN
-Wire Bus Line
-	1500 5800 1400 5800
 Entry Wire Line
-	1800 2500 1700 2400
+	3750 2500 3650 2400
 Entry Wire Line
-	1800 2600 1700 2500
+	3750 2600 3650 2500
 Entry Wire Line
-	1800 2700 1700 2600
+	3750 2800 3650 2700
 Entry Wire Line
-	1800 2800 1700 2700
+	3750 2900 3650 2800
 Entry Wire Line
-	1800 2900 1700 2800
+	3750 3000 3650 2900
 Entry Wire Line
-	1800 3000 1700 2900
+	3750 3100 3650 3000
 Entry Wire Line
-	1800 3100 1700 3000
+	3750 3300 3650 3200
 Entry Wire Line
-	1800 3200 1700 3100
+	3750 3400 3650 3300
 Entry Wire Line
-	1800 3300 1700 3200
+	3750 3500 3650 3400
 Entry Wire Line
-	1800 3400 1700 3300
+	3750 3600 3650 3500
 Entry Wire Line
-	1800 3500 1700 3400
+	3750 3700 3650 3600
 Entry Wire Line
-	1800 3600 1700 3500
+	3750 4000 3650 3900
 Entry Wire Line
-	1800 3700 1700 3600
+	3750 4100 3650 4000
 Entry Wire Line
-	1800 3800 1700 3700
+	3750 4300 3650 4200
 Entry Wire Line
-	1800 4000 1700 3900
+	3750 4400 3650 4300
 Wire Wire Line
-	2150 2500 1800 2500
+	4250 2500 3750 2500
 Wire Wire Line
-	2150 2600 1800 2600
+	4250 2600 3750 2600
 Wire Wire Line
-	2150 2700 1800 2700
+	4250 2800 3750 2800
 Wire Wire Line
-	2150 2800 1800 2800
+	4250 2900 3750 2900
 Wire Wire Line
-	2150 2900 1800 2900
+	4250 3000 3750 3000
 Wire Wire Line
-	2150 3000 1800 3000
+	4250 3100 3750 3100
 Wire Wire Line
-	2150 3100 1800 3100
+	4250 3300 3750 3300
 Wire Wire Line
-	2150 3200 1800 3200
+	4250 3400 3750 3400
 Wire Wire Line
-	2150 3300 1800 3300
+	4250 3500 3750 3500
 Wire Wire Line
-	2150 3400 1800 3400
+	4250 3600 3750 3600
 Wire Wire Line
-	2150 3500 1800 3500
+	4250 3700 3750 3700
 Wire Wire Line
-	2150 3600 1800 3600
+	4250 4000 3750 4000
 Wire Wire Line
-	2150 3700 1800 3700
+	4250 4100 3750 4100
 Wire Wire Line
-	2150 3800 1800 3800
+	4250 4300 3750 4300
 Wire Wire Line
-	2150 4000 1800 4000
-Text Label 2050 2500 2    50   ~ 0
+	4250 4400 3750 4400
+Text Label 4150 2500 2    50   ~ 0
 D0
-Text Label 2050 2600 2    50   ~ 0
+Text Label 4150 2600 2    50   ~ 0
 D1
-Text Label 2050 2700 2    50   ~ 0
+Text Label 4150 2800 2    50   ~ 0
 D2
-Text Label 2050 2800 2    50   ~ 0
+Text Label 4150 2900 2    50   ~ 0
 D3
-Text Label 2050 2900 2    50   ~ 0
+Text Label 4150 3000 2    50   ~ 0
 D4
-Text Label 2050 3000 2    50   ~ 0
+Text Label 4150 3100 2    50   ~ 0
 D5
-Text Label 2050 3100 2    50   ~ 0
+Text Label 4150 3300 2    50   ~ 0
 D6
-Text Label 2050 3200 2    50   ~ 0
+Text Label 4150 3400 2    50   ~ 0
 D7
-Text Label 2050 3300 2    50   ~ 0
+Text Label 4150 3500 2    50   ~ 0
 D8
-Text Label 2050 3400 2    50   ~ 0
+Text Label 4150 3600 2    50   ~ 0
 D9
-Text Label 2050 3500 2    50   ~ 0
+Text Label 4150 3700 2    50   ~ 0
 D10
-Text Label 2050 3600 2    50   ~ 0
+Text Label 4150 4000 2    50   ~ 0
 D11
-Text Label 2050 3700 2    50   ~ 0
+Text Label 4150 4100 2    50   ~ 0
 D12
-Text Label 2050 3800 2    50   ~ 0
+Text Label 4150 4300 2    50   ~ 0
 D13
-Text Label 2050 4000 2    50   ~ 0
+Text Label 4150 4400 2    50   ~ 0
 CLK
-Wire Bus Line
-	1700 4300 1900 4300
-Text HLabel 1900 4300 2    50   Input ~ 0
+Text HLabel 3250 2250 0    50   Input ~ 0
 DAC
-Wire Wire Line
-	1400 4650 1400 4150
 Entry Wire Line
-	1700 4050 1600 4150
-Wire Wire Line
-	1600 4150 1400 4150
-Text Label 1550 4150 2    50   ~ 0
+	3650 4500 3750 4600
+Text Label 3950 4600 0    50   ~ 0
 SLEEP
-Wire Wire Line
-	1300 4700 1300 4050
-Wire Wire Line
-	1300 4050 1600 4050
 Entry Wire Line
-	1700 3950 1600 4050
-Text Label 1550 4050 2    50   ~ 0
+	3650 4400 3750 4500
+Text Label 3950 4500 0    50   ~ 0
 MODE
-Text Notes 1650 3950 2    50   ~ 0
-FIX MODE???
-Text Label 9750 4200 0    50   ~ 0
+Text Notes 3000 4450 0    50   ~ 0
+FIX MODE???\non other sheet?
+Text Label 7950 4400 0    50   ~ 0
 ATT0
-Text Label 9750 4300 0    50   ~ 0
+Text Label 7950 4500 0    50   ~ 0
 ATT1
-Text Label 9750 3700 0    50   ~ 0
+Text Label 7950 3900 0    50   ~ 0
 TR
 Wire Bus Line
-	10050 3450 10300 3450
-Text HLabel 10300 3450 2    50   Input ~ 0
+	8250 3650 8500 3650
+Text HLabel 8500 3650 2    50   Input ~ 0
 CONTROL
 Entry Wire Line
-	9950 3700 10050 3600
+	8150 3900 8250 3800
 Entry Wire Line
-	9950 4300 10050 4200
+	8150 4500 8250 4400
 Entry Wire Line
-	9950 4200 10050 4100
+	8150 4400 8250 4300
 Wire Wire Line
-	9950 4200 9750 4200
+	8150 4400 7950 4400
 Wire Wire Line
-	9750 4300 9950 4300
+	7950 4500 8150 4500
 Wire Wire Line
-	9950 3700 9750 3700
+	8150 3900 7950 3900
+Wire Wire Line
+	3750 4600 4250 4600
+Wire Wire Line
+	3750 4500 4250 4500
 Wire Bus Line
-	10050 3450 10050 4200
+	3250 2250 3650 2250
 Wire Bus Line
-	1500 5800 1500 7000
+	3250 4700 3650 4700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60904776
+P 4100 1400
+F 0 "#PWR?" H 4100 1250 50  0001 C CNN
+F 1 "+3.3V" H 4115 1573 50  0000 C CNN
+F 2 "" H 4100 1400 50  0001 C CNN
+F 3 "" H 4100 1400 50  0001 C CNN
+	1    4100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1800 4100 1800
+Wire Wire Line
+	4100 1800 4100 1700
+Wire Wire Line
+	4250 1600 4100 1600
+Connection ~ 4100 1600
+Wire Wire Line
+	4100 1600 4100 1400
+Wire Wire Line
+	4250 1700 4100 1700
 Wire Bus Line
-	1700 2400 1700 4300
+	8250 3650 8250 4400
+Wire Bus Line
+	3650 4700 3650 6000
+Wire Bus Line
+	3650 2250 3650 4600
+Connection ~ 4100 1700
+Wire Wire Line
+	4100 1700 4100 1600
 $EndSCHEMATC
