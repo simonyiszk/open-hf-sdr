@@ -250,6 +250,8 @@ $Comp
 L power:+3.3V #PWR?
 U 1 1 60904776
 P 4100 1400
+AR Path="/60904776" Ref="#PWR?"  Part="1" 
+AR Path="/6004B243/60904776" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4100 1250 50  0001 C CNN
 F 1 "+3.3V" H 4115 1573 50  0000 C CNN
 F 2 "" H 4100 1400 50  0001 C CNN
@@ -268,13 +270,37 @@ Wire Wire Line
 	4100 1600 4100 1400
 Wire Wire Line
 	4250 1700 4100 1700
+Connection ~ 4100 1700
+Wire Wire Line
+	4100 1700 4100 1600
 Wire Bus Line
 	8250 3650 8250 4400
 Wire Bus Line
 	3650 4700 3650 6000
 Wire Bus Line
 	3650 2250 3650 4600
-Connection ~ 4100 1700
-Wire Wire Line
-	4100 1700 4100 1600
+$Comp
+L Device:R R?
+U 1 1 609B728D
+P 8100 3200
+F 0 "R?" V 7893 3200 50  0000 C CNN
+F 1 "4k7" V 7984 3200 50  0000 C CNN
+F 2 "" V 8030 3200 50  0001 C CNN
+F 3 "~" H 8100 3200 50  0001 C CNN
+	1    8100 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 609B7D59
+P 8250 3200
+F 0 "#PWR?" H 8250 2950 50  0001 C CNN
+F 1 "GNDD" H 8254 3045 50  0000 C CNN
+F 2 "" H 8250 3200 50  0001 C CNN
+F 3 "" H 8250 3200 50  0001 C CNN
+	1    8250 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 8350 3250 0    50   ~ 0
+FPGA Internal Pull-up states for Select IO pins during configuration
 $EndSCHEMATC
