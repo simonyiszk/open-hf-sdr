@@ -64,29 +64,29 @@ F 31 "0°C" H 6900 4750 50  0001 L CNN "temperature range low"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 1850 6400 1850
+	7000 1850 6950 1850
 Wire Wire Line
-	6400 1850 6400 1900
+	6950 1850 6950 1900
 Wire Wire Line
-	6400 1900 5650 1900
+	6950 1900 5650 1900
 Wire Wire Line
-	5650 2000 6850 2000
+	5650 2000 6950 2000
 Wire Wire Line
-	6850 2000 6850 2050
+	6950 2000 6950 2050
 Wire Wire Line
-	6850 2050 7000 2050
+	6950 2050 7000 2050
 Wire Wire Line
-	5650 2100 6700 2100
+	5650 2100 6950 2100
 Wire Wire Line
-	6700 2100 6700 2250
+	6950 2100 6950 2250
 Wire Wire Line
-	6700 2250 7000 2250
+	6950 2250 7000 2250
 Wire Wire Line
-	5650 2200 6450 2200
+	5650 2200 6900 2200
 Wire Wire Line
-	6450 2200 6450 2450
+	6900 2200 6900 2450
 Wire Wire Line
-	6450 2450 7000 2450
+	6900 2450 7000 2450
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60998547
@@ -326,103 +326,53 @@ Wire Wire Line
 Wire Wire Line
 	9650 2250 9900 2250
 Entry Wire Line
-	6050 2800 6150 2900
+	6000 2800 6100 2900
 Entry Wire Line
-	6050 2900 6150 3000
+	6000 2900 6100 3000
 Entry Wire Line
-	6050 3000 6150 3100
+	6000 3000 6100 3100
 Entry Wire Line
-	6050 3100 6150 3200
+	6000 3100 6100 3200
 Entry Wire Line
-	6050 3200 6150 3300
+	6000 3200 6100 3300
 Entry Wire Line
-	6050 3300 6150 3400
+	6000 3300 6100 3400
 Entry Wire Line
-	6050 3400 6150 3500
+	6000 3400 6100 3500
 Entry Wire Line
-	6050 3500 6150 3600
-Entry Wire Line
-	6050 3700 6150 3800
-Entry Wire Line
-	6050 3800 6150 3900
-Entry Wire Line
-	6050 3900 6150 4000
-Entry Wire Line
-	6050 4000 6150 4100
-Entry Wire Line
-	6050 4100 6150 4200
-Entry Wire Line
-	6050 4200 6150 4300
-Entry Wire Line
-	6050 4300 6150 4400
-Entry Wire Line
-	6050 4400 6150 4500
+	6000 3500 6100 3600
 Wire Wire Line
-	5700 2800 6050 2800
+	5650 2800 6000 2800
 Wire Wire Line
-	5700 2900 6050 2900
+	5650 2900 6000 2900
 Wire Wire Line
-	5700 3000 6050 3000
+	5650 3000 6000 3000
 Wire Wire Line
-	5700 3100 6050 3100
+	5650 3100 6000 3100
 Wire Wire Line
-	5700 3200 6050 3200
+	5650 3200 6000 3200
 Wire Wire Line
-	5700 3300 6050 3300
+	5650 3300 6000 3300
 Wire Wire Line
-	5700 3400 6050 3400
+	5650 3400 6000 3400
 Wire Wire Line
-	5700 3500 6050 3500
-Wire Wire Line
-	5700 3700 6050 3700
-Wire Wire Line
-	5700 3800 6050 3800
-Wire Wire Line
-	5700 3900 6050 3900
-Wire Wire Line
-	5700 4000 6050 4000
-Wire Wire Line
-	5700 4100 6050 4100
-Wire Wire Line
-	5700 4200 6050 4200
-Wire Wire Line
-	5700 4300 6050 4300
-Wire Wire Line
-	5700 4400 6050 4400
-Text Label 5750 2800 0    50   ~ 0
+	5650 3500 6000 3500
+Text Label 5700 2800 0    50   ~ 0
 DAT0
-Text Label 5750 2900 0    50   ~ 0
+Text Label 5700 2900 0    50   ~ 0
 DAT1
-Text Label 5750 3000 0    50   ~ 0
+Text Label 5700 3000 0    50   ~ 0
 DAT2
-Text Label 5750 3100 0    50   ~ 0
+Text Label 5700 3100 0    50   ~ 0
 DAT3
-Text Label 5750 3200 0    50   ~ 0
+Text Label 5700 3200 0    50   ~ 0
 DAT4
-Text Label 5750 3300 0    50   ~ 0
+Text Label 5700 3300 0    50   ~ 0
 DAT5
-Text Label 5750 3400 0    50   ~ 0
+Text Label 5700 3400 0    50   ~ 0
 DAT6
-Text Label 5750 3500 0    50   ~ 0
+Text Label 5700 3500 0    50   ~ 0
 DAT7
-Text Label 5750 3700 0    50   ~ 0
-DAT8
-Text Label 5750 3800 0    50   ~ 0
-DAT9
-Text Label 5750 3900 0    50   ~ 0
-DAT10
-Text Label 5750 4000 0    50   ~ 0
-DAT11
-Text Label 5750 4100 0    50   ~ 0
-DAT12
-Text Label 5750 4200 0    50   ~ 0
-DAT13
-Text Label 5750 4300 0    50   ~ 0
-DAT14
-Text Label 5750 4400 0    50   ~ 0
-DAT15
-Wire Bus Line
-	6150 2700 6500 2700
 Wire Wire Line
 	9000 2250 9450 2250
 Wire Wire Line
@@ -1441,6 +1391,124 @@ Wire Wire Line
 Connection ~ 3050 4500
 Wire Wire Line
 	3050 4500 2950 4500
+Entry Wire Line
+	6000 3700 6100 3800
+Entry Wire Line
+	6000 3800 6100 3900
+Entry Wire Line
+	6000 3900 6100 4000
+Entry Wire Line
+	6000 4000 6100 4100
+Text Label 5700 3700 0    50   ~ 0
+MOSI
+Text Label 5700 3800 0    50   ~ 0
+MISO
+Text Label 5700 3900 0    50   ~ 0
+SCK
+Text Label 5700 4000 0    50   ~ 0
+nCS
 Wire Bus Line
-	6150 2700 6150 4500
+	6100 3700 6250 3700
+Text HLabel 6250 3700 2    50   Input ~ 0
+SDR_CONTROL
+Wire Wire Line
+	5650 2600 6000 2600
+Entry Wire Line
+	6000 2600 6100 2700
+Text Label 5700 2600 0    50   ~ 0
+CLK
+Wire Wire Line
+	5650 2500 6000 2500
+Entry Wire Line
+	6000 2500 6100 2600
+Text Label 5700 2500 0    50   ~ 0
+InQ
+Wire Bus Line
+	6100 2500 6300 2500
+Text HLabel 6300 2500 2    50   Input ~ 0
+T_DATA
+Entry Wire Line
+	6000 4600 6100 4700
+Entry Wire Line
+	6000 4700 6100 4800
+Entry Wire Line
+	6000 4800 6100 4900
+Entry Wire Line
+	6000 4900 6100 5000
+Entry Wire Line
+	6000 5000 6100 5100
+Entry Wire Line
+	6000 5100 6100 5200
+Entry Wire Line
+	6000 5200 6100 5300
+Entry Wire Line
+	6000 5300 6100 5400
+Wire Wire Line
+	5650 4600 6000 4600
+Wire Wire Line
+	5650 4700 6000 4700
+Wire Wire Line
+	5650 4800 6000 4800
+Wire Wire Line
+	5650 4900 6000 4900
+Wire Wire Line
+	5650 5000 6000 5000
+Wire Wire Line
+	5650 5100 6000 5100
+Wire Wire Line
+	5650 5200 6000 5200
+Wire Wire Line
+	5650 5300 6000 5300
+Text Label 5700 4600 0    50   ~ 0
+DAT0
+Text Label 5700 4700 0    50   ~ 0
+DAT1
+Text Label 5700 4800 0    50   ~ 0
+DAT2
+Text Label 5700 4900 0    50   ~ 0
+DAT3
+Text Label 5700 5000 0    50   ~ 0
+DAT4
+Text Label 5700 5100 0    50   ~ 0
+DAT5
+Text Label 5700 5200 0    50   ~ 0
+DAT6
+Text Label 5700 5300 0    50   ~ 0
+DAT7
+Wire Wire Line
+	5650 4400 6000 4400
+Entry Wire Line
+	6000 4400 6100 4500
+Text Label 5700 4400 0    50   ~ 0
+CLK
+Wire Wire Line
+	5650 4300 6000 4300
+Entry Wire Line
+	6000 4300 6100 4400
+Text Label 5700 4300 0    50   ~ 0
+InQ
+Wire Bus Line
+	6100 5500 6300 5500
+Text HLabel 6300 5500 2    50   Input ~ 0
+R_DATA
+Wire Wire Line
+	5650 3700 6000 3700
+Wire Wire Line
+	5650 3800 6000 3800
+Wire Wire Line
+	5650 3900 6000 3900
+Wire Wire Line
+	5650 4000 6000 4000
+Wire Wire Line
+	5650 4100 6000 4100
+Text Label 5700 4100 0    50   ~ 0
+RESET
+Entry Wire Line
+	6000 4100 6100 4200
+Wire Bus Line
+	6100 3700 6100 4200
+Wire Bus Line
+	6100 2500 6100 3600
+Wire Bus Line
+	6100 4300 6100 5500
 $EndSCHEMATC
