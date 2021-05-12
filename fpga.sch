@@ -220,14 +220,14 @@ Text Label 7950 4400 0    50   ~ 0
 ATT0
 Text Label 7950 4500 0    50   ~ 0
 ATT1
-Text Label 7950 3900 0    50   ~ 0
+Text Label 7950 4200 0    50   ~ 0
 TR
 Wire Bus Line
-	8250 3650 8500 3650
-Text HLabel 8500 3650 2    50   Input ~ 0
+	8250 4050 8500 4050
+Text HLabel 8500 4050 2    50   Input ~ 0
 CONTROL
 Entry Wire Line
-	8150 3900 8250 3800
+	8150 4200 8250 4100
 Entry Wire Line
 	8150 4500 8250 4400
 Entry Wire Line
@@ -237,7 +237,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 4500 8150 4500
 Wire Wire Line
-	8150 3900 7950 3900
+	8150 4200 7950 4200
 Wire Wire Line
 	3750 4600 4250 4600
 Wire Wire Line
@@ -277,8 +277,8 @@ $Comp
 L Device:R R?
 U 1 1 609B728D
 P 8100 3200
-F 0 "R?" V 7893 3200 50  0000 C CNN
-F 1 "4k7" V 7984 3200 50  0000 C CNN
+F 0 "R?" V 8000 3350 50  0000 C CNN
+F 1 "4k7" V 8000 3150 50  0000 C CNN
 F 2 "" V 8030 3200 50  0001 C CNN
 F 3 "~" H 8100 3200 50  0001 C CNN
 	1    8100 3200
@@ -295,7 +295,7 @@ F 3 "" H 8250 3200 50  0001 C CNN
 	1    8250 3200
 	1    0    0    -1  
 $EndComp
-Text Notes 8350 3250 0    50   ~ 0
+Text Notes 8550 3250 0    50   ~ 0
 FPGA Internal Pull-up states for Select IO pins during configuration
 $Comp
 L 74xGxx:74LVC1G04 U?
@@ -465,14 +465,50 @@ Connection ~ 9800 5250
 Wire Wire Line
 	7950 4300 8050 4300
 Wire Wire Line
-	8050 4300 8050 4200
+	8050 4300 8050 4250
 Wire Wire Line
-	8050 4200 8650 4200
+	8050 4250 8650 4250
 Wire Wire Line
-	8650 4200 8650 4400
+	8650 4250 8650 4400
 Connection ~ 8650 4400
+Entry Wire Line
+	8300 3500 8400 3600
+Entry Wire Line
+	8300 3600 8400 3700
+Entry Wire Line
+	8300 3000 8400 3100
+Entry Wire Line
+	8300 3800 8400 3900
+Text Label 8000 3500 0    50   ~ 0
+MOSI
+Text Label 8000 3600 0    50   ~ 0
+MISO
+Text Label 8000 3000 0    50   ~ 0
+SCK
+Text Label 8000 3800 0    50   ~ 0
+nCS
 Wire Bus Line
-	8250 3650 8250 4400
+	8400 3000 8550 3000
+Text HLabel 8550 3000 2    50   Input ~ 0
+SDR_CONTROL
+Wire Wire Line
+	7950 3500 8300 3500
+Wire Wire Line
+	7950 3600 8300 3600
+Wire Wire Line
+	7950 3000 8300 3000
+Wire Wire Line
+	7950 3800 8300 3800
+Wire Wire Line
+	7950 3900 8300 3900
+Text Label 8000 3900 0    50   ~ 0
+RESET
+Entry Wire Line
+	8300 3900 8400 4000
+Wire Bus Line
+	8250 4050 8250 4400
+Wire Bus Line
+	8400 3000 8400 4000
 Wire Bus Line
 	3650 4700 3650 6000
 Wire Bus Line
