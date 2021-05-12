@@ -373,6 +373,18 @@ Entry Wire Line
 	7900 3500 8000 3600
 Wire Bus Line
 	8000 6300 4200 6300
+Text Label 4000 5500 0    50   ~ 0
+LED15
+Text Label 4000 5600 0    50   ~ 0
+LED16
+Entry Wire Line
+	4000 5500 3900 5400
+Entry Wire Line
+	3900 5500 4000 5600
+Wire Wire Line
+	4650 5500 4000 5500
+Wire Wire Line
+	4000 5600 4650 5600
 Wire Bus Line
 	4200 5900 4200 6300
 Wire Bus Line
@@ -382,5 +394,5 @@ Wire Bus Line
 Wire Bus Line
 	4100 1850 4100 3400
 Wire Bus Line
-	3900 3400 3900 5200
+	3900 3400 3900 5600
 $EndSCHEMATC
