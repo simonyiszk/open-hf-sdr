@@ -213,10 +213,6 @@ Entry Wire Line
 	3900 5500 4000 5600
 Wire Wire Line
 	4000 5600 4650 5600
-Wire Bus Line
-	4100 2150 4100 3600
-Wire Bus Line
-	3900 3700 3900 5900
 Text Label 4050 3800 0    50   ~ 0
 LED1
 Text Label 4050 4000 0    50   ~ 0
@@ -247,4 +243,20 @@ Text Label 4050 5600 0    50   ~ 0
 LED14
 Text HLabel 2500 3700 0    50   Output ~ 0
 Leds
+Entry Wire Line
+	3900 5600 4000 5700
+Entry Wire Line
+	3900 5700 4000 5800
+Wire Wire Line
+	4000 5800 4650 5800
+Wire Wire Line
+	4000 5700 4650 5700
+Wire Bus Line
+	4100 2150 4100 3600
+Wire Bus Line
+	3900 3700 3900 5900
+Text Label 4050 5700 0    50   ~ 0
+LED15
+Text Label 4050 5800 0    50   ~ 0
+LED16
 $EndSCHEMATC

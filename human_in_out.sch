@@ -1732,6 +1732,14 @@ Text HLabel 7900 1450 0    50   Input ~ 0
 Leds
 Wire Bus Line
 	7900 4550 7250 4550
+Entry Wire Line
+	7250 5950 7350 6050
+Entry Wire Line
+	7250 5400 7350 5500
+Wire Wire Line
+	7350 5500 7700 5500
+Wire Wire Line
+	7350 6050 7700 6050
 Wire Bus Line
 	7250 4550 7250 6300
 Wire Bus Line
@@ -1740,4 +1748,8 @@ Wire Bus Line
 	6300 900  6300 4750
 Wire Bus Line
 	7900 1450 7900 4550
+Text Label 7400 5500 0    50   ~ 0
+LED15
+Text Label 7400 6050 0    50   ~ 0
+LED16
 $EndSCHEMATC
