@@ -16,40 +16,40 @@ $EndDescr
 $Comp
 L sdr:XC7S6-1FTGB196C U?
 U 4 1 60050ABC
-P 9450 700
-F 0 "U?" H 10800 700 50  0000 C CNN
-F 1 "XC7S6-1FTGB196C" H 11000 800 50  0000 C CNN
-F 2 "Xilinx-XC7S6-1FTGB196C-0-0-*" H 9450 1100 50  0001 L CNN
-F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds189-spartan-7-data-sheet.pdf" H 9450 1200 50  0001 L CNN
-F 4 "180Kbits" H 9450 1300 50  0001 L CNN "RAM size"
-F 5 "No" H 9450 1400 50  0001 L CNN "automotive"
-F 6 "IC" H 9450 1500 50  0001 L CNN "category"
-F 7 "Integrated Circuits (ICs)" H 9450 1600 50  0001 L CNN "device class L1"
-F 8 "Embedded Processors and Controllers" H 9450 1700 50  0001 L CNN "device class L2"
-F 9 "FPGAs - Field Programmable Gate Arrays" H 9450 1800 50  0001 L CNN "device class L3"
-F 10 "XC7S6-1FTGB196C" H 9450 1900 50  0001 L CNN "digikey description"
-F 11 "122-2240-ND" H 9450 2000 50  0001 L CNN "digikey part number"
-F 12 "https://www.xilinx.com/support/documentation/user_guides/ug475_7Series_Pkg_Pinout.pdf" H 9450 2100 50  0001 L CNN "footprint url"
-F 13 "200MHz" H 9450 2200 50  0001 L CNN "frequency"
-F 14 "1.55mm" H 9450 2300 50  0001 L CNN "height"
-F 15 "BGA196C100P14X14_1500X1500X146" H 9450 2400 50  0001 L CNN "ipc land pattern name"
-F 16 "Yes" H 9450 2500 50  0001 L CNN "lead free"
-F 17 "d5f555df3775b1ed" H 9450 2600 50  0001 L CNN "library id"
-F 18 "Xilinx" H 9450 2700 50  0001 L CNN "manufacturer"
-F 19 "+85°C" H 9450 2800 50  0001 L CNN "max junction temp"
-F 20 "3.465V" H 9450 2900 50  0001 L CNN "max supply voltage"
-F 21 "0.95V" H 9450 3000 50  0001 L CNN "min supply voltage"
-F 22 "100" H 9450 3100 50  0001 L CNN "number of I/Os"
-F 23 "938" H 9450 3200 50  0001 L CNN "number of logic blocks"
-F 24 "6000" H 9450 3300 50  0001 L CNN "number of logic elements cells"
-F 25 "FTGB196" H 9450 3400 50  0001 L CNN "package"
-F 26 "0.13ns" H 9450 3500 50  0001 L CNN "propagation delay"
-F 27 "Yes" H 9450 3600 50  0001 L CNN "rohs"
-F 28 "1" H 9450 3700 50  0001 L CNN "speed grade"
-F 29 "0.3mm" H 9450 3800 50  0001 L CNN "standoff height"
-F 30 "+85°C" H 9450 3900 50  0001 L CNN "temperature range high"
-F 31 "0°C" H 9450 4000 50  0001 L CNN "temperature range low"
-	4    9450 700 
+P 9300 650
+F 0 "U?" H 10650 650 50  0000 C CNN
+F 1 "XC7S6-1FTGB196C" H 10850 750 50  0000 C CNN
+F 2 "Xilinx-XC7S6-1FTGB196C-0-0-*" H 9300 1050 50  0001 L CNN
+F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds189-spartan-7-data-sheet.pdf" H 9300 1150 50  0001 L CNN
+F 4 "180Kbits" H 9300 1250 50  0001 L CNN "RAM size"
+F 5 "No" H 9300 1350 50  0001 L CNN "automotive"
+F 6 "IC" H 9300 1450 50  0001 L CNN "category"
+F 7 "Integrated Circuits (ICs)" H 9300 1550 50  0001 L CNN "device class L1"
+F 8 "Embedded Processors and Controllers" H 9300 1650 50  0001 L CNN "device class L2"
+F 9 "FPGAs - Field Programmable Gate Arrays" H 9300 1750 50  0001 L CNN "device class L3"
+F 10 "XC7S6-1FTGB196C" H 9300 1850 50  0001 L CNN "digikey description"
+F 11 "122-2240-ND" H 9300 1950 50  0001 L CNN "digikey part number"
+F 12 "https://www.xilinx.com/support/documentation/user_guides/ug475_7Series_Pkg_Pinout.pdf" H 9300 2050 50  0001 L CNN "footprint url"
+F 13 "200MHz" H 9300 2150 50  0001 L CNN "frequency"
+F 14 "1.55mm" H 9300 2250 50  0001 L CNN "height"
+F 15 "BGA196C100P14X14_1500X1500X146" H 9300 2350 50  0001 L CNN "ipc land pattern name"
+F 16 "Yes" H 9300 2450 50  0001 L CNN "lead free"
+F 17 "d5f555df3775b1ed" H 9300 2550 50  0001 L CNN "library id"
+F 18 "Xilinx" H 9300 2650 50  0001 L CNN "manufacturer"
+F 19 "+85°C" H 9300 2750 50  0001 L CNN "max junction temp"
+F 20 "3.465V" H 9300 2850 50  0001 L CNN "max supply voltage"
+F 21 "0.95V" H 9300 2950 50  0001 L CNN "min supply voltage"
+F 22 "100" H 9300 3050 50  0001 L CNN "number of I/Os"
+F 23 "938" H 9300 3150 50  0001 L CNN "number of logic blocks"
+F 24 "6000" H 9300 3250 50  0001 L CNN "number of logic elements cells"
+F 25 "FTGB196" H 9300 3350 50  0001 L CNN "package"
+F 26 "0.13ns" H 9300 3450 50  0001 L CNN "propagation delay"
+F 27 "Yes" H 9300 3550 50  0001 L CNN "rohs"
+F 28 "1" H 9300 3650 50  0001 L CNN "speed grade"
+F 29 "0.3mm" H 9300 3750 50  0001 L CNN "standoff height"
+F 30 "+85°C" H 9300 3850 50  0001 L CNN "temperature range high"
+F 31 "0°C" H 9300 3950 50  0001 L CNN "temperature range low"
+	4    9300 650 
 	1    0    0    -1  
 $EndComp
 Text Notes 600  7700 0    50   ~ 0
@@ -59,7 +59,7 @@ L Device:C C?
 U 1 1 6019CFB9
 P 6000 950
 F 0 "C?" H 6115 996 50  0000 L CNN
-F 1 "C" H 6115 905 50  0000 L CNN
+F 1 "100n" H 6115 905 50  0000 L CNN
 F 2 "" H 6038 800 50  0001 C CNN
 F 3 "~" H 6000 950 50  0001 C CNN
 	1    6000 950 
@@ -70,7 +70,7 @@ L Device:C C?
 U 1 1 6019D60E
 P 6450 950
 F 0 "C?" H 6565 996 50  0000 L CNN
-F 1 "C" H 6565 905 50  0000 L CNN
+F 1 "100n" H 6565 905 50  0000 L CNN
 F 2 "" H 6488 800 50  0001 C CNN
 F 3 "~" H 6450 950 50  0001 C CNN
 	1    6450 950 
@@ -81,7 +81,7 @@ L Device:C C?
 U 1 1 6019DA81
 P 6900 950
 F 0 "C?" H 7015 996 50  0000 L CNN
-F 1 "C" H 7015 905 50  0000 L CNN
+F 1 "100n" H 7015 905 50  0000 L CNN
 F 2 "" H 6938 800 50  0001 C CNN
 F 3 "~" H 6900 950 50  0001 C CNN
 	1    6900 950 
@@ -92,7 +92,7 @@ L Device:C C?
 U 1 1 6019E051
 P 7400 950
 F 0 "C?" H 7515 996 50  0000 L CNN
-F 1 "C" H 7515 905 50  0000 L CNN
+F 1 "100n" H 7515 905 50  0000 L CNN
 F 2 "" H 7438 800 50  0001 C CNN
 F 3 "~" H 7400 950 50  0001 C CNN
 	1    7400 950 
@@ -103,7 +103,7 @@ L Device:C C?
 U 1 1 6019E4FE
 P 7850 950
 F 0 "C?" H 7965 996 50  0000 L CNN
-F 1 "C" H 7965 905 50  0000 L CNN
+F 1 "100n" H 7965 905 50  0000 L CNN
 F 2 "" H 7888 800 50  0001 C CNN
 F 3 "~" H 7850 950 50  0001 C CNN
 	1    7850 950 
@@ -114,7 +114,7 @@ L Device:C C?
 U 1 1 6019E980
 P 8250 950
 F 0 "C?" H 8365 996 50  0000 L CNN
-F 1 "C" H 8365 905 50  0000 L CNN
+F 1 "100n" H 8365 905 50  0000 L CNN
 F 2 "" H 8288 800 50  0001 C CNN
 F 3 "~" H 8250 950 50  0001 C CNN
 	1    8250 950 
@@ -125,7 +125,7 @@ L Device:C C?
 U 1 1 6019F153
 P 8600 950
 F 0 "C?" H 8715 996 50  0000 L CNN
-F 1 "C" H 8715 905 50  0000 L CNN
+F 1 "100n" H 8715 905 50  0000 L CNN
 F 2 "" H 8638 800 50  0001 C CNN
 F 3 "~" H 8600 950 50  0001 C CNN
 	1    8600 950 
@@ -185,7 +185,7 @@ L Device:C C?
 U 1 1 601AFD41
 P 6000 2150
 F 0 "C?" H 6115 2196 50  0000 L CNN
-F 1 "C" H 6115 2105 50  0000 L CNN
+F 1 "100n" H 6115 2105 50  0000 L CNN
 F 2 "" H 6038 2000 50  0001 C CNN
 F 3 "~" H 6000 2150 50  0001 C CNN
 	1    6000 2150
@@ -196,7 +196,7 @@ L Device:C C?
 U 1 1 601AFD47
 P 6450 2150
 F 0 "C?" H 6565 2196 50  0000 L CNN
-F 1 "C" H 6565 2105 50  0000 L CNN
+F 1 "100n" H 6565 2105 50  0000 L CNN
 F 2 "" H 6488 2000 50  0001 C CNN
 F 3 "~" H 6450 2150 50  0001 C CNN
 	1    6450 2150
@@ -207,7 +207,7 @@ L Device:C C?
 U 1 1 601AFD4D
 P 6900 2150
 F 0 "C?" H 7015 2196 50  0000 L CNN
-F 1 "C" H 7015 2105 50  0000 L CNN
+F 1 "100n" H 7015 2105 50  0000 L CNN
 F 2 "" H 6938 2000 50  0001 C CNN
 F 3 "~" H 6900 2150 50  0001 C CNN
 	1    6900 2150
@@ -218,7 +218,7 @@ L Device:C C?
 U 1 1 601AFD53
 P 7400 2150
 F 0 "C?" H 7515 2196 50  0000 L CNN
-F 1 "C" H 7515 2105 50  0000 L CNN
+F 1 "100n" H 7515 2105 50  0000 L CNN
 F 2 "" H 7438 2000 50  0001 C CNN
 F 3 "~" H 7400 2150 50  0001 C CNN
 	1    7400 2150
@@ -229,7 +229,7 @@ L Device:C C?
 U 1 1 601AFD59
 P 7850 2150
 F 0 "C?" H 7965 2196 50  0000 L CNN
-F 1 "C" H 7965 2105 50  0000 L CNN
+F 1 "100n" H 7965 2105 50  0000 L CNN
 F 2 "" H 7888 2000 50  0001 C CNN
 F 3 "~" H 7850 2150 50  0001 C CNN
 	1    7850 2150
@@ -240,7 +240,7 @@ L Device:C C?
 U 1 1 601AFD5F
 P 8250 2150
 F 0 "C?" H 8365 2196 50  0000 L CNN
-F 1 "C" H 8365 2105 50  0000 L CNN
+F 1 "100n" H 8365 2105 50  0000 L CNN
 F 2 "" H 8288 2000 50  0001 C CNN
 F 3 "~" H 8250 2150 50  0001 C CNN
 	1    8250 2150
@@ -251,7 +251,7 @@ L Device:C C?
 U 1 1 601AFD65
 P 8600 2150
 F 0 "C?" H 8715 2196 50  0000 L CNN
-F 1 "C" H 8715 2105 50  0000 L CNN
+F 1 "100n" H 8715 2105 50  0000 L CNN
 F 2 "" H 8638 2000 50  0001 C CNN
 F 3 "~" H 8600 2150 50  0001 C CNN
 	1    8600 2150
@@ -1022,7 +1022,7 @@ F 1 "SI2301CDS-T1-GE3" H 7354 5705 50  0000 L CNN
 F 2 "" H 7350 5850 50  0001 C CNN
 F 3 "~" H 7150 5750 50  0001 C CNN
 	1    7150 5750
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Notes Line
 	4250 2800 8350 2800
@@ -1056,4 +1056,318 @@ Wire Wire Line
 	4700 5700 4700 5650
 Wire Wire Line
 	4700 5650 5000 5650
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B32DF5
+P 10500 6600
+F 0 "#PWR?" H 10500 6350 50  0001 C CNN
+F 1 "GNDD" H 10504 6445 50  0000 C CNN
+F 2 "" H 10500 6600 50  0001 C CNN
+F 3 "" H 10500 6600 50  0001 C CNN
+	1    10500 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 6600 10500 6350
+Connection ~ 10500 1550
+Wire Wire Line
+	10500 1550 10500 1450
+Connection ~ 10500 1650
+Wire Wire Line
+	10500 1650 10500 1550
+Connection ~ 10500 1750
+Wire Wire Line
+	10500 1750 10500 1650
+Connection ~ 10500 1850
+Wire Wire Line
+	10500 1850 10500 1750
+Connection ~ 10500 1950
+Wire Wire Line
+	10500 1950 10500 1850
+Connection ~ 10500 2050
+Wire Wire Line
+	10500 2050 10500 1950
+Connection ~ 10500 2150
+Wire Wire Line
+	10500 2150 10500 2050
+Connection ~ 10500 2250
+Wire Wire Line
+	10500 2250 10500 2150
+Connection ~ 10500 2350
+Wire Wire Line
+	10500 2350 10500 2250
+Connection ~ 10500 2450
+Wire Wire Line
+	10500 2450 10500 2350
+Connection ~ 10500 2550
+Wire Wire Line
+	10500 2550 10500 2450
+Connection ~ 10500 2650
+Wire Wire Line
+	10500 2650 10500 2550
+Connection ~ 10500 2750
+Wire Wire Line
+	10500 2750 10500 2650
+Connection ~ 10500 2850
+Wire Wire Line
+	10500 2850 10500 2750
+Connection ~ 10500 2950
+Wire Wire Line
+	10500 2950 10500 2850
+Connection ~ 10500 3050
+Wire Wire Line
+	10500 3050 10500 2950
+Connection ~ 10500 3150
+Wire Wire Line
+	10500 3150 10500 3050
+Connection ~ 10500 3250
+Wire Wire Line
+	10500 3250 10500 3150
+Connection ~ 10500 3350
+Wire Wire Line
+	10500 3350 10500 3250
+Connection ~ 10500 3450
+Wire Wire Line
+	10500 3450 10500 3350
+Connection ~ 10500 3550
+Wire Wire Line
+	10500 3550 10500 3450
+Connection ~ 10500 3650
+Wire Wire Line
+	10500 3650 10500 3550
+Connection ~ 10500 3750
+Wire Wire Line
+	10500 3750 10500 3650
+Connection ~ 10500 3850
+Wire Wire Line
+	10500 3850 10500 3750
+Connection ~ 10500 3950
+Wire Wire Line
+	10500 3950 10500 3850
+Connection ~ 10500 4050
+Wire Wire Line
+	10500 4050 10500 3950
+Connection ~ 10500 4150
+Wire Wire Line
+	10500 4150 10500 4050
+Connection ~ 10500 4250
+Wire Wire Line
+	10500 4250 10500 4150
+Connection ~ 10500 4350
+Wire Wire Line
+	10500 4350 10500 4250
+Connection ~ 10500 4450
+Wire Wire Line
+	10500 4450 10500 4350
+Connection ~ 10500 4550
+Wire Wire Line
+	10500 4550 10500 4450
+Connection ~ 10500 4650
+Wire Wire Line
+	10500 4650 10500 4550
+Connection ~ 10500 4750
+Wire Wire Line
+	10500 4750 10500 4650
+Connection ~ 10500 4850
+Wire Wire Line
+	10500 4850 10500 4750
+Connection ~ 10500 4950
+Wire Wire Line
+	10500 4950 10500 4850
+Connection ~ 10500 5050
+Wire Wire Line
+	10500 5050 10500 4950
+Connection ~ 10500 5150
+Wire Wire Line
+	10500 5150 10500 5050
+Connection ~ 10500 5250
+Wire Wire Line
+	10500 5250 10500 5150
+Connection ~ 10500 5350
+Wire Wire Line
+	10500 5350 10500 5250
+Connection ~ 10500 5450
+Wire Wire Line
+	10500 5450 10500 5350
+Connection ~ 10500 5550
+Wire Wire Line
+	10500 5550 10500 5450
+Connection ~ 10500 5650
+Wire Wire Line
+	10500 5650 10500 5550
+Connection ~ 10500 5750
+Wire Wire Line
+	10500 5750 10500 5650
+Connection ~ 10500 5850
+Wire Wire Line
+	10500 5850 10500 5750
+Connection ~ 10500 5950
+Wire Wire Line
+	10500 5950 10500 5850
+Connection ~ 10500 6050
+Wire Wire Line
+	10500 6050 10500 5950
+Connection ~ 10500 6150
+Wire Wire Line
+	10500 6150 10500 6050
+Connection ~ 10500 6250
+Wire Wire Line
+	10500 6250 10500 6150
+Connection ~ 10500 6350
+Wire Wire Line
+	10500 6350 10500 6250
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B69AAC
+P 6000 1100
+F 0 "#PWR?" H 6000 850 50  0001 C CNN
+F 1 "GNDD" H 6004 945 50  0000 C CNN
+F 2 "" H 6000 1100 50  0001 C CNN
+F 3 "" H 6000 1100 50  0001 C CNN
+	1    6000 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6ADEC
+P 6450 1100
+F 0 "#PWR?" H 6450 850 50  0001 C CNN
+F 1 "GNDD" H 6454 945 50  0000 C CNN
+F 2 "" H 6450 1100 50  0001 C CNN
+F 3 "" H 6450 1100 50  0001 C CNN
+	1    6450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6B1FB
+P 6900 1100
+F 0 "#PWR?" H 6900 850 50  0001 C CNN
+F 1 "GNDD" H 6904 945 50  0000 C CNN
+F 2 "" H 6900 1100 50  0001 C CNN
+F 3 "" H 6900 1100 50  0001 C CNN
+	1    6900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6B490
+P 7400 1100
+F 0 "#PWR?" H 7400 850 50  0001 C CNN
+F 1 "GNDD" H 7404 945 50  0000 C CNN
+F 2 "" H 7400 1100 50  0001 C CNN
+F 3 "" H 7400 1100 50  0001 C CNN
+	1    7400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6B8A3
+P 7850 1100
+F 0 "#PWR?" H 7850 850 50  0001 C CNN
+F 1 "GNDD" H 7854 945 50  0000 C CNN
+F 2 "" H 7850 1100 50  0001 C CNN
+F 3 "" H 7850 1100 50  0001 C CNN
+	1    7850 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6BCD9
+P 8250 1100
+F 0 "#PWR?" H 8250 850 50  0001 C CNN
+F 1 "GNDD" H 8254 945 50  0000 C CNN
+F 2 "" H 8250 1100 50  0001 C CNN
+F 3 "" H 8250 1100 50  0001 C CNN
+	1    8250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6BFCE
+P 8600 1100
+F 0 "#PWR?" H 8600 850 50  0001 C CNN
+F 1 "GNDD" H 8604 945 50  0000 C CNN
+F 2 "" H 8600 1100 50  0001 C CNN
+F 3 "" H 8600 1100 50  0001 C CNN
+	1    8600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6C43E
+P 8600 2300
+F 0 "#PWR?" H 8600 2050 50  0001 C CNN
+F 1 "GNDD" H 8604 2145 50  0000 C CNN
+F 2 "" H 8600 2300 50  0001 C CNN
+F 3 "" H 8600 2300 50  0001 C CNN
+	1    8600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6CB06
+P 8250 2300
+F 0 "#PWR?" H 8250 2050 50  0001 C CNN
+F 1 "GNDD" H 8254 2145 50  0000 C CNN
+F 2 "" H 8250 2300 50  0001 C CNN
+F 3 "" H 8250 2300 50  0001 C CNN
+	1    8250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6CE36
+P 7850 2300
+F 0 "#PWR?" H 7850 2050 50  0001 C CNN
+F 1 "GNDD" H 7854 2145 50  0000 C CNN
+F 2 "" H 7850 2300 50  0001 C CNN
+F 3 "" H 7850 2300 50  0001 C CNN
+	1    7850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6D151
+P 7400 2300
+F 0 "#PWR?" H 7400 2050 50  0001 C CNN
+F 1 "GNDD" H 7404 2145 50  0000 C CNN
+F 2 "" H 7400 2300 50  0001 C CNN
+F 3 "" H 7400 2300 50  0001 C CNN
+	1    7400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6D5A7
+P 6900 2300
+F 0 "#PWR?" H 6900 2050 50  0001 C CNN
+F 1 "GNDD" H 6904 2145 50  0000 C CNN
+F 2 "" H 6900 2300 50  0001 C CNN
+F 3 "" H 6900 2300 50  0001 C CNN
+	1    6900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6DA89
+P 6450 2300
+F 0 "#PWR?" H 6450 2050 50  0001 C CNN
+F 1 "GNDD" H 6454 2145 50  0000 C CNN
+F 2 "" H 6450 2300 50  0001 C CNN
+F 3 "" H 6450 2300 50  0001 C CNN
+	1    6450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B6DDC3
+P 6000 2300
+F 0 "#PWR?" H 6000 2050 50  0001 C CNN
+F 1 "GNDD" H 6004 2145 50  0000 C CNN
+F 2 "" H 6000 2300 50  0001 C CNN
+F 3 "" H 6000 2300 50  0001 C CNN
+	1    6000 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
