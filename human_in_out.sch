@@ -168,17 +168,6 @@ F 3 "~" H 10750 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_Array:ULN2004A U?
-U 1 1 60912981
-P 7900 1700
-F 0 "U?" H 7900 2367 50  0000 C CNN
-F 1 "ULN2004A" H 7900 2276 50  0000 C CNN
-F 2 "" H 7950 1150 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 8000 1500 50  0001 C CNN
-	1    7900 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR?
 U 1 1 6092D700
 P 8400 850
@@ -256,44 +245,13 @@ F 3 "" H 10750 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 1500 8400 1500
-Wire Wire Line
 	8400 1500 8400 1450
-Wire Wire Line
-	8300 1600 8800 1600
 Wire Wire Line
 	8800 1600 8800 1450
 Wire Wire Line
-	8300 1700 9200 1700
-Wire Wire Line
 	9200 1700 9200 1450
 Wire Wire Line
-	8300 1800 9600 1800
-Wire Wire Line
 	9600 1800 9600 1450
-Wire Wire Line
-	8300 1900 9950 1900
-Wire Wire Line
-	9950 1900 9950 1450
-Wire Wire Line
-	8300 2000 10350 2000
-Wire Wire Line
-	10350 2000 10350 1450
-Wire Wire Line
-	8300 2100 10750 2100
-Wire Wire Line
-	10750 2100 10750 1450
-$Comp
-L power:GNDD #PWR?
-U 1 1 60931A66
-P 7900 2300
-F 0 "#PWR?" H 7900 2050 50  0001 C CNN
-F 1 "GNDD" H 7904 2145 50  0000 C CNN
-F 2 "" H 7900 2300 50  0001 C CNN
-F 3 "" H 7900 2300 50  0001 C CNN
-	1    7900 2300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED D?
 U 1 1 60963E98
@@ -449,17 +407,6 @@ F 3 "~" H 10800 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_Array:ULN2004A U?
-U 1 1 60964128
-P 7950 3850
-F 0 "U?" H 7950 4517 50  0000 C CNN
-F 1 "ULN2004A" H 7950 4426 50  0000 C CNN
-F 2 "" H 8000 3300 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 8050 3650 50  0001 C CNN
-	1    7950 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR?
 U 1 1 60964132
 P 8450 3000
@@ -537,44 +484,13 @@ F 3 "" H 10800 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 3650 8450 3650
-Wire Wire Line
 	8450 3650 8450 3600
-Wire Wire Line
-	8350 3750 8850 3750
 Wire Wire Line
 	8850 3750 8850 3600
 Wire Wire Line
-	8350 3850 9250 3850
-Wire Wire Line
 	9250 3850 9250 3600
 Wire Wire Line
-	8350 3950 9650 3950
-Wire Wire Line
 	9650 3950 9650 3600
-Wire Wire Line
-	8350 4050 10000 4050
-Wire Wire Line
-	10000 4050 10000 3600
-Wire Wire Line
-	8350 4150 10400 4150
-Wire Wire Line
-	10400 4150 10400 3600
-Wire Wire Line
-	8350 4250 10800 4250
-Wire Wire Line
-	10800 4250 10800 3600
-$Comp
-L power:GNDD #PWR?
-U 1 1 60964186
-P 7950 4450
-F 0 "#PWR?" H 7950 4200 50  0001 C CNN
-F 1 "GNDD" H 7954 4295 50  0000 C CNN
-F 2 "" H 7950 4450 50  0001 C CNN
-F 3 "" H 7950 4450 50  0001 C CNN
-	1    7950 4450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 609A9462
@@ -1716,8 +1632,112 @@ Wire Wire Line
 	8300 6050 8800 6050
 Wire Wire Line
 	8800 6050 8800 5400
+Wire Wire Line
+	8000 1500 8400 1500
+Entry Wire Line
+	7900 1600 8000 1500
+Wire Wire Line
+	8000 1600 8800 1600
+Wire Wire Line
+	8000 1700 9200 1700
+Wire Wire Line
+	8000 1800 9600 1800
+Wire Wire Line
+	8000 1900 9950 1900
+Wire Wire Line
+	8000 2000 10350 2000
+Wire Wire Line
+	8000 2100 10750 2100
+Entry Wire Line
+	7900 1700 8000 1600
+Entry Wire Line
+	7900 1900 8000 1800
+Entry Wire Line
+	7900 1800 8000 1700
+Entry Wire Line
+	7900 2000 8000 1900
+Entry Wire Line
+	7900 2100 8000 2000
+Entry Wire Line
+	7900 2200 8000 2100
+Entry Wire Line
+	7900 3750 8000 3650
+Entry Wire Line
+	7900 3850 8000 3750
+Entry Wire Line
+	7900 4050 8000 3950
+Entry Wire Line
+	7900 3950 8000 3850
+Entry Wire Line
+	7900 4150 8000 4050
+Entry Wire Line
+	7900 4250 8000 4150
+Entry Wire Line
+	7900 4350 8000 4250
+Wire Wire Line
+	8000 3650 8450 3650
+Wire Wire Line
+	8000 3750 8850 3750
+Wire Wire Line
+	8000 3850 9250 3850
+Wire Wire Line
+	8000 3950 9650 3950
+Wire Wire Line
+	8000 4050 10000 4050
+Wire Wire Line
+	8000 4150 10400 4150
+Wire Wire Line
+	8000 4250 10800 4250
+Text Label 8050 1500 0    50   ~ 0
+LED1
+Text Label 8050 1600 0    50   ~ 0
+LED2
+Text Label 8050 1700 0    50   ~ 0
+LED3
+Text Label 8050 1800 0    50   ~ 0
+LED4
+Text Label 8050 1900 0    50   ~ 0
+LED5
+Text Label 8050 2000 0    50   ~ 0
+LED6
+Text Label 8050 2100 0    50   ~ 0
+LED7
+Text Label 8050 3650 0    50   ~ 0
+LED8
+Text Label 8050 3750 0    50   ~ 0
+LED9
+Text Label 8050 3850 0    50   ~ 0
+LED10
+Text Label 8050 3950 0    50   ~ 0
+LED11
+Text Label 8050 4050 0    50   ~ 0
+LED12
+Text Label 8050 4150 0    50   ~ 0
+LED13
+Text Label 8050 4250 0    50   ~ 0
+LED14
+Wire Wire Line
+	10000 3600 10000 4050
+Wire Wire Line
+	10400 3600 10400 4150
+Wire Wire Line
+	10800 3600 10800 4250
+Wire Wire Line
+	9950 1450 9950 1900
+Wire Wire Line
+	10350 1450 10350 2000
+Wire Wire Line
+	10750 1450 10750 2100
+Text HLabel 7900 1450 0    50   Input ~ 0
+Leds
+Wire Bus Line
+	7900 4550 7250 4550
+Wire Bus Line
+	7250 4550 7250 6300
 Wire Bus Line
 	4550 4750 4550 5900
 Wire Bus Line
 	6300 900  6300 4750
+Wire Bus Line
+	7900 1450 7900 4550
 $EndSCHEMATC

@@ -108,17 +108,143 @@ Wire Wire Line
 Wire Wire Line
 	4200 3000 4650 3000
 Text Label 4300 2300 0    50   ~ 0
-BTN1
-Text Label 4300 2400 0    50   ~ 0
-BTN2
-Text Label 4300 2500 0    50   ~ 0
 SW1
-Text Label 4300 2600 0    50   ~ 0
+Text Label 4300 2400 0    50   ~ 0
 SW2
-Text Label 4300 2900 0    50   ~ 0
+Text Label 4300 2500 0    50   ~ 0
 SW3
-Text Label 4300 3000 0    50   ~ 0
+Text Label 4300 2600 0    50   ~ 0
 SW4
+Text Label 4300 2900 0    50   ~ 0
+BTN1
+Text Label 4300 3000 0    50   ~ 0
+BTN2
+Entry Wire Line
+	4100 3000 4200 3100
+Entry Wire Line
+	4100 3100 4200 3200
+Entry Wire Line
+	4100 3300 4200 3400
+Entry Wire Line
+	4100 3400 4200 3500
+Entry Wire Line
+	4100 3500 4200 3600
+Entry Wire Line
+	4100 3600 4200 3700
+Wire Wire Line
+	4200 3100 4650 3100
+Wire Wire Line
+	4200 3200 4650 3200
+Wire Wire Line
+	4200 3400 4650 3400
+Wire Wire Line
+	4200 3500 4650 3500
+Wire Wire Line
+	4200 3600 4650 3600
+Wire Wire Line
+	4200 3700 4650 3700
+Text Label 4300 3100 0    50   ~ 0
+BTN3
+Text Label 4300 3200 0    50   ~ 0
+BTN4
+Text Label 4300 3400 0    50   ~ 0
+BTN5
+Text Label 4300 3500 0    50   ~ 0
+BTN6
+Text Label 4300 3600 0    50   ~ 0
+BTN7
+Text Label 4300 3700 0    50   ~ 0
+BTN8
 Wire Bus Line
-	4100 2150 4100 3000
+	2500 3700 3900 3700
+Entry Wire Line
+	3900 3700 4000 3800
+Wire Wire Line
+	4000 3800 4650 3800
+Entry Wire Line
+	3900 3900 4000 4000
+Wire Wire Line
+	4000 4000 4650 4000
+Entry Wire Line
+	3900 4000 4000 4100
+Wire Wire Line
+	4000 4100 4650 4100
+Entry Wire Line
+	3900 4200 4000 4300
+Wire Wire Line
+	4000 4300 4650 4300
+Entry Wire Line
+	3900 4300 4000 4400
+Wire Wire Line
+	4000 4400 4650 4400
+Entry Wire Line
+	3900 4400 4000 4500
+Wire Wire Line
+	4000 4500 4650 4500
+Entry Wire Line
+	3900 4500 4000 4600
+Wire Wire Line
+	4000 4600 4650 4600
+Entry Wire Line
+	3900 4600 4000 4700
+Wire Wire Line
+	4000 4700 4650 4700
+Entry Wire Line
+	3900 4700 4000 4800
+Wire Wire Line
+	4000 4800 4650 4800
+Entry Wire Line
+	3900 4900 4000 5000
+Wire Wire Line
+	4000 5000 4650 5000
+Entry Wire Line
+	3900 5000 4000 5100
+Wire Wire Line
+	4000 5100 4650 5100
+Entry Wire Line
+	3900 5100 4000 5200
+Wire Wire Line
+	4000 5200 4650 5200
+Entry Wire Line
+	3900 5400 4000 5500
+Wire Wire Line
+	4000 5500 4650 5500
+Entry Wire Line
+	3900 5500 4000 5600
+Wire Wire Line
+	4000 5600 4650 5600
+Wire Bus Line
+	4100 2150 4100 3600
+Wire Bus Line
+	3900 3700 3900 5900
+Text Label 4050 3800 0    50   ~ 0
+LED1
+Text Label 4050 4000 0    50   ~ 0
+LED2
+Text Label 4050 4100 0    50   ~ 0
+LED3
+Text Label 4050 4300 0    50   ~ 0
+LED4
+Text Label 4050 4400 0    50   ~ 0
+LED5
+Text Label 4050 4500 0    50   ~ 0
+LED6
+Text Label 4050 4600 0    50   ~ 0
+LED7
+Text Label 4050 4700 0    50   ~ 0
+LED8
+Text Label 4050 4800 0    50   ~ 0
+LED9
+Text Label 4050 5000 0    50   ~ 0
+LED10
+Text Label 4050 5100 0    50   ~ 0
+LED11
+Text Label 4050 5200 0    50   ~ 0
+LED12
+Text Label 4050 5500 0    50   ~ 0
+LED13
+Text Label 4050 5600 0    50   ~ 0
+LED14
+Text HLabel 2500 3700 0    50   Output ~ 0
+Leds
 $EndSCHEMATC

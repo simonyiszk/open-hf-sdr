@@ -37,6 +37,7 @@ U 6004B327
 F0 "Sheet6004B326" 50
 F1 "fpga_2.sch" 50
 F2 "Buttons" I L 3100 2050 50 
+F3 "Leds" O L 3100 2150 50 
 $EndSheet
 $Sheet
 S 1150 4250 1250 450 
@@ -58,7 +59,8 @@ S 1150 1950 1250 450
 U 608DD7ED
 F0 "Sheet608DD7EC" 50
 F1 "human_in_out.sch" 50
-F2 "Buttons" I R 2400 2050 50 
+F2 "Leds" I R 2400 2150 50 
+F3 "Buttons" O R 2400 2050 50 
 $EndSheet
 Wire Bus Line
 	2400 2050 3100 2050
@@ -68,4 +70,6 @@ Wire Bus Line
 	2400 1300 3100 1300
 Wire Bus Line
 	2400 1200 3100 1200
+Wire Bus Line
+	2400 2150 3100 2150
 $EndSCHEMATC
