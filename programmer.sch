@@ -1868,13 +1868,23 @@ Wire Wire Line
 	6900 1550 6900 1450
 Wire Wire Line
 	7000 1450 6900 1450
+Connection ~ 6900 1450
+Wire Wire Line
+	6900 1450 6900 1400
+NoConn ~ 3250 1900
+NoConn ~ 3250 2100
+NoConn ~ 5650 2300
+NoConn ~ 5650 2400
+NoConn ~ 5650 4200
+NoConn ~ 1500 3400
+NoConn ~ 1500 3500
+NoConn ~ 7000 2650
+NoConn ~ 7000 2750
+NoConn ~ 9000 1650
 Wire Bus Line
 	6100 3700 6100 4200
 Wire Bus Line
 	6100 2500 6100 3600
 Wire Bus Line
 	6100 4300 6100 5500
-Connection ~ 6900 1450
-Wire Wire Line
-	6900 1450 6900 1400
 $EndSCHEMATC
