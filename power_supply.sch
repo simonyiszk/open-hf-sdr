@@ -428,17 +428,6 @@ F 3 "~" H 2250 2200 50  0001 C CNN
 	1    2250 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 603CF150
-P 1600 2000
-F 0 "J?" H 1650 2200 50  0000 C CNN
-F 1 "_BAT_PROT" H 1800 2100 50  0000 C CNN
-F 2 "" H 1600 2000 50  0001 C CNN
-F 3 "~" H 1600 2000 50  0001 C CNN
-	1    1600 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 2000 2050 2000
 Wire Wire Line
@@ -1666,4 +1655,16 @@ Wire Wire Line
 Connection ~ 1900 3300
 Wire Wire Line
 	1900 3300 2250 3300
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 60D41D02
+P 1600 2000
+F 0 "J?" H 1200 2000 50  0000 C CNN
+F 1 "_BAT_PROT" H 1350 1900 50  0000 C CNN
+F 2 "" H 1600 2000 50  0001 C CNN
+F 3 "~" H 1600 2000 50  0001 C CNN
+	1    1600 2000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 1900
 $EndSCHEMATC
