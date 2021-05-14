@@ -130,8 +130,6 @@ F 3 "~" H 7550 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 3800 4600 3800
-Wire Wire Line
 	4300 2050 4650 2050
 Text Notes 5450 4750 0    50   ~ 0
 10mV ripple with 0.1 ohm ESR per cap
@@ -191,12 +189,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 604014D9
-P 4200 4800
-F 0 "#PWR?" H 4200 4550 50  0001 C CNN
-F 1 "GNDA" H 4205 4627 50  0000 C CNN
-F 2 "" H 4200 4800 50  0001 C CNN
-F 3 "" H 4200 4800 50  0001 C CNN
-	1    4200 4800
+P 3600 4100
+F 0 "#PWR?" H 3600 3850 50  0001 C CNN
+F 1 "GNDA" H 3605 3927 50  0000 C CNN
+F 2 "" H 3600 4100 50  0001 C CNN
+F 3 "" H 3600 4100 50  0001 C CNN
+	1    3600 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -494,17 +492,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 2150 7150 2150
 Connection ~ 7150 2150
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60401584
-P 7150 2150
-F 0 "#PWR?" H 7150 2000 50  0001 C CNN
-F 1 "+3V3" H 7165 2323 50  0000 C CNN
-F 2 "" H 7150 2150 50  0001 C CNN
-F 3 "" H 7150 2150 50  0001 C CNN
-	1    7150 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 2700 7150 2450
 Wire Wire Line
@@ -616,11 +603,43 @@ Wire Wire Line
 Wire Wire Line
 	3900 4200 3900 4000
 Text HLabel 4300 2050 0    50   Input ~ 0
-PWR_EN
-Text HLabel 4250 3800 0    50   Input ~ 0
-PWR_EN
+PWR_D_EN
+Text HLabel 3100 3800 0    50   Input ~ 0
+PWR_A_EN
 Text HLabel 4500 1950 0    50   Input ~ 0
 VIN
 Text HLabel 4450 3700 0    50   Input ~ 0
 VIN
+Text HLabel 8600 2150 2    50   Input ~ 0
+3v3_non_switched
+Wire Wire Line
+	8600 2150 8050 2150
+Connection ~ 8050 2150
+$Comp
+L Device:R R?
+U 1 1 60A70FBA
+P 3600 3950
+F 0 "R?" H 3670 3996 50  0000 L CNN
+F 1 "10k" H 3670 3905 50  0000 L CNN
+F 2 "" V 3530 3950 50  0001 C CNN
+F 3 "~" H 3600 3950 50  0001 C CNN
+	1    3600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60A718B5
+P 3250 3800
+F 0 "D?" V 3350 3650 50  0000 L CNN
+F 1 "SS34" V 3450 3550 50  0000 L CNN
+F 2 "" H 3250 3800 50  0001 C CNN
+F 3 "~" H 3250 3800 50  0001 C CNN
+	1    3250 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 3800 3600 3800
+Connection ~ 3600 3800
+Wire Wire Line
+	3600 3800 4600 3800
 $EndSCHEMATC

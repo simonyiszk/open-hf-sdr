@@ -186,20 +186,6 @@ Wire Notes Line
 Text Notes 6250 2900 0    50   ~ 0
 Filter at SMPS
 $Comp
-L power:+3V3 #PWR?
-U 1 1 603D6AE6
-P 3000 2850
-AR Path="/6004B3B4/603D6AE6" Ref="#PWR?"  Part="1" 
-AR Path="/6004B3B4/603AAE8B/603D6AE6" Ref="#PWR?"  Part="1" 
-AR Path="/603D6AE6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3000 2700 50  0001 C CNN
-F 1 "+3V3" H 3015 3023 50  0000 C CNN
-F 2 "" H 3000 2850 50  0001 C CNN
-F 3 "" H 3000 2850 50  0001 C CNN
-	1    3000 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDD #PWR?
 U 1 1 603D6AEC
 P 3000 3300
@@ -399,17 +385,6 @@ Wire Notes Line
 Text HLabel 3750 3800 0    50   Input ~ 0
 EN_VCCaux
 $Comp
-L power:+3.3V #PWR?
-U 1 1 603DCFE1
-P 3750 2600
-F 0 "#PWR?" H 3750 2450 50  0001 C CNN
-F 1 "+3.3V" H 3765 2773 50  0000 C CNN
-F 2 "" H 3750 2600 50  0001 C CNN
-F 3 "" H 3750 2600 50  0001 C CNN
-	1    3750 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+1V8 #PWR?
 U 1 1 60A1E6CE
 P 6950 2100
@@ -447,4 +422,12 @@ F 3 "" H 6550 3800 50  0001 C CNN
 	1    6550 3800
 	1    0    0    -1  
 $EndComp
+Text HLabel 2750 2600 0    50   Input ~ 0
+V_IN
+Wire Wire Line
+	3750 2600 2750 2600
+Wire Wire Line
+	2750 2600 2750 2850
+Wire Wire Line
+	2750 2850 3000 2850
 $EndSCHEMATC
