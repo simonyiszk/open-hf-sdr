@@ -610,7 +610,7 @@ Text HLabel 4500 1950 0    50   Input ~ 0
 VIN
 Text HLabel 4450 3700 0    50   Input ~ 0
 VIN
-Text HLabel 8600 2150 2    50   Input ~ 0
+Text HLabel 8600 2150 2    50   Output ~ 0
 3v3_non_switched
 Wire Wire Line
 	8600 2150 8050 2150
